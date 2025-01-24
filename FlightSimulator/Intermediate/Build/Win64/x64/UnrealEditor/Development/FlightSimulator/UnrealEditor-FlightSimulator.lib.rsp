@@ -1,0 +1,15 @@
+/NOLOGO
+/errorReport:prompt
+/MACHINE:x64
+/SUBSYSTEM:WINDOWS
+/DEF
+/NAME:"UnrealEditor-FlightSimulator.dll"
+/IGNORE:4221
+/NODEFAULTLIB
+"C:\FlightSimulator-UE5\FlightSimulator\Intermediate\Build\Win64\x64\FlightSimulatorEditor\Development\Engine\SharedPCH.Engine.Cpp20.h.obj"
+"C:\FlightSimulator-UE5\FlightSimulator\Intermediate\Build\Win64\x64\UnrealEditor\Development\FlightSimulator\FlightSimulator.init.gen.cpp.obj"
+"C:\FlightSimulator-UE5\FlightSimulator\Intermediate\Build\Win64\x64\UnrealEditor\Development\FlightSimulator\FlightSimulatorGameModeBase.gen.cpp.obj"
+"C:\FlightSimulator-UE5\FlightSimulator\Intermediate\Build\Win64\x64\UnrealEditor\Development\FlightSimulator\FlightSimulator.cpp.obj"
+"C:\FlightSimulator-UE5\FlightSimulator\Intermediate\Build\Win64\x64\UnrealEditor\Development\FlightSimulator\FlightSimulatorGameModeBase.cpp.obj"
+"C:\FlightSimulator-UE5\FlightSimulator\Intermediate\Build\Win64\x64\UnrealEditor\Development\FlightSimulator\Default.rc2.res"
+/OUT:"C:\FlightSimulator-UE5\FlightSimulator\Intermediate\Build\Win64\x64\UnrealEditor\Development\FlightSimulator\UnrealEditor-FlightSimulator.lib"

@@ -1,0 +1,8 @@
+{
+	"SourceFiles": [
+		"C:\\FlightSimulator-UE5\\FlightSimulator\\Source\\FlightSimulator\\FlightSimulator.Build.cs",
+		"C:\\FlightSimulator-UE5\\FlightSimulator\\Source\\FlightSimulator.Target.cs",
+		"C:\\FlightSimulator-UE5\\FlightSimulator\\Source\\FlightSimulatorEditor.Target.cs"
+	],
+	"EngineVersion": "5.3.2"
+}

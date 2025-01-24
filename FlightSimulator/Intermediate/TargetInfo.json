@@ -1,0 +1,14 @@
+{
+	"Targets": [
+		{
+			"Name": "FlightSimulator",
+			"Path": "..\\Source\\FlightSimulator.Target.cs",
+			"Type": "Game"
+		},
+		{
+			"Name": "FlightSimulatorEditor",
+			"Path": "..\\Source\\FlightSimulatorEditor.Target.cs",
+			"Type": "Editor"
+		}
+	]
+}

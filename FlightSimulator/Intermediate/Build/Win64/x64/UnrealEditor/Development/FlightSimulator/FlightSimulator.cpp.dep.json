@@ -1,0 +1,14 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "c:\\flightsimulator-ue5\\flightsimulator\\source\\flightsimulator\\flightsimulator.cpp",
+        "ProvidedModule": "",
+        "PCH": "c:\\flightsimulator-ue5\\flightsimulator\\intermediate\\build\\win64\\x64\\flightsimulatoreditor\\development\\engine\\sharedpch.engine.cpp20.h.pch",
+        "Includes": [
+            "c:\\flightsimulator-ue5\\flightsimulator\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\flightsimulator\\definitions.flightsimulator.h",
+            "c:\\flightsimulator-ue5\\flightsimulator\\source\\flightsimulator\\flightsimulator.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

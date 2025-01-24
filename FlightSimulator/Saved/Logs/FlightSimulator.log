@@ -1662,3 +1662,180 @@ BUILD FAILED
 [2025.01.24-13.13.00:420][781]LogContentValidation: Display: Validating /Script/Engine.Material /Game/Assets/airplane1/dbl_Group_058.dbl_Group_058
 [2025.01.24-13.13.00:421][781]LogContentValidation: Display: Validating /Script/Engine.Material /Game/Assets/airplane1/dbl_Group_059.dbl_Group_059
 [2025.01.24-13.13.00:421][781]LogContentValidation: Display: Validating /Script/Engine.Material /Game/Assets/airplane1/dbl_sketchup-download200703301703494_003.dbl_sketchup-download200703301703494_003
+[2025.01.24-13.14.03:215][ 69]LogWorld: UWorld::CleanupWorld for World_2, bSessionEnded=true, bCleanupResources=true
+[2025.01.24-13.14.03:215][ 69]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2025.01.24-13.15.36:049][609]LogFactory: FactoryCreateFile: StaticMesh with FbxFactory (0 0 C:\Users\pgmla\OneDrive\Escritorio\PaperAirPlane.fbx)
+[2025.01.24-13.15.36:075][609]LogFbx: Loading FBX Scene from C:\Users\pgmla\OneDrive\Escritorio\PaperAirPlane.fbx
+[2025.01.24-13.15.36:095][609]LogFbx: FBX Scene Loaded Succesfully
+[2025.01.24-13.15.38:391][609]LogSlate: Window 'FBX Import Options' being destroyed
+[2025.01.24-13.15.39:083][609]LogStaticMesh: Display: Building static mesh PaperAirPlane...
+[2025.01.24-13.15.39:556][609]LogStaticMesh: Built static mesh [0.47s] /Game/Assets/PaperAirPlane.PaperAirPlane
+[2025.01.24-13.15.39:596][609]FBXImport: Warning: No smoothing group information was found in this FBX scene.  Please make sure to enable the 'Export Smoothing Groups' option in the FBX Exporter plug-in before exporting the file.  Even for tools that don't support smoothing groups, the FBX Exporter will generate appropriate smoothing data at export-time so that correct vertex normals can be inferred while importing. 
+[2025.01.24-13.15.42:098][703]LogSlate: Window 'Message Log' being destroyed
+[2025.01.24-13.15.42:143][703]LogSlate: Window 'Message Log' being destroyed
+[2025.01.24-13.15.45:974][873]LogAssetEditorSubsystem: Opening Asset editor for StaticMesh /Game/Assets/PaperAirPlane.PaperAirPlane
+[2025.01.24-13.15.46:294][873]LogWorldSubsystemInput: UEnhancedInputDeveloperSettings::bEnableWorldSubsystem is false, the world subsystem will not be created!
+[2025.01.24-13.15.46:295][873]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2025.01.24-13.15.47:876][873]LogViewport: Scene viewport resized to 916x881, mode Windowed.
+[2025.01.24-13.15.52:314][ 10]LogSlate: Window 'PaperAirPlane' being destroyed
+[2025.01.24-13.15.52:355][ 10]LogSlate: Window 'PaperAirPlane' being destroyed
+[2025.01.24-13.15.52:490][ 10]LogWorld: UWorld::CleanupWorld for World_3, bSessionEnded=true, bCleanupResources=true
+[2025.01.24-13.15.52:490][ 10]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2025.01.24-13.15.59:792][321]LogContentBrowser: Deferred new asset folder creation: NewFolder
+[2025.01.24-13.15.59:822][321]LogContentBrowser: Creating deferred item: NewFolder
+[2025.01.24-13.15.59:851][322]LogContentBrowser: Renaming the item being created (Deferred Item: NewFolder).
+[2025.01.24-13.16.03:290][507]LogContentBrowser: Attempting asset rename: NewFolder -> PaperAirPlane
+[2025.01.24-13.16.03:293][507]LogContentBrowser: End creating deferred item NewFolder
+[2025.01.24-13.16.07:620][689]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2025.01.24-13.16.08:109][689]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Assets/PaperAirPlane/PaperAirPlane" FILE="../../../../../../FlightSimulator-UE5/FlightSimulator/Content/Assets/PaperAirPlane/PaperAirPlane.uasset" SILENT=true
+[2025.01.24-13.16.08:117][689]LogSavePackage: Moving output files for package: /Game/Assets/PaperAirPlane/PaperAirPlane
+[2025.01.24-13.16.08:118][689]LogSavePackage: Moving '../../../../../../FlightSimulator-UE5/FlightSimulator/Saved/PaperAirPlaneCFB5BD0A4E5C728986CE04BCEDBC570D.tmp' to '../../../../../../FlightSimulator-UE5/FlightSimulator/Content/Assets/PaperAirPlane/PaperAirPlane.uasset'
+[2025.01.24-13.16.08:148][689]LogFileHelpers: InternalPromptForCheckoutAndSave took 528 ms (total: 7.09 sec)
+[2025.01.24-13.16.08:181][689]LogUObjectHash: Compacting FUObjectHashTables data took   3.00ms
+[2025.01.24-13.16.08:207][689]LogUObjectHash: Compacting FUObjectHashTables data took   4.43ms
+[2025.01.24-13.16.08:224][689]LogUObjectHash: Compacting FUObjectHashTables data took   1.83ms
+[2025.01.24-13.16.08:562][689]AssetCheck: New page: Asset Save: PaperAirPlane
+[2025.01.24-13.16.08:562][689]LogContentValidation: Display: Validating /Script/Engine.StaticMesh /Game/Assets/PaperAirPlane/PaperAirPlane.PaperAirPlane
+[2025.01.24-13.16.36:771][635]LogFactory: FactoryCreateFile: StaticMesh with FbxFactory (0 0 C:\Users\pgmla\OneDrive\Escritorio\assetsFlightSimulator\uploads_files_211292_3d-model.fbx\3d-model.fbx)
+[2025.01.24-13.16.36:788][635]LogFbx: Loading FBX Scene from C:\Users\pgmla\OneDrive\Escritorio\assetsFlightSimulator\uploads_files_211292_3d-model.fbx\3d-model.fbx
+[2025.01.24-13.16.36:901][635]LogFbx: FBX Scene Loaded Succesfully
+[2025.01.24-13.16.39:074][635]LogSlate: Window 'FBX Import Options' being destroyed
+[2025.01.24-13.16.39:754][635]LogFbxMaterialImport: Display: Unable to find Texture file C:\Users\Azuolas\Documents\3dsMax\sceneassets\images\загруженное.jpeg
+[2025.01.24-13.16.39:779][635]LogFbxMaterialImport: Display: Unable to find Texture file C:\Users\Azuolas\Documents\3dsMax\sceneassets\images\Metal_Seamed.jpg
+[2025.01.24-13.16.40:214][635]LogStaticMesh: Display: Building static mesh 3d-model...
+[2025.01.24-13.16.41:169][635]LogStaticMesh: Built static mesh [0.96s] /Game/Assets/3d-model.3d-model
+[2025.01.24-13.16.41:530][635]LogStaticMesh: Warning: 3d-model has degenerate tangent bases which will result in incorrect shading.  MikkTSpace relies on tangent bases and may result in mesh corruption, consider disabling this option.
+[2025.01.24-13.16.41:531][635]LogStaticMesh: Warning: 3d-model has some nearly zero bi-normals which can create some issues. (Tolerance of 1E-4)
+[2025.01.24-13.16.42:078][635]FBXImport: FBX Scene Loading: Found texture name clash, name clash can be wrongly reassign at reimport , texture 'Metal_Seamed' was renamed 'Metal_Seamed_ncl1_1' 
+[2025.01.24-13.16.42:079][635]FBXImport: Warning: No smoothing group information was found in this FBX scene.  Please make sure to enable the 'Export Smoothing Groups' option in the FBX Exporter plug-in before exporting the file.  Even for tools that don't support smoothing groups, the FBX Exporter will generate appropriate smoothing data at export-time so that correct vertex normals can be inferred while importing. 
+[2025.01.24-13.16.42:079][635]FBXImport: Warning: 3d-model has degenerate tangent bases which will result in incorrect shading.  MikkTSpace relies on tangent bases and may result in mesh corruption, consider disabling this option. 
+[2025.01.24-13.16.42:079][635]FBXImport: Warning: 3d-model has some nearly zero bi-normals which can create some issues. (Tolerance of 1E-4) 
+[2025.01.24-13.16.44:339][709]LogSlate: Window 'Message Log' being destroyed
+[2025.01.24-13.16.44:391][709]LogSlate: Window 'Message Log' being destroyed
+[2025.01.24-13.16.45:762][769]LogShaderCompilers: Display: ================================================
+[2025.01.24-13.16.45:763][769]LogShaderCompilers: Display: === FShaderJobCache stats ===
+[2025.01.24-13.16.45:763][769]LogShaderCompilers: Display: Total job queries 747, among them cache hits 720 (96.39%)
+[2025.01.24-13.16.45:764][769]LogShaderCompilers: Display: Tracking 27 distinct input hashes that result in 20 distinct outputs (74.07%)
+[2025.01.24-13.16.45:764][769]LogShaderCompilers: Display: RAM used: 556,98 KiB of 1,60 GiB budget. Usage: 0.03%
+[2025.01.24-13.16.45:765][769]LogShaderCompilers: Display: === Shader Compilation stats ===
+[2025.01.24-13.16.45:766][769]LogShaderCompilers: Display: Shaders Compiled: 0
+[2025.01.24-13.16.45:766][769]LogShaderCompilers: Display: Jobs assigned 0, completed 0 (0%)
+[2025.01.24-13.16.45:767][769]LogShaderCompilers: Display: Time at least one job was in flight (either pending or executed): 0.00 s
+[2025.01.24-13.16.45:767][769]LogShaderCompilers: Display: ================================================
+[2025.01.24-13.16.47:997][833]LogAssetEditorSubsystem: Opening Asset editor for StaticMesh /Game/Assets/3d-model.3d-model
+[2025.01.24-13.16.48:036][833]LogWorldSubsystemInput: UEnhancedInputDeveloperSettings::bEnableWorldSubsystem is false, the world subsystem will not be created!
+[2025.01.24-13.16.48:037][833]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2025.01.24-13.16.49:424][833]LogViewport: Scene viewport resized to 1013x1161, mode Windowed.
+[2025.01.24-13.16.59:424][271]LogUObjectHash: Compacting FUObjectHashTables data took   5.10ms
+[2025.01.24-13.17.01:306][271]LogSlate: Window 'Save Content' being destroyed
+[2025.01.24-13.17.01:429][271]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2025.01.24-13.17.01:929][271]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Assets/3d-model" FILE="../../../../../../FlightSimulator-UE5/FlightSimulator/Content/Assets/3d-model.uasset" SILENT=true
+[2025.01.24-13.17.01:986][271]LogSavePackage: Moving output files for package: /Game/Assets/3d-model
+[2025.01.24-13.17.01:986][271]LogSavePackage: Moving '../../../../../../FlightSimulator-UE5/FlightSimulator/Saved/3d-modelF508396D4FC49EA3AF4F779EF304CD6E.tmp' to '../../../../../../FlightSimulator-UE5/FlightSimulator/Content/Assets/3d-model.uasset'
+[2025.01.24-13.17.02:031][271]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Assets/Color_004" FILE="../../../../../../FlightSimulator-UE5/FlightSimulator/Content/Assets/Color_004.uasset" SILENT=true
+[2025.01.24-13.17.02:038][271]LogSavePackage: Moving output files for package: /Game/Assets/Color_004
+[2025.01.24-13.17.02:039][271]LogSavePackage: Moving '../../../../../../FlightSimulator-UE5/FlightSimulator/Saved/Color_0040B2FC8934FC10211C565DC83F01963B3.tmp' to '../../../../../../FlightSimulator-UE5/FlightSimulator/Content/Assets/Color_004.uasset'
+[2025.01.24-13.17.02:082][271]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Assets/Color_005" FILE="../../../../../../FlightSimulator-UE5/FlightSimulator/Content/Assets/Color_005.uasset" SILENT=true
+[2025.01.24-13.17.02:091][271]LogSavePackage: Moving output files for package: /Game/Assets/Color_005
+[2025.01.24-13.17.02:091][271]LogSavePackage: Moving '../../../../../../FlightSimulator-UE5/FlightSimulator/Saved/Color_00582C8565D44FBE167A8319E9EA2E39725.tmp' to '../../../../../../FlightSimulator-UE5/FlightSimulator/Content/Assets/Color_005.uasset'
+[2025.01.24-13.17.02:141][271]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Assets/Color_008" FILE="../../../../../../FlightSimulator-UE5/FlightSimulator/Content/Assets/Color_008.uasset" SILENT=true
+[2025.01.24-13.17.02:148][271]LogSavePackage: Moving output files for package: /Game/Assets/Color_008
+[2025.01.24-13.17.02:149][271]LogSavePackage: Moving '../../../../../../FlightSimulator-UE5/FlightSimulator/Saved/Color_008BFA8BEE8400BA41E3708B7A92433FFB1.tmp' to '../../../../../../FlightSimulator-UE5/FlightSimulator/Content/Assets/Color_008.uasset'
+[2025.01.24-13.17.02:192][271]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Assets/Image1" FILE="../../../../../../FlightSimulator-UE5/FlightSimulator/Content/Assets/Image1.uasset" SILENT=true
+[2025.01.24-13.17.02:199][271]LogSavePackage: Moving output files for package: /Game/Assets/Image1
+[2025.01.24-13.17.02:200][271]LogSavePackage: Moving '../../../../../../FlightSimulator-UE5/FlightSimulator/Saved/Image1C8E54A2F44B526989F39F092590468B3.tmp' to '../../../../../../FlightSimulator-UE5/FlightSimulator/Content/Assets/Image1.uasset'
+[2025.01.24-13.17.02:249][271]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Assets/Material1" FILE="../../../../../../FlightSimulator-UE5/FlightSimulator/Content/Assets/Material1.uasset" SILENT=true
+[2025.01.24-13.17.02:256][271]LogSavePackage: Moving output files for package: /Game/Assets/Material1
+[2025.01.24-13.17.02:257][271]LogSavePackage: Moving '../../../../../../FlightSimulator-UE5/FlightSimulator/Saved/Material18101E2884EE88CFFD1E752A6DD1A589F.tmp' to '../../../../../../FlightSimulator-UE5/FlightSimulator/Content/Assets/Material1.uasset'
+[2025.01.24-13.17.02:306][271]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Assets/Material2" FILE="../../../../../../FlightSimulator-UE5/FlightSimulator/Content/Assets/Material2.uasset" SILENT=true
+[2025.01.24-13.17.02:312][271]LogSavePackage: Moving output files for package: /Game/Assets/Material2
+[2025.01.24-13.17.02:312][271]LogSavePackage: Moving '../../../../../../FlightSimulator-UE5/FlightSimulator/Saved/Material2251C1E77473D140A4F205995775B3445.tmp' to '../../../../../../FlightSimulator-UE5/FlightSimulator/Content/Assets/Material2.uasset'
+[2025.01.24-13.17.02:361][271]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Assets/Material3" FILE="../../../../../../FlightSimulator-UE5/FlightSimulator/Content/Assets/Material3.uasset" SILENT=true
+[2025.01.24-13.17.02:368][271]LogSavePackage: Moving output files for package: /Game/Assets/Material3
+[2025.01.24-13.17.02:369][271]LogSavePackage: Moving '../../../../../../FlightSimulator-UE5/FlightSimulator/Saved/Material33D88D134490A1529EE69D990DBE5C9BA.tmp' to '../../../../../../FlightSimulator-UE5/FlightSimulator/Content/Assets/Material3.uasset'
+[2025.01.24-13.17.02:420][271]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Assets/Material5" FILE="../../../../../../FlightSimulator-UE5/FlightSimulator/Content/Assets/Material5.uasset" SILENT=true
+[2025.01.24-13.17.02:426][271]LogSavePackage: Moving output files for package: /Game/Assets/Material5
+[2025.01.24-13.17.02:427][271]LogSavePackage: Moving '../../../../../../FlightSimulator-UE5/FlightSimulator/Saved/Material57608ED644F543B6730ED0EB2360A4ADF.tmp' to '../../../../../../FlightSimulator-UE5/FlightSimulator/Content/Assets/Material5.uasset'
+[2025.01.24-13.17.02:474][271]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Assets/Material8" FILE="../../../../../../FlightSimulator-UE5/FlightSimulator/Content/Assets/Material8.uasset" SILENT=true
+[2025.01.24-13.17.02:482][271]LogSavePackage: Moving output files for package: /Game/Assets/Material8
+[2025.01.24-13.17.02:482][271]LogSavePackage: Moving '../../../../../../FlightSimulator-UE5/FlightSimulator/Saved/Material8D7DCD8F347A4024AC9463BB868DE9196.tmp' to '../../../../../../FlightSimulator-UE5/FlightSimulator/Content/Assets/Material8.uasset'
+[2025.01.24-13.17.02:537][271]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Assets/Metal_Seamed" FILE="../../../../../../FlightSimulator-UE5/FlightSimulator/Content/Assets/Metal_Seamed.uasset" SILENT=true
+[2025.01.24-13.17.02:543][271]LogSavePackage: Moving output files for package: /Game/Assets/Metal_Seamed
+[2025.01.24-13.17.02:543][271]LogSavePackage: Moving '../../../../../../FlightSimulator-UE5/FlightSimulator/Saved/Metal_SeamedFD967EFB407874A8DCB2F8867CD2B169.tmp' to '../../../../../../FlightSimulator-UE5/FlightSimulator/Content/Assets/Metal_Seamed.uasset'
+[2025.01.24-13.17.02:591][271]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Assets/skp_front_default" FILE="../../../../../../FlightSimulator-UE5/FlightSimulator/Content/Assets/skp_front_default.uasset" SILENT=true
+[2025.01.24-13.17.02:596][271]LogSavePackage: Moving output files for package: /Game/Assets/skp_front_default
+[2025.01.24-13.17.02:597][271]LogSavePackage: Moving '../../../../../../FlightSimulator-UE5/FlightSimulator/Saved/skp_front_default16ECBB6F4CEC57E34358E4A4E08E611E.tmp' to '../../../../../../FlightSimulator-UE5/FlightSimulator/Content/Assets/skp_front_default.uasset'
+[2025.01.24-13.17.02:627][271]LogFileHelpers: InternalPromptForCheckoutAndSave took 1.19 sec (total: 8.29 sec)
+[2025.01.24-13.17.02:637][271]AssetCheck: New page: Asset Save: multiple assets
+[2025.01.24-13.17.02:638][271]LogContentValidation: Display: Validating /Script/Engine.StaticMesh /Game/Assets/3d-model.3d-model
+[2025.01.24-13.17.02:638][271]LogContentValidation: Display: Validating /Script/Engine.Material /Game/Assets/Color_004.Color_004
+[2025.01.24-13.17.02:639][271]LogContentValidation: Display: Validating /Script/Engine.Material /Game/Assets/Color_005.Color_005
+[2025.01.24-13.17.02:639][271]LogContentValidation: Display: Validating /Script/Engine.Material /Game/Assets/Color_008.Color_008
+[2025.01.24-13.17.02:640][271]LogContentValidation: Display: Validating /Script/Engine.Material /Game/Assets/Image1.Image1
+[2025.01.24-13.17.02:640][271]LogContentValidation: Display: Validating /Script/Engine.Material /Game/Assets/Material1.Material1
+[2025.01.24-13.17.02:640][271]LogContentValidation: Display: Validating /Script/Engine.Material /Game/Assets/Material2.Material2
+[2025.01.24-13.17.02:641][271]LogContentValidation: Display: Validating /Script/Engine.Material /Game/Assets/Material3.Material3
+[2025.01.24-13.17.02:641][271]LogContentValidation: Display: Validating /Script/Engine.Material /Game/Assets/Material5.Material5
+[2025.01.24-13.17.02:642][271]LogContentValidation: Display: Validating /Script/Engine.Material /Game/Assets/Material8.Material8
+[2025.01.24-13.17.02:642][271]LogContentValidation: Display: Validating /Script/Engine.Material /Game/Assets/Metal_Seamed.Metal_Seamed
+[2025.01.24-13.17.02:642][271]LogContentValidation: Display: Validating /Script/Engine.Material /Game/Assets/skp_front_default.skp_front_default
+[2025.01.24-13.17.09:802][561]LogContentBrowser: Deferred new asset folder creation: NewFolder
+[2025.01.24-13.17.09:841][561]LogContentBrowser: Creating deferred item: NewFolder
+[2025.01.24-13.17.09:884][562]LogContentBrowser: Renaming the item being created (Deferred Item: NewFolder).
+[2025.01.24-13.17.14:069][759]LogContentBrowser: Attempting asset rename: NewFolder -> airplane2
+[2025.01.24-13.17.14:070][759]LogContentBrowser: End creating deferred item NewFolder
+[2025.01.24-13.17.18:568][908]LogMetaData: Removing '/Game/Assets/airplane2/3d-model.3d-model' ref from Metadata '/Game/Assets/3d-model.PackageMetaData'
+[2025.01.24-13.17.18:612][908]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2025.01.24-13.17.19:109][908]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Assets/airplane2/3d-model" FILE="../../../../../../FlightSimulator-UE5/FlightSimulator/Content/Assets/airplane2/3d-model.uasset" SILENT=true
+[2025.01.24-13.17.19:169][908]LogSavePackage: Moving output files for package: /Game/Assets/airplane2/3d-model
+[2025.01.24-13.17.19:169][908]LogSavePackage: Moving '../../../../../../FlightSimulator-UE5/FlightSimulator/Saved/3d-model3B448D14462C6801993690B4799B1638.tmp' to '../../../../../../FlightSimulator-UE5/FlightSimulator/Content/Assets/airplane2/3d-model.uasset'
+[2025.01.24-13.17.19:174][908]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Assets/airplane2/Color_004" FILE="../../../../../../FlightSimulator-UE5/FlightSimulator/Content/Assets/airplane2/Color_004.uasset" SILENT=true
+[2025.01.24-13.17.19:179][908]LogSavePackage: Moving output files for package: /Game/Assets/airplane2/Color_004
+[2025.01.24-13.17.19:179][908]LogSavePackage: Moving '../../../../../../FlightSimulator-UE5/FlightSimulator/Saved/Color_004409E914F426E69388CA805B236848F44.tmp' to '../../../../../../FlightSimulator-UE5/FlightSimulator/Content/Assets/airplane2/Color_004.uasset'
+[2025.01.24-13.17.19:182][908]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Assets/airplane2/Color_005" FILE="../../../../../../FlightSimulator-UE5/FlightSimulator/Content/Assets/airplane2/Color_005.uasset" SILENT=true
+[2025.01.24-13.17.19:187][908]LogSavePackage: Moving output files for package: /Game/Assets/airplane2/Color_005
+[2025.01.24-13.17.19:187][908]LogSavePackage: Moving '../../../../../../FlightSimulator-UE5/FlightSimulator/Saved/Color_0059224CEC348A5BF49D67E1E9F15B2F06C.tmp' to '../../../../../../FlightSimulator-UE5/FlightSimulator/Content/Assets/airplane2/Color_005.uasset'
+[2025.01.24-13.17.19:190][908]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Assets/airplane2/Color_008" FILE="../../../../../../FlightSimulator-UE5/FlightSimulator/Content/Assets/airplane2/Color_008.uasset" SILENT=true
+[2025.01.24-13.17.19:196][908]LogSavePackage: Moving output files for package: /Game/Assets/airplane2/Color_008
+[2025.01.24-13.17.19:196][908]LogSavePackage: Moving '../../../../../../FlightSimulator-UE5/FlightSimulator/Saved/Color_0082ADC27754DB6B5D44D7A0CBC47B11338.tmp' to '../../../../../../FlightSimulator-UE5/FlightSimulator/Content/Assets/airplane2/Color_008.uasset'
+[2025.01.24-13.17.19:199][908]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Assets/airplane2/Image1" FILE="../../../../../../FlightSimulator-UE5/FlightSimulator/Content/Assets/airplane2/Image1.uasset" SILENT=true
+[2025.01.24-13.17.19:204][908]LogSavePackage: Moving output files for package: /Game/Assets/airplane2/Image1
+[2025.01.24-13.17.19:205][908]LogSavePackage: Moving '../../../../../../FlightSimulator-UE5/FlightSimulator/Saved/Image1D12DA91C4DD49445D9D9BBB1BCA8671C.tmp' to '../../../../../../FlightSimulator-UE5/FlightSimulator/Content/Assets/airplane2/Image1.uasset'
+[2025.01.24-13.17.19:207][908]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Assets/airplane2/Material1" FILE="../../../../../../FlightSimulator-UE5/FlightSimulator/Content/Assets/airplane2/Material1.uasset" SILENT=true
+[2025.01.24-13.17.19:212][908]LogSavePackage: Moving output files for package: /Game/Assets/airplane2/Material1
+[2025.01.24-13.17.19:213][908]LogSavePackage: Moving '../../../../../../FlightSimulator-UE5/FlightSimulator/Saved/Material14159ED46469244C9F027E093F7D36113.tmp' to '../../../../../../FlightSimulator-UE5/FlightSimulator/Content/Assets/airplane2/Material1.uasset'
+[2025.01.24-13.17.19:216][908]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Assets/airplane2/Material2" FILE="../../../../../../FlightSimulator-UE5/FlightSimulator/Content/Assets/airplane2/Material2.uasset" SILENT=true
+[2025.01.24-13.17.19:221][908]LogSavePackage: Moving output files for package: /Game/Assets/airplane2/Material2
+[2025.01.24-13.17.19:222][908]LogSavePackage: Moving '../../../../../../FlightSimulator-UE5/FlightSimulator/Saved/Material2E4B25905452D5CFB4FC39FA2F9F670B5.tmp' to '../../../../../../FlightSimulator-UE5/FlightSimulator/Content/Assets/airplane2/Material2.uasset'
+[2025.01.24-13.17.19:225][908]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Assets/airplane2/Material3" FILE="../../../../../../FlightSimulator-UE5/FlightSimulator/Content/Assets/airplane2/Material3.uasset" SILENT=true
+[2025.01.24-13.17.19:230][908]LogSavePackage: Moving output files for package: /Game/Assets/airplane2/Material3
+[2025.01.24-13.17.19:230][908]LogSavePackage: Moving '../../../../../../FlightSimulator-UE5/FlightSimulator/Saved/Material3BE70DCE640759E66C817A08F2A272E6A.tmp' to '../../../../../../FlightSimulator-UE5/FlightSimulator/Content/Assets/airplane2/Material3.uasset'
+[2025.01.24-13.17.19:234][908]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Assets/airplane2/Material5" FILE="../../../../../../FlightSimulator-UE5/FlightSimulator/Content/Assets/airplane2/Material5.uasset" SILENT=true
+[2025.01.24-13.17.19:241][908]LogSavePackage: Moving output files for package: /Game/Assets/airplane2/Material5
+[2025.01.24-13.17.19:242][908]LogSavePackage: Moving '../../../../../../FlightSimulator-UE5/FlightSimulator/Saved/Material5347A439E450980C4E8CF75AAD4C84B15.tmp' to '../../../../../../FlightSimulator-UE5/FlightSimulator/Content/Assets/airplane2/Material5.uasset'
+[2025.01.24-13.17.19:244][908]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Assets/airplane2/Material8" FILE="../../../../../../FlightSimulator-UE5/FlightSimulator/Content/Assets/airplane2/Material8.uasset" SILENT=true
+[2025.01.24-13.17.19:251][908]LogSavePackage: Moving output files for package: /Game/Assets/airplane2/Material8
+[2025.01.24-13.17.19:251][908]LogSavePackage: Moving '../../../../../../FlightSimulator-UE5/FlightSimulator/Saved/Material8196D2CD8425665C9E497D78377D13CBF.tmp' to '../../../../../../FlightSimulator-UE5/FlightSimulator/Content/Assets/airplane2/Material8.uasset'
+[2025.01.24-13.17.19:254][908]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Assets/airplane2/Metal_Seamed" FILE="../../../../../../FlightSimulator-UE5/FlightSimulator/Content/Assets/airplane2/Metal_Seamed.uasset" SILENT=true
+[2025.01.24-13.17.19:258][908]LogSavePackage: Moving output files for package: /Game/Assets/airplane2/Metal_Seamed
+[2025.01.24-13.17.19:259][908]LogSavePackage: Moving '../../../../../../FlightSimulator-UE5/FlightSimulator/Saved/Metal_Seamed2994C85D401BFB6A8CC884A71BE7A5DF.tmp' to '../../../../../../FlightSimulator-UE5/FlightSimulator/Content/Assets/airplane2/Metal_Seamed.uasset'
+[2025.01.24-13.17.19:262][908]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Assets/airplane2/skp_front_default" FILE="../../../../../../FlightSimulator-UE5/FlightSimulator/Content/Assets/airplane2/skp_front_default.uasset" SILENT=true
+[2025.01.24-13.17.19:267][908]LogSavePackage: Moving output files for package: /Game/Assets/airplane2/skp_front_default
+[2025.01.24-13.17.19:268][908]LogSavePackage: Moving '../../../../../../FlightSimulator-UE5/FlightSimulator/Saved/skp_front_default20539B9044D0FFA6EB91E887C5981DF7.tmp' to '../../../../../../FlightSimulator-UE5/FlightSimulator/Content/Assets/airplane2/skp_front_default.uasset'
+[2025.01.24-13.17.19:300][908]LogFileHelpers: InternalPromptForCheckoutAndSave took 686 ms (total: 8.97 sec)
+[2025.01.24-13.17.19:409][908]LogUObjectHash: Compacting FUObjectHashTables data took   5.32ms
+[2025.01.24-13.17.19:434][908]LogUObjectHash: Compacting FUObjectHashTables data took   4.81ms
+[2025.01.24-13.17.19:458][908]LogUObjectHash: Compacting FUObjectHashTables data took   2.36ms
+[2025.01.24-13.17.19:737][908]AssetCheck: New page: Asset Save: multiple assets
+[2025.01.24-13.17.19:737][908]LogContentValidation: Display: Validating /Script/Engine.StaticMesh /Game/Assets/airplane2/3d-model.3d-model
+[2025.01.24-13.17.19:738][908]LogContentValidation: Display: Validating /Script/Engine.Material /Game/Assets/airplane2/Color_004.Color_004
+[2025.01.24-13.17.19:738][908]LogContentValidation: Display: Validating /Script/Engine.Material /Game/Assets/airplane2/Color_005.Color_005
+[2025.01.24-13.17.19:739][908]LogContentValidation: Display: Validating /Script/Engine.Material /Game/Assets/airplane2/Color_008.Color_008
+[2025.01.24-13.17.19:739][908]LogContentValidation: Display: Validating /Script/Engine.Material /Game/Assets/airplane2/Image1.Image1
+[2025.01.24-13.17.19:740][908]LogContentValidation: Display: Validating /Script/Engine.Material /Game/Assets/airplane2/Material1.Material1
+[2025.01.24-13.17.19:740][908]LogContentValidation: Display: Validating /Script/Engine.Material /Game/Assets/airplane2/Material2.Material2
+[2025.01.24-13.17.19:741][908]LogContentValidation: Display: Validating /Script/Engine.Material /Game/Assets/airplane2/Material3.Material3
+[2025.01.24-13.17.19:741][908]LogContentValidation: Display: Validating /Script/Engine.Material /Game/Assets/airplane2/Material5.Material5
+[2025.01.24-13.17.19:741][908]LogContentValidation: Display: Validating /Script/Engine.Material /Game/Assets/airplane2/Material8.Material8
+[2025.01.24-13.17.19:742][908]LogContentValidation: Display: Validating /Script/Engine.Material /Game/Assets/airplane2/Metal_Seamed.Metal_Seamed
+[2025.01.24-13.17.19:742][908]LogContentValidation: Display: Validating /Script/Engine.Material /Game/Assets/airplane2/skp_front_default.skp_front_default

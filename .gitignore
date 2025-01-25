@@ -72,3 +72,8 @@ Plugins/**/Intermediate/*
 
 # Cache files for the editor to use
 DerivedDataCache/*
+FlightSimulator/Binaries/Win64/UnrealEditor-FlightSimulator.patch_0.pdb
+FlightSimulator/Binaries/Win64/UnrealEditor-FlightSimulator.patch_1.pdb
+FlightSimulator/Binaries/Win64/UnrealEditor-FlightSimulator.patch_2.pdb
+FlightSimulator/Binaries/Win64/UnrealEditor-FlightSimulator.patch_3.pdb
+FlightSimulator/Saved/Logs/FlightSimulator.log

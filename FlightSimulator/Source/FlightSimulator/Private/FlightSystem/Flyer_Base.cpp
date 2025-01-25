@@ -62,7 +62,31 @@ void AFlyer_Base::Tick(float DeltaTime)
     
     Super::Tick(DeltaTime);
 
-    
+    //Calculate accelerations
+    const float CurrentAccForward = -GetActorRotation().Pitch * DeltaTime * Acceleration;
+
+	const float CurrentAccSide = -GetActorRotation().Roll * DeltaTime * Acceleration;
+	
+	//calculate new forward speed
+	const float NewForwardSpeed = CurrentForwardSpeed + CurrentAccForward;
+	CurrentForwardSpeed = FMath::Clamp(NewForwardSpeed, MinSpeed, MaxSpeed);
+	//calculate new side speed if there is any inclination more than 10 grades
+	if(GetActorRotation().Roll > 10 || GetActorRotation().Roll < -10)
+	{
+		const float NewSideSpeed = CurrentSideSpeed + CurrentAccSide;
+		CurrentSideSpeed = FMath::Clamp(NewSideSpeed, MinSpeed, MaxSpeed);
+	}
+	else
+	{
+		CurrentSideSpeed = 0;
+	}
+
+	
+
+	const FVector LocalMove = FVector(CurrentForwardSpeed * DeltaTime,0,CurrentSideSpeed * DeltaTime);
+    AddActorLocalOffset(LocalMove,true);
+
+	GEngine->AddOnScreenDebugMessage(0,0, FColor::Green, FString::Printf(TEXT("ForwardSpeed: %f"), CurrentForwardSpeed));
 }
 
 // SetupPlayerInputComponent
@@ -74,8 +98,9 @@ void AFlyer_Base::SetupPlayerInputComponent(UInputComponent* PlayerInputComponen
     {
         // Bind Yaw (Horizontal Rotation)
         EnhancedInputComponent->BindAction(IA_Turn, ETriggerEvent::Triggered, this, &AFlyer_Base::HandleRollAxis_HorizontalInclination);
-
+		
         // Bind Pitch (Vertical Rotation)
         EnhancedInputComponent->BindAction(IA_LookUp, ETriggerEvent::Triggered, this, &AFlyer_Base::HandlePitchAxis_VerticalInclination);
-    }
+    	
+	}
 }

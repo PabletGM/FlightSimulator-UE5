@@ -31,9 +31,9 @@ public:
 
 	// Rotation multipliers
 	UPROPERTY(EditAnywhere, Category = "Flight")
-	float RollRateMultiplier{200.0f};
+	float RollRateMultiplier{150.0f};
 	UPROPERTY(EditAnywhere, Category = "Flight")
-	float PitchRateMultiplier{200.0f};
+	float PitchRateMultiplier{150.0f};
 	
 	UPROPERTY(VisibleAnywhere, Category = "Flight")
 	float CurrentForwardSpeed{100.f};

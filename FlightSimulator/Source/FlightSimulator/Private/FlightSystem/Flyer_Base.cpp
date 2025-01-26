@@ -13,11 +13,7 @@ AFlyer_Base::AFlyer_Base()
 void AFlyer_Base::HandleRollAxis_HorizontalInclination(const FInputActionValue& Value)
 {
     float InputValue = Value.Get<float>();
-    // Print the value on the screen
-    if (GEngine)
-    {
-        GEngine->AddOnScreenDebugMessage(-1, 1.0f, FColor::Green, FString::Printf(TEXT("HandleYaw InputValue: %f"), InputValue));
-    }
+   
     AddControllerRollInput(InputValue * RollRateMultiplier * GetWorld()->GetDeltaSeconds());
     
 }
@@ -26,11 +22,7 @@ void AFlyer_Base::HandleRollAxis_HorizontalInclination(const FInputActionValue& 
 void AFlyer_Base::HandlePitchAxis_VerticalInclination(const FInputActionValue& Value)
 {
     float InputValue = Value.Get<float>();
-    // Print the value on the screen
-    if (GEngine)
-    {
-        GEngine->AddOnScreenDebugMessage(-1, 1.0f, FColor::Green, FString::Printf(TEXT("HandleYaw InputValue: %f"), InputValue));
-    }
+   
     AddControllerPitchInput(InputValue * PitchRateMultiplier * GetWorld()->GetDeltaSeconds());
     
 }
@@ -67,11 +59,19 @@ void AFlyer_Base::Tick(float DeltaTime)
 
 	const float CurrentAccSide = -GetActorRotation().Roll * DeltaTime * Acceleration;
 	
-	//calculate new forward speed
-	const float NewForwardSpeed = CurrentForwardSpeed + CurrentAccForward;
-	CurrentForwardSpeed = FMath::Clamp(NewForwardSpeed, MinSpeed, MaxSpeed);
-	//calculate new side speed if there is any inclination more than 10 grades
-	if(GetActorRotation().Roll > 10 || GetActorRotation().Roll < -10)
+	//calculate new forward speed if it is not in vertical, 180 grades or -180 grades
+	if(GetActorRotation().Roll < 150 || GetActorRotation().Roll > -150)
+	{
+		const float NewForwardSpeed = CurrentForwardSpeed + CurrentAccForward;
+		CurrentForwardSpeed = FMath::Clamp(NewForwardSpeed, MinSpeed, MaxSpeed);
+	}
+	else
+	{
+		CurrentForwardSpeed= 300.f;
+	}
+	
+	//calculate new side speed if there is any inclination more than 10 grades or -10 grades
+	if(GetActorRotation().Roll > 20 || GetActorRotation().Roll < -20)
 	{
 		const float NewSideSpeed = CurrentSideSpeed + CurrentAccSide;
 		CurrentSideSpeed = FMath::Clamp(NewSideSpeed, MinSpeed, MaxSpeed);
@@ -86,7 +86,8 @@ void AFlyer_Base::Tick(float DeltaTime)
 	const FVector LocalMove = FVector(CurrentForwardSpeed * DeltaTime,0,CurrentSideSpeed * DeltaTime);
     AddActorLocalOffset(LocalMove,true);
 
-	GEngine->AddOnScreenDebugMessage(0,0, FColor::Green, FString::Printf(TEXT("ForwardSpeed: %f"), CurrentForwardSpeed));
+	//GEngine->AddOnScreenDebugMessage(0,0, FColor::Green, FString::Printf(TEXT("ForwardSpeed: %f"), CurrentForwardSpeed));
+	//GEngine->AddOnScreenDebugMessage(0,0, FColor::Green, FString::Printf(TEXT("SideSpeed: %f"), CurrentSideSpeed));
 }
 
 // SetupPlayerInputComponent

@@ -4,6 +4,10 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/Character.h"
+#include "Components/StaticMeshComponent.h"
+
+#include "GameFramework/SpringArmComponent.h"
+#include "Camera/CameraComponent.h"
 #include "EnhancedInputComponent.h"
 #include "EnhancedInputSubsystems.h"
 #include "InputMappingContext.h"
@@ -12,6 +16,11 @@
 
 class UInputMappingContext;
 class UInputAction;
+class USceneComponent;
+class UStaticMeshComponent;
+class USpringArmComponent;
+class UCameraComponent;
+class UCapsuleComponent;
 
 UCLASS()
 class FLIGHTSIMULATOR_API AFlyer_Base : public ACharacter
@@ -19,6 +28,7 @@ class FLIGHTSIMULATOR_API AFlyer_Base : public ACharacter
 	GENERATED_BODY()
 
 public:
+	
 	// Sets default values for this character's properties
 	AFlyer_Base();
 
@@ -40,9 +50,37 @@ public:
 
 	UPROPERTY(VisibleAnywhere, Category = "Flight")
 	float CurrentSideSpeed{100.f};
-	
 
 protected:
+	float CalculateHeightFromGround();
+
+public:
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Flight")
+	float CurrentHeight;
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Flight")
+	float minimumHeightToReduceSpeed = 100.f;
+
+protected:
+
+	
+	
+	// Spring Arm Component
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Components")
+	USpringArmComponent* SpringArm;
+
+	// Camera Component
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Components")
+	UCameraComponent* Camera;
+
+	//ROOT
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Components")
+	USceneComponent* Root;
+
+	// Static Mesh Component
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Components")
+	UStaticMeshComponent* FlyerMesh;
+
+	
 
 	// Input handling
 	void HandleRollAxis_HorizontalInclination(const FInputActionValue& Value);  // A/D for Yaw

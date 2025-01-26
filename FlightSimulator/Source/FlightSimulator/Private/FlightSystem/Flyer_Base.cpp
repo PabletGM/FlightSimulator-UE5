@@ -2,12 +2,62 @@
 
 #include "FlightSimulator/Public/FlightSystem/Flyer_Base.h"
 
+#include "Components/CapsuleComponent.h"
+
 
 // Constructor
 AFlyer_Base::AFlyer_Base()
 {
     // Enable ticking every frame
     PrimaryActorTick.bCanEverTick = true;
+
+
+	// Configure the existing CapsuleComponent
+	GetCapsuleComponent()->SetCollisionEnabled(ECollisionEnabled::QueryAndPhysics);
+	GetCapsuleComponent()->SetCollisionObjectType(ECollisionChannel::ECC_Pawn);
+	GetCapsuleComponent()->SetCollisionResponseToAllChannels(ECR_Block);
+	GetCapsuleComponent()->SetNotifyRigidBodyCollision(true);
+	GetCapsuleComponent()->SetCapsuleHalfHeight(96.0f);
+	GetCapsuleComponent()->SetCapsuleRadius(48.0f);
+	
+	
+
+    // Create the Static Mesh Component
+    FlyerMesh = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("FlyerMesh"));
+    FlyerMesh->SetupAttachment(GetCapsuleComponent());
+
+    // Create the SpringArm and attach to CapsuleComponent
+    SpringArm = CreateDefaultSubobject<USpringArmComponent>(TEXT("SpringArm"));
+    SpringArm->SetupAttachment(GetCapsuleComponent());
+    SpringArm->TargetArmLength = 300.0f;
+    SpringArm->bUsePawnControlRotation = true;
+
+    // Create the Camera and attach to the SpringArm
+    Camera = CreateDefaultSubobject<UCameraComponent>(TEXT("Camera"));
+    Camera->SetupAttachment(SpringArm, USpringArmComponent::SocketName);
+    Camera->bUsePawnControlRotation = false;
+}
+
+
+
+float AFlyer_Base::CalculateHeightFromGround()
+{
+	FVector Start = GetActorLocation(); // Posición actual del actor
+	FVector End = Start - FVector(0.0f, 0.0f, 100000.0f); // Traza hacia abajo
+
+	FHitResult HitResult;
+	FCollisionQueryParams QueryParams;
+	QueryParams.AddIgnoredActor(this); // Ignorar el propio actor
+
+	// Realizar el trace
+	if (GetWorld()->LineTraceSingleByChannel(HitResult, Start, End, ECC_Visibility, QueryParams))
+	{
+		// Si colisiona con algo, calcula la distancia
+		return (Start - HitResult.Location).Size();
+	}
+
+	// Si no colisiona, devuelve una altura muy grande (indicando que no hay suelo debajo)
+	return 10000.0f; // Altura máxima si no detecta el suelo
 }
 
 void AFlyer_Base::HandleRollAxis_HorizontalInclination(const FInputActionValue& Value)
@@ -60,17 +110,18 @@ void AFlyer_Base::Tick(float DeltaTime)
 	const float CurrentAccSide = -GetActorRotation().Roll * DeltaTime * Acceleration;
 	
 	//calculate new forward speed if it is not in vertical, 180 grades or -180 grades
-	if(GetActorRotation().Roll < 150 || GetActorRotation().Roll > -150)
+	if(GetActorRotation().Roll < 160 || GetActorRotation().Roll > -160)
 	{
 		const float NewForwardSpeed = CurrentForwardSpeed + CurrentAccForward;
 		CurrentForwardSpeed = FMath::Clamp(NewForwardSpeed, MinSpeed, MaxSpeed);
 	}
 	else
 	{
-		CurrentForwardSpeed= 300.f;
+		//minimum of forward speed
+		CurrentForwardSpeed= 10.f;
 	}
 	
-	//calculate new side speed if there is any inclination more than 10 grades or -10 grades
+	//calculate new side speed if there is any inclination more than 40 grades or -40 grades
 	if(GetActorRotation().Roll > 20 || GetActorRotation().Roll < -20)
 	{
 		const float NewSideSpeed = CurrentSideSpeed + CurrentAccSide;
@@ -78,7 +129,8 @@ void AFlyer_Base::Tick(float DeltaTime)
 	}
 	else
 	{
-		CurrentSideSpeed = 0;
+		//minimum of sideSpeed
+		CurrentSideSpeed = 100.f;
 	}
 
 	
@@ -86,8 +138,12 @@ void AFlyer_Base::Tick(float DeltaTime)
 	const FVector LocalMove = FVector(CurrentForwardSpeed * DeltaTime,0,CurrentSideSpeed * DeltaTime);
     AddActorLocalOffset(LocalMove,true);
 
-	//GEngine->AddOnScreenDebugMessage(0,0, FColor::Green, FString::Printf(TEXT("ForwardSpeed: %f"), CurrentForwardSpeed));
-	//GEngine->AddOnScreenDebugMessage(0,0, FColor::Green, FString::Printf(TEXT("SideSpeed: %f"), CurrentSideSpeed));
+	//check of height if it is near the ground to reduce speed
+	if(CalculateHeightFromGround() <=minimumHeightToReduceSpeed)
+	{
+		CurrentForwardSpeed= 0.f;
+		CurrentSideSpeed = 0.f;
+	}
 }
 
 // SetupPlayerInputComponent

@@ -3,6 +3,8 @@
 #include "FlightSimulator/Public/FlightSystem/Flyer_Base.h"
 
 #include "Components/CapsuleComponent.h"
+#include "GameInstance/GameInstanceFlightSimulator.h"
+
 
 
 // Constructor
@@ -10,8 +12,7 @@ AFlyer_Base::AFlyer_Base()
 {
     // Enable ticking every frame
     PrimaryActorTick.bCanEverTick = true;
-
-
+	
 	// Configure the existing CapsuleComponent
 	GetCapsuleComponent()->SetCollisionEnabled(ECollisionEnabled::QueryAndPhysics);
 	GetCapsuleComponent()->SetCollisionObjectType(ECollisionChannel::ECC_Pawn);
@@ -20,8 +21,6 @@ AFlyer_Base::AFlyer_Base()
 	GetCapsuleComponent()->SetCapsuleHalfHeight(96.0f);
 	GetCapsuleComponent()->SetCapsuleRadius(48.0f);
 	
-	
-
     // Create the Static Mesh Component
     FlyerMesh = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("FlyerMesh"));
     FlyerMesh->SetupAttachment(GetCapsuleComponent());
@@ -63,27 +62,20 @@ float AFlyer_Base::CalculateHeightFromGround()
 void AFlyer_Base::HandleRollAxis_HorizontalInclination(const FInputActionValue& Value)
 {
     float InputValue = Value.Get<float>();
-   
     AddControllerRollInput(InputValue * RollRateMultiplier * GetWorld()->GetDeltaSeconds());
-    
 }
 
 //IT WORKS, the vertical inclination
 void AFlyer_Base::HandlePitchAxis_VerticalInclination(const FInputActionValue& Value)
 {
     float InputValue = Value.Get<float>();
-   
-    AddControllerPitchInput(InputValue * PitchRateMultiplier * GetWorld()->GetDeltaSeconds());
-    
+    AddControllerPitchInput(InputValue * PitchRateMultiplier * GetWorld()->GetDeltaSeconds()); 
 }
-
-
 
 // BeginPlay
 void AFlyer_Base::BeginPlay()
 {
     Super::BeginPlay();
-    
     if (FlyerInputMappingContext)
     {
         // Add the input mapping context to the enhanced input subsystem
@@ -95,18 +87,14 @@ void AFlyer_Base::BeginPlay()
             }
         }
     }
-   
 }
 
 // Tick
 void AFlyer_Base::Tick(float DeltaTime)
 {
-    
     Super::Tick(DeltaTime);
-
     //Calculate accelerations
     const float CurrentAccForward = -GetActorRotation().Pitch * DeltaTime * Acceleration;
-
 	const float CurrentAccSide = -GetActorRotation().Roll * DeltaTime * Acceleration;
 	
 	//calculate new forward speed if it is not in vertical, 180 grades or -180 grades
@@ -120,7 +108,6 @@ void AFlyer_Base::Tick(float DeltaTime)
 		//minimum of forward speed
 		CurrentForwardSpeed= 10.f;
 	}
-	
 	//calculate new side speed if there is any inclination more than 40 grades or -40 grades
 	if(GetActorRotation().Roll > 20 || GetActorRotation().Roll < -20)
 	{
@@ -133,11 +120,8 @@ void AFlyer_Base::Tick(float DeltaTime)
 		CurrentSideSpeed = 100.f;
 	}
 
-	
-
 	const FVector LocalMove = FVector(CurrentForwardSpeed * DeltaTime,0,CurrentSideSpeed * DeltaTime);
     AddActorLocalOffset(LocalMove,true);
-
 	//check of height if it is near the ground to reduce speed
 	if(CalculateHeightFromGround() <=minimumHeightToReduceSpeed)
 	{
@@ -150,14 +134,11 @@ void AFlyer_Base::Tick(float DeltaTime)
 void AFlyer_Base::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
 {
     Super::SetupPlayerInputComponent(PlayerInputComponent);
-    
     if (UEnhancedInputComponent* EnhancedInputComponent = Cast<UEnhancedInputComponent>(PlayerInputComponent))
     {
         // Bind Yaw (Horizontal Rotation)
         EnhancedInputComponent->BindAction(IA_Turn, ETriggerEvent::Triggered, this, &AFlyer_Base::HandleRollAxis_HorizontalInclination);
-		
         // Bind Pitch (Vertical Rotation)
         EnhancedInputComponent->BindAction(IA_LookUp, ETriggerEvent::Triggered, this, &AFlyer_Base::HandlePitchAxis_VerticalInclination);
-    	
 	}
 }

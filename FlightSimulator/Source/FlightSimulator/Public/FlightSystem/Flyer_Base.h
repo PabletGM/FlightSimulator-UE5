@@ -21,6 +21,7 @@ class UStaticMeshComponent;
 class USpringArmComponent;
 class UCameraComponent;
 class UCapsuleComponent;
+class UGameInstanceFlightSimulator;
 
 UCLASS()
 class FLIGHTSIMULATOR_API AFlyer_Base : public ACharacter
@@ -61,9 +62,6 @@ public:
 	float minimumHeightToReduceSpeed = 100.f;
 
 protected:
-
-	
-	
 	// Spring Arm Component
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Components")
 	USpringArmComponent* SpringArm;
@@ -110,5 +108,6 @@ public:
 
 	// Called to bind functionality to input
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
+
 
 };

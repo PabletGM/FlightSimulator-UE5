@@ -60,6 +60,12 @@
     <ClCompile Include="..\..\Source\FlightSimulator\Private\FlightSystem\Flyer_Base.cpp">
       <Filter>Source\FlightSimulator\Private\FlightSystem</Filter>
     </ClCompile>
+    <Filter Include="Source\FlightSimulator\Private\GameInstance">
+      <UniqueIdentifier>{E1146A72-FAF1-3B01-A225-AE2B060CBB67}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\FlightSimulator\Private\GameInstance\GameInstanceFlightSimulator.cpp">
+      <Filter>Source\FlightSimulator\Private\GameInstance</Filter>
+    </ClCompile>
     <Filter Include="Source\FlightSimulator\Private\GameMode">
       <UniqueIdentifier>{06C31741-DA3E-327B-8AEA-279C3E307877}</UniqueIdentifier>
     </Filter>
@@ -86,6 +92,12 @@
     </Filter>
     <ClInclude Include="..\..\Source\FlightSimulator\Public\FlightSystem\Flyer_Base.h">
       <Filter>Source\FlightSimulator\Public\FlightSystem</Filter>
+    </ClInclude>
+    <Filter Include="Source\FlightSimulator\Public\GameInstance">
+      <UniqueIdentifier>{EF18B495-083E-36C1-95BF-4D6D727614C6}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Source\FlightSimulator\Public\GameInstance\GameInstanceFlightSimulator.h">
+      <Filter>Source\FlightSimulator\Public\GameInstance</Filter>
     </ClInclude>
     <Filter Include="Source\FlightSimulator\Public\GameMode">
       <UniqueIdentifier>{E16270E6-F38C-3E38-AB38-99C46C1F9A20}</UniqueIdentifier>

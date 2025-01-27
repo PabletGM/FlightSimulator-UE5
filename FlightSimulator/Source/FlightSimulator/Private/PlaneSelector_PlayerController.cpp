@@ -3,6 +3,7 @@
 
 #include "PlaneSelector_PlayerController.h"
 
+#include "GameInstance/GameInstanceFlightSimulator.h"
 #include "Kismet/GameplayStatics.h"
 
 void APlaneSelector_PlayerController::BeginPlay()
@@ -94,8 +95,15 @@ void APlaneSelector_PlayerController::EnterLevelGameplay()
 	{
 		GEngine->AddOnScreenDebugMessage(-1, 5.0f, FColor::Green, FString::Printf(TEXT("Selected Airplane: %s"), *CurrentAirplaneName));
         
-		// Almacenar selección en GameInstance o cargar el nivel
-		// UGameplayStatics::OpenLevel(this, FName("GameplayLevel")); 
+		if (UGameInstance* GI = GetGameInstance())
+		{
+			UGameInstanceFlightSimulator* MyGI = Cast<UGameInstanceFlightSimulator>(GI);
+			if (MyGI)
+			{
+				MyGI->SelectedAirplaneName = CurrentAirplaneName;
+				UGameplayStatics::OpenLevel(this, FName("Gameplay"));
+			}
+		}
 	}
 }
 

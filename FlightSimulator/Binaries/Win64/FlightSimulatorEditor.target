@@ -42,6 +42,10 @@
 			"Type": "SymbolFile"
 		},
 		{
+			"Path": "$(EngineDir)/Binaries/Win64/EOSSDK-Win64-Shipping.dll",
+			"Type": "DynamicLibrary"
+		},
+		{
 			"Path": "$(EngineDir)/Binaries/Win64/OpenColorIO_2_2.dll",
 			"Type": "DynamicLibrary"
 		},
@@ -2046,6 +2050,14 @@
 			"Type": "RequiredResource"
 		},
 		{
+			"Path": "$(EngineDir)/Plugins/Editor/BlueprintMaterialTextureNodes/Binaries/Win64/UnrealEditor-BlueprintMaterialTextureNodes.dll",
+			"Type": "DynamicLibrary"
+		},
+		{
+			"Path": "$(EngineDir)/Plugins/Editor/BlueprintMaterialTextureNodes/Binaries/Win64/UnrealEditor.modules",
+			"Type": "RequiredResource"
+		},
+		{
 			"Path": "$(EngineDir)/Plugins/Editor/ChangelistReview/Binaries/Win64/UnrealEditor-ChangelistReview.dll",
 			"Type": "DynamicLibrary"
 		},
@@ -2478,6 +2490,18 @@
 			"Type": "RequiredResource"
 		},
 		{
+			"Path": "$(EngineDir)/Plugins/Experimental/Landmass/Binaries/Win64/UnrealEditor-Landmass.dll",
+			"Type": "DynamicLibrary"
+		},
+		{
+			"Path": "$(EngineDir)/Plugins/Experimental/Landmass/Binaries/Win64/UnrealEditor-LandmassEditor.dll",
+			"Type": "DynamicLibrary"
+		},
+		{
+			"Path": "$(EngineDir)/Plugins/Experimental/Landmass/Binaries/Win64/UnrealEditor.modules",
+			"Type": "RequiredResource"
+		},
+		{
 			"Path": "$(EngineDir)/Plugins/Experimental/LocalizableMessage/Binaries/Win64/UnrealEditor-LocalizableMessage.dll",
 			"Type": "DynamicLibrary"
 		},
@@ -2618,6 +2642,18 @@
 			"Type": "RequiredResource"
 		},
 		{
+			"Path": "$(EngineDir)/Plugins/Experimental/Water/Binaries/Win64/UnrealEditor-Water.dll",
+			"Type": "DynamicLibrary"
+		},
+		{
+			"Path": "$(EngineDir)/Plugins/Experimental/Water/Binaries/Win64/UnrealEditor-WaterEditor.dll",
+			"Type": "DynamicLibrary"
+		},
+		{
+			"Path": "$(EngineDir)/Plugins/Experimental/Water/Binaries/Win64/UnrealEditor.modules",
+			"Type": "RequiredResource"
+		},
+		{
 			"Path": "$(EngineDir)/Plugins/FX/Niagara/Binaries/Win64/UnrealEditor-Niagara.dll",
 			"Type": "DynamicLibrary"
 		},
@@ -2647,6 +2683,18 @@
 		},
 		{
 			"Path": "$(EngineDir)/Plugins/FX/Niagara/Binaries/Win64/UnrealEditor.modules",
+			"Type": "RequiredResource"
+		},
+		{
+			"Path": "$(EngineDir)/Plugins/Fab/Binaries/Win64/UnrealEditor-Fab.dll",
+			"Type": "DynamicLibrary"
+		},
+		{
+			"Path": "$(EngineDir)/Plugins/Fab/Binaries/Win64/UnrealEditor-Fab.pdb",
+			"Type": "SymbolFile"
+		},
+		{
+			"Path": "$(EngineDir)/Plugins/Fab/Binaries/Win64/UnrealEditor.modules",
 			"Type": "RequiredResource"
 		},
 		{
@@ -2727,6 +2775,26 @@
 		},
 		{
 			"Path": "$(EngineDir)/Plugins/Interchange/Runtime/Binaries/Win64/UnrealEditor.modules",
+			"Type": "RequiredResource"
+		},
+		{
+			"Path": "$(EngineDir)/Plugins/Marketplace/CesiumForUnreal_5.3/Binaries/Win64/UnrealEditor-CesiumEditor.dll",
+			"Type": "DynamicLibrary"
+		},
+		{
+			"Path": "$(EngineDir)/Plugins/Marketplace/CesiumForUnreal_5.3/Binaries/Win64/UnrealEditor-CesiumEditor.pdb",
+			"Type": "SymbolFile"
+		},
+		{
+			"Path": "$(EngineDir)/Plugins/Marketplace/CesiumForUnreal_5.3/Binaries/Win64/UnrealEditor-CesiumRuntime.dll",
+			"Type": "DynamicLibrary"
+		},
+		{
+			"Path": "$(EngineDir)/Plugins/Marketplace/CesiumForUnreal_5.3/Binaries/Win64/UnrealEditor-CesiumRuntime.pdb",
+			"Type": "SymbolFile"
+		},
+		{
+			"Path": "$(EngineDir)/Plugins/Marketplace/CesiumForUnreal_5.3/Binaries/Win64/UnrealEditor.modules",
 			"Type": "RequiredResource"
 		},
 		{
@@ -2915,6 +2983,14 @@
 		},
 		{
 			"Path": "$(EngineDir)/Plugins/MovieScene/TemplateSequence/Binaries/Win64/UnrealEditor.modules",
+			"Type": "RequiredResource"
+		},
+		{
+			"Path": "$(EngineDir)/Plugins/Online/EOSShared/Binaries/Win64/UnrealEditor-EOSShared.dll",
+			"Type": "DynamicLibrary"
+		},
+		{
+			"Path": "$(EngineDir)/Plugins/Online/EOSShared/Binaries/Win64/UnrealEditor.modules",
 			"Type": "RequiredResource"
 		},
 		{
@@ -21348,6 +21424,10 @@
 			"Type": "DebugNonUFS"
 		},
 		{
+			"Path": "$(EngineDir)/Binaries/Win64/EOSSDK-Win64-Shipping.dll",
+			"Type": "NonUFS"
+		},
+		{
 			"Path": "$(EngineDir)/Binaries/Win64/EpicWebHelper.exe",
 			"Type": "NonUFS"
 		},
@@ -24268,6 +24348,10 @@
 			"Type": "UFS"
 		},
 		{
+			"Path": "$(EngineDir)/Plugins/Editor/BlueprintMaterialTextureNodes/BlueprintMaterialTextureNodes.uplugin",
+			"Type": "UFS"
+		},
+		{
 			"Path": "$(EngineDir)/Plugins/Editor/ChangelistReview/ChangelistReview.uplugin",
 			"Type": "UFS"
 		},
@@ -24444,6 +24528,10 @@
 			"Type": "UFS"
 		},
 		{
+			"Path": "$(EngineDir)/Plugins/Experimental/Landmass/Landmass.uplugin",
+			"Type": "UFS"
+		},
+		{
 			"Path": "$(EngineDir)/Plugins/Experimental/LocalizableMessage/LocalizableMessage.uplugin",
 			"Type": "UFS"
 		},
@@ -24488,7 +24576,15 @@
 			"Type": "UFS"
 		},
 		{
+			"Path": "$(EngineDir)/Plugins/Experimental/Water/Water.uplugin",
+			"Type": "UFS"
+		},
+		{
 			"Path": "$(EngineDir)/Plugins/FX/Niagara/Niagara.uplugin",
+			"Type": "UFS"
+		},
+		{
+			"Path": "$(EngineDir)/Plugins/Fab/Fab.uplugin",
 			"Type": "UFS"
 		},
 		{
@@ -24505,6 +24601,10 @@
 		},
 		{
 			"Path": "$(EngineDir)/Plugins/Interchange/Runtime/Interchange.uplugin",
+			"Type": "UFS"
+		},
+		{
+			"Path": "$(EngineDir)/Plugins/Marketplace/CesiumForUnreal_5.3/CesiumForUnreal.uplugin",
 			"Type": "UFS"
 		},
 		{
@@ -24569,6 +24669,10 @@
 		},
 		{
 			"Path": "$(EngineDir)/Plugins/Online/Android/OnlineSubsystemGooglePlay/OnlineSubsystemGooglePlay.uplugin",
+			"Type": "UFS"
+		},
+		{
+			"Path": "$(EngineDir)/Plugins/Online/EOSShared/EOSShared.uplugin",
 			"Type": "UFS"
 		},
 		{

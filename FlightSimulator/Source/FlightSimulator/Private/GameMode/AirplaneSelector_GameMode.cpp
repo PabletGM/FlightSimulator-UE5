@@ -5,5 +5,9 @@
 
 AAirplaneSelector_GameMode::AAirplaneSelector_GameMode()
 {
-	
+	static ConstructorHelpers::FClassFinder<APlayerController> PlayerControllerBPClass(TEXT("/Game/Blueprints/PlayerController/BP_Selector_PlayerController"));
+	if (PlayerControllerBPClass.Class != NULL)
+	{
+		PlayerControllerClass = PlayerControllerBPClass.Class;
+	}
 }

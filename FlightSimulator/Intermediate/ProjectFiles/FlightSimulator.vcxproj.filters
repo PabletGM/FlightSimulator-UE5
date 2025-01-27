@@ -11,6 +11,7 @@
     <None Include="..\..\Source\FlightSimulatorEditor.Target.cs">
       <Filter>Source</Filter>
     </None>
+    <None Include="..\..\.vsconfig" />
     <Filter Include="Config">
       <UniqueIdentifier>{FA535FFB-25E1-3D20-B416-52F9BE21E06E}</UniqueIdentifier>
     </Filter>
@@ -43,6 +44,60 @@
     </ClCompile>
     <ClInclude Include="..\..\Source\FlightSimulator\FlightSimulatorGameModeBase.h">
       <Filter>Source\FlightSimulator</Filter>
+    </ClInclude>
+    <Filter Include="Source\FlightSimulator\Private">
+      <UniqueIdentifier>{2F419917-3282-3E97-899C-B12E4013F1C9}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\FlightSimulator\Private\PawnStaticCamera_PlaneSelector.cpp">
+      <Filter>Source\FlightSimulator\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\FlightSimulator\Private\PlaneSelector_PlayerController.cpp">
+      <Filter>Source\FlightSimulator\Private</Filter>
+    </ClCompile>
+    <Filter Include="Source\FlightSimulator\Private\FlightSystem">
+      <UniqueIdentifier>{7754A3E4-9435-33C4-8481-072554936027}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\FlightSimulator\Private\FlightSystem\Flyer_Base.cpp">
+      <Filter>Source\FlightSimulator\Private\FlightSystem</Filter>
+    </ClCompile>
+    <Filter Include="Source\FlightSimulator\Private\GameMode">
+      <UniqueIdentifier>{06C31741-DA3E-327B-8AEA-279C3E307877}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\FlightSimulator\Private\GameMode\AirplaneSelector_GameMode.cpp">
+      <Filter>Source\FlightSimulator\Private\GameMode</Filter>
+    </ClCompile>
+    <Filter Include="Source\FlightSimulator\Private\UI">
+      <UniqueIdentifier>{D03EF0FE-D49D-384C-B759-ECF05D5F8757}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\FlightSimulator\Private\UI\AirplaneSelectorWidget.cpp">
+      <Filter>Source\FlightSimulator\Private\UI</Filter>
+    </ClCompile>
+    <Filter Include="Source\FlightSimulator\Public">
+      <UniqueIdentifier>{8D87317E-6AD7-355D-A186-A4267DDE5EBA}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Source\FlightSimulator\Public\PawnStaticCamera_PlaneSelector.h">
+      <Filter>Source\FlightSimulator\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\FlightSimulator\Public\PlaneSelector_PlayerController.h">
+      <Filter>Source\FlightSimulator\Public</Filter>
+    </ClInclude>
+    <Filter Include="Source\FlightSimulator\Public\FlightSystem">
+      <UniqueIdentifier>{C646B898-82B3-30AB-A9A8-7C39BAC45639}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Source\FlightSimulator\Public\FlightSystem\Flyer_Base.h">
+      <Filter>Source\FlightSimulator\Public\FlightSystem</Filter>
+    </ClInclude>
+    <Filter Include="Source\FlightSimulator\Public\GameMode">
+      <UniqueIdentifier>{E16270E6-F38C-3E38-AB38-99C46C1F9A20}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Source\FlightSimulator\Public\GameMode\AirplaneSelector_GameMode.h">
+      <Filter>Source\FlightSimulator\Public\GameMode</Filter>
+    </ClInclude>
+    <Filter Include="Source\FlightSimulator\Public\UI">
+      <UniqueIdentifier>{262F0B9A-049E-3570-A0C3-B99AD64AB276}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Source\FlightSimulator\Public\UI\AirplaneSelectorWidget.h">
+      <Filter>Source\FlightSimulator\Public\UI</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

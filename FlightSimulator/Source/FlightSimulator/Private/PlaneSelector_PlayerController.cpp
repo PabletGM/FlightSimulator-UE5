@@ -101,7 +101,7 @@ void APlaneSelector_PlayerController::EnterLevelGameplay()
 			if (MyGI)
 			{
 				MyGI->SelectedAirplaneName = CurrentAirplaneName;
-				UGameplayStatics::OpenLevel(this, FName("Gameplay"));
+				UGameplayStatics::OpenLevel(this, FName("CesiumGameplay"));
 			}
 		}
 	}

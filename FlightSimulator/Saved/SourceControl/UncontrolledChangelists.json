@@ -29,6 +29,8 @@
 				"C:/FlightSimulator-UE5/FlightSimulator/Content/level/GameplayTest.umap",
 				"C:/FlightSimulator-UE5/FlightSimulator/Content/level/CesiumGameplay.umap",
 				"C:/FlightSimulator-UE5/FlightSimulator/Content/Assets/subLevel/Melbourne.umap",
+				"C:/FlightSimulator-UE5/FlightSimulator/Content/Blueprints/Gameplay/flyers_child/airplane2/BP_FlyerAirplane2.uasset",
+				"C:/FlightSimulator-UE5/FlightSimulator/Content/Blueprints/Gameplay/flyers_child/bird/BP_FlyerBird.uasset",
 				"C:/FlightSimulator-UE5/FlightSimulator/Content/level/TryCesium.umap",
 				"C:/FlightSimulator-UE5/FlightSimulator/Content/Blueprints/staticCamera/BP_StaticCamera_PlaneSelector_Child.uasset",
 				"C:/FlightSimulator-UE5/FlightSimulator/Content/Input/IA_Turn.uasset",

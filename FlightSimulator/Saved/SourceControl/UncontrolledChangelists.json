@@ -5,6 +5,10 @@
 			"guid": "00000000000000000000000000000000",
 			"description": "Default Uncontrolled Changelist",
 			"files": [
+				"C:/FlightSimulator-UE5/FlightSimulator/Content/Blueprints/Gameplay/flyers_child/airplane2/BP_FlyerAirplane2.uasset",
+				"C:/FlightSimulator-UE5/FlightSimulator/Content/Blueprints/Gameplay/flyers_child/bird/BP_FlyerBird.uasset",
+				"C:/FlightSimulator-UE5/FlightSimulator/Content/Blueprints/Gameplay/flyers_child/paperAirplane/BP_FlyerPaperAirplane.uasset",
+				"C:/FlightSimulator-UE5/FlightSimulator/Content/Blueprints/Gameplay/flyers_child/SmallAirplane/BP_FlyerSmallAirplane.uasset",
 				"C:/FlightSimulator-UE5/FlightSimulator/Content/level/GameplayTest.umap"
 			]
 		}

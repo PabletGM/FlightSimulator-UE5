@@ -38,13 +38,32 @@ public:
 	UPROPERTY(EditAnywhere, Category = "Flight")
 	float MaxSpeed{4000.f};
 	UPROPERTY(EditAnywhere, Category = "Flight")
-	float MinSpeed{500.f};
+	float MinSpeed{800.f};
 
-	// Rotation multipliers
+	// Rotation multipliers to make the effect input enough
 	UPROPERTY(EditAnywhere, Category = "Flight")
-	float RollRateMultiplier{150.0f};
+	float RollRateMultiplier{20.0f};
 	UPROPERTY(EditAnywhere, Category = "Flight")
-	float PitchRateMultiplier{150.0f};
+	float PitchRateMultiplier{10.0f};
+
+	//controls how much the Roll should affect the Yaw.
+	UPROPERTY(EditAnywhere, Category = "Flight")
+	float YawScalingFactor {0.1f};
+
+	//controls acceleration multipliers
+	UPROPERTY(EditAnywhere, Category = "Flight")
+	float PitchEffectMultiplier = 1.f;
+	UPROPERTY(EditAnywhere, Category = "Flight")
+	float RollEffectMultiplier = 100.f;
+
+
+	//maximum degree turn on vertical to have forward velocity
+	UPROPERTY(EditAnywhere, Category = "Flight")
+	float maxTurnDegreeVertical = 80.0f;
+
+	//minimum degree turn on horizontal to have lateral velocity
+	UPROPERTY(EditAnywhere, Category = "Flight")
+	float minimumTurnDegreeHorizontal = 10.0f;
 	
 	UPROPERTY(VisibleAnywhere, Category = "Flight")
 	float CurrentForwardSpeed{100.f};
@@ -81,8 +100,34 @@ protected:
 	
 
 	// Input handling
-	void HandleRollAxis_HorizontalInclination(const FInputActionValue& Value);  // A/D for Yaw
-	void HandlePitchAxis_VerticalInclination(const FInputActionValue& Value); // W/S for Pitch
+		// Change RollActorRotation
+		void HandleRollAxis_HorizontalInclination(const FInputActionValue& Value);
+		//Change PitchActorRotation
+		void HandlePitchAxis_VerticalInclination(const FInputActionValue& Value);
+		//change Yaw based on Roll
+		float CalculateYawEffect_HorizontalInclination(float RollInput, float deltaTime);
+
+	//calculate accelerations
+		float CalculateAccelerationForward(float PitchInput, float deltaTime, float PitchEffectMultiplier);
+		float CalculateAccelerationSide(float RollInput, float deltaTime, float RollEffectMultiplier);
+
+	//calculate speed
+		void CalculateFrontSpeed(float PitchInput, float CurrentAccForward );
+		void CalculateLateralSpeed(float RollInput, float CurrentAccSide, float DeltaTime );
+	
+	//DEBUG
+		void calculate_debugging_axis_degree_inclination_speeds(float RollInput, float PitchInput, float YawEffect);
+
+	//Apply movement
+		void ApplyMovement(float DeltaTime);
+
+	//GETTERS
+		//RollActorRotation
+		float GetActorRotationRoll();
+		//PitchActorRotation
+		float GetActorRotationPitch();
+	
+
 	
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;

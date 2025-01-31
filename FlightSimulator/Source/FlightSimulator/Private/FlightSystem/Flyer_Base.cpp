@@ -28,7 +28,7 @@ AFlyer_Base::AFlyer_Base()
     // Create the SpringArm and attach to CapsuleComponent
     SpringArm = CreateDefaultSubobject<USpringArmComponent>(TEXT("SpringArm"));
     SpringArm->SetupAttachment(GetCapsuleComponent());
-    SpringArm->TargetArmLength = 300.0f;
+    SpringArm->TargetArmLength= 300.0f;
     SpringArm->bUsePawnControlRotation = true;
 
     // Create the Camera and attach to the SpringArm
@@ -41,21 +41,26 @@ AFlyer_Base::AFlyer_Base()
 
 float AFlyer_Base::CalculateHeightFromGround()
 {
-	FVector Start = GetActorLocation(); // Posición actual del actor
-	FVector End = Start - FVector(0.0f, 0.0f, 100000.0f); // Traza hacia abajo
+	//start position of player
+	FVector Start = GetActorLocation();
+	//end position of raycast, going down x units
+	FVector End = Start - FVector(0.0f, 0.0f, 100000.0f);
 
+	//create raycast
+	
 	FHitResult HitResult;
 	FCollisionQueryParams QueryParams;
-	QueryParams.AddIgnoredActor(this); // Ignorar el propio actor
+	//Ignore the actor
+	QueryParams.AddIgnoredActor(this); 
 
-	// Realizar el trace
+	// Make the trace
 	if (GetWorld()->LineTraceSingleByChannel(HitResult, Start, End, ECC_Visibility, QueryParams))
 	{
-		// Si colisiona con algo, calcula la distancia
+		//if it hits, calculate distance
 		return (Start - HitResult.Location).Size();
 	}
 
-	// Si no colisiona, devuelve una altura muy grande (indicando que no hay suelo debajo)
+	//if it doesnt collide, it returns a big altitude
 	return 10000.0f; // Altura máxima si no detecta el suelo
 }
 
@@ -70,6 +75,85 @@ void AFlyer_Base::HandlePitchAxis_VerticalInclination(const FInputActionValue& V
 {
     float InputValue = Value.Get<float>();
     AddControllerPitchInput(InputValue * PitchRateMultiplier * GetWorld()->GetDeltaSeconds()); 
+}
+
+float AFlyer_Base::CalculateYawEffect_HorizontalInclination(float RollInput, float deltaTime)
+{
+	float YawEffect = RollInput * YawScalingFactor;
+	AddControllerYawInput(YawEffect * deltaTime);
+	
+	return YawEffect;
+}
+
+float AFlyer_Base::CalculateAccelerationForward(float PitchInput, float deltaTime, float pitchEffectMultiplier)
+{
+	return (-FMath::Sin(FMath::DegreesToRadians(PitchInput)) * Acceleration * pitchEffectMultiplier * deltaTime);
+}
+
+float AFlyer_Base::CalculateAccelerationSide(float RollInput, float deltaTime, float rollEffectMultiplier)
+{
+	return FMath::Sin(FMath::DegreesToRadians(RollInput)) * rollEffectMultiplier * Acceleration * deltaTime;
+}
+
+void AFlyer_Base::CalculateFrontSpeed(float PitchInput, float CurrentAccForward)
+{
+	// Apply FRONT Speed if it does not surpass the maxTurnDegreeVertical
+    	if (FMath::Abs(PitchInput) < maxTurnDegreeVertical) 
+    	{
+    		const float NewForwardSpeed = CurrentForwardSpeed + CurrentAccForward;
+    		CurrentForwardSpeed = FMath::Clamp(NewForwardSpeed, MinSpeed, MaxSpeed);
+    	}
+    	else
+    	{
+    		CurrentForwardSpeed = FMath::Max(CurrentForwardSpeed, MinSpeed);
+    	}
+}
+
+void AFlyer_Base::CalculateLateralSpeed(float RollInput, float CurrentAccSide, float DeltaTime)
+{
+		// Apply LATERAL Speed only if airplane has a minimum of inclination
+		if (FMath::Abs(RollInput) > minimumTurnDegreeHorizontal) 
+		{
+			//*deltaTime because it is currently accumulating acceleration
+			CurrentSideSpeed = CurrentAccSide * DeltaTime;
+		}
+		else
+		{
+			CurrentSideSpeed = 0.f;
+		}
+}
+
+void AFlyer_Base::calculate_debugging_axis_degree_inclination_speeds(float RollInput, float PitchInput, float YawEffect)
+{
+	if (GEngine)
+	{
+		FString DebugMessage = FString::Printf(TEXT("Forward Speed: %.2f, Side Speed: %.2f, Roll: %.2f, Pitch: %.2f, Yaw: %.2f"),
+			CurrentForwardSpeed, CurrentSideSpeed, RollInput, PitchInput, YawEffect);
+		GEngine->AddOnScreenDebugMessage(-1, 0.1f, FColor::Green, DebugMessage);
+	}
+}
+
+void AFlyer_Base::ApplyMovement(float DeltaTime)
+{
+	//Apply movement
+	const FVector LocalMove = FVector(
+		CurrentForwardSpeed * DeltaTime,  // front movement
+		CurrentSideSpeed * DeltaTime,     // lateral movement
+		0.0f                              
+	);
+
+	//Apply this move to actor
+	AddActorLocalOffset(LocalMove, true);
+}
+
+float AFlyer_Base::GetActorRotationRoll()
+{
+	return GetActorRotation().Roll;
+}
+
+float AFlyer_Base::GetActorRotationPitch()
+{
+	return GetActorRotation().Pitch;
 }
 
 // BeginPlay
@@ -93,41 +177,39 @@ void AFlyer_Base::BeginPlay()
 void AFlyer_Base::Tick(float DeltaTime)
 {
     Super::Tick(DeltaTime);
-    //Calculate accelerations
-    const float CurrentAccForward = -GetActorRotation().Pitch * DeltaTime * Acceleration;
-	const float CurrentAccSide = -GetActorRotation().Roll * DeltaTime * Acceleration;
-	
-	//calculate new forward speed if it is not in vertical, 180 grades or -180 grades
-	if(GetActorRotation().Roll < 160 || GetActorRotation().Roll > -160)
-	{
-		const float NewForwardSpeed = CurrentForwardSpeed + CurrentAccForward;
-		CurrentForwardSpeed = FMath::Clamp(NewForwardSpeed, MinSpeed, MaxSpeed);
-	}
-	else
-	{
-		//minimum of forward speed
-		CurrentForwardSpeed= 10.f;
-	}
-	//calculate new side speed if there is any inclination more than 40 grades or -40 grades
-	if(GetActorRotation().Roll > 20 || GetActorRotation().Roll < -20)
-	{
-		const float NewSideSpeed = CurrentSideSpeed + CurrentAccSide;
-		CurrentSideSpeed = FMath::Clamp(NewSideSpeed, MinSpeed, MaxSpeed);
-	}
-	else
-	{
-		//minimum of sideSpeed
-		CurrentSideSpeed = 100.f;
-	}
+    
+    
+	// 🛠️ 1️⃣ OBTENER LOS VALORES ACTUALES DE LOS EJES
+	float RollInput = GetActorRotationRoll(); // Rotación actual en Roll
+	float PitchInput = GetActorRotationRoll(); // Rotación actual en Pitch
 
-	const FVector LocalMove = FVector(CurrentForwardSpeed * DeltaTime,0,CurrentSideSpeed * DeltaTime);
-    AddActorLocalOffset(LocalMove,true);
-	//check of height if it is near the ground to reduce speed
-	if(CalculateHeightFromGround() <=minimumHeightToReduceSpeed)
+	// 🌀 2️⃣ CÁLCULO DEL GIRO EN YAW BASADO EN ROLL
+	float YawEffect = CalculateYawEffect_HorizontalInclination(RollInput, DeltaTime);
+	
+
+	//ACCELERATIONS
+	float CurrentAccForward = CalculateAccelerationForward( PitchInput, PitchEffectMultiplier, DeltaTime);
+	float CurrentAccSide = CalculateAccelerationSide(RollInput, DeltaTime, RollEffectMultiplier);
+
+
+
+	// SPEED
+		//Front
+		CalculateFrontSpeed(PitchInput, CurrentAccForward);
+		//Lateral
+		CalculateLateralSpeed(RollInput,CurrentAccSide, DeltaTime);
+
+	//Apply movement
+	ApplyMovement(DeltaTime);
+
+	// 🔽 6️⃣ Control of minimum height for  COLLISIONS
+	if (CalculateHeightFromGround() <= minimumHeightToReduceSpeed)
 	{
-		CurrentForwardSpeed= 0.f;
+		CurrentForwardSpeed = 0.f;
 		CurrentSideSpeed = 0.f;
 	}
+
+	calculate_debugging_axis_degree_inclination_speeds(RollInput,PitchInput,  YawEffect);
 }
 
 // SetupPlayerInputComponent

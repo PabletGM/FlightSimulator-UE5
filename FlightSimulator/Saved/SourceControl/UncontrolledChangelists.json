@@ -9,6 +9,15 @@
 				"C:/FlightSimulator-UE5/FlightSimulator/Content/Blueprints/Gameplay/flyers_child/bird/BP_FlyerBird.uasset",
 				"C:/FlightSimulator-UE5/FlightSimulator/Content/Blueprints/Gameplay/flyers_child/paperAirplane/BP_FlyerPaperAirplane.uasset",
 				"C:/FlightSimulator-UE5/FlightSimulator/Content/Blueprints/Gameplay/flyers_child/SmallAirplane/BP_FlyerSmallAirplane.uasset",
+				"C:/FlightSimulator-UE5/FlightSimulator/Content/Input/Gameplay/FlyerInputMappingContext.uasset",
+				"C:/FlightSimulator-UE5/FlightSimulator/Content/Input/Gameplay/IA_PauseMenu.uasset",
+				"C:/FlightSimulator-UE5/FlightSimulator/Content/Blueprints/PlayerController/BP_Gameplay_PlayerController.uasset",
+				"C:/FlightSimulator-UE5/FlightSimulator/Content/Blueprints/GameModes/BP_GameModeGameplay.uasset",
+				"C:/FlightSimulator-UE5/FlightSimulator/Content/Blueprints/Gameplay/WBP_AirplanePauseMenuWidget.uasset",
+				"C:/FlightSimulator-UE5/FlightSimulator/Content/Blueprints/Gameplay/UI/WBP_AirplanePauseMenuWidget.uasset",
+				"C:/FlightSimulator-UE5/FlightSimulator/Content/Blueprints/Gameplay/BP_Flyer_Base.uasset",
+				"C:/FlightSimulator-UE5/FlightSimulator/Content/Input/Gameplay/IA_LookUpMouse.uasset",
+				"C:/FlightSimulator-UE5/FlightSimulator/Content/Input/Gameplay/IA_TurnMouse.uasset",
 				"C:/FlightSimulator-UE5/FlightSimulator/Content/level/GameplayTest.umap"
 			]
 		}

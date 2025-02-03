@@ -12,6 +12,7 @@
       <Filter>Source</Filter>
     </None>
     <None Include="..\..\.vsconfig" />
+    <None Include="..\..\FlightSimulator.sln.DotSettings.user" />
     <Filter Include="Config">
       <UniqueIdentifier>{FA535FFB-25E1-3D20-B416-52F9BE21E06E}</UniqueIdentifier>
     </Filter>
@@ -48,6 +49,9 @@
     <Filter Include="Source\FlightSimulator\Private">
       <UniqueIdentifier>{2F419917-3282-3E97-899C-B12E4013F1C9}</UniqueIdentifier>
     </Filter>
+    <ClCompile Include="..\..\Source\FlightSimulator\Private\Gameplay_PlayerController.cpp">
+      <Filter>Source\FlightSimulator\Private</Filter>
+    </ClCompile>
     <ClCompile Include="..\..\Source\FlightSimulator\Private\PawnStaticCamera_PlaneSelector.cpp">
       <Filter>Source\FlightSimulator\Private</Filter>
     </ClCompile>
@@ -75,12 +79,18 @@
     <Filter Include="Source\FlightSimulator\Private\UI">
       <UniqueIdentifier>{D03EF0FE-D49D-384C-B759-ECF05D5F8757}</UniqueIdentifier>
     </Filter>
+    <ClCompile Include="..\..\Source\FlightSimulator\Private\UI\AirplanePauseMenuWidget.cpp">
+      <Filter>Source\FlightSimulator\Private\UI</Filter>
+    </ClCompile>
     <ClCompile Include="..\..\Source\FlightSimulator\Private\UI\AirplaneSelectorWidget.cpp">
       <Filter>Source\FlightSimulator\Private\UI</Filter>
     </ClCompile>
     <Filter Include="Source\FlightSimulator\Public">
       <UniqueIdentifier>{8D87317E-6AD7-355D-A186-A4267DDE5EBA}</UniqueIdentifier>
     </Filter>
+    <ClInclude Include="..\..\Source\FlightSimulator\Public\Gameplay_PlayerController.h">
+      <Filter>Source\FlightSimulator\Public</Filter>
+    </ClInclude>
     <ClInclude Include="..\..\Source\FlightSimulator\Public\PawnStaticCamera_PlaneSelector.h">
       <Filter>Source\FlightSimulator\Public</Filter>
     </ClInclude>
@@ -108,6 +118,9 @@
     <Filter Include="Source\FlightSimulator\Public\UI">
       <UniqueIdentifier>{262F0B9A-049E-3570-A0C3-B99AD64AB276}</UniqueIdentifier>
     </Filter>
+    <ClInclude Include="..\..\Source\FlightSimulator\Public\UI\AirplanePauseMenuWidget.h">
+      <Filter>Source\FlightSimulator\Public\UI</Filter>
+    </ClInclude>
     <ClInclude Include="..\..\Source\FlightSimulator\Public\UI\AirplaneSelectorWidget.h">
       <Filter>Source\FlightSimulator\Public\UI</Filter>
     </ClInclude>

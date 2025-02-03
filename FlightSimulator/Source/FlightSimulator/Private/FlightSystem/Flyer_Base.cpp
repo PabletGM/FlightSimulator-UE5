@@ -2,7 +2,9 @@
 
 #include "FlightSimulator/Public/FlightSystem/Flyer_Base.h"
 
+#include "Blueprint/UserWidget.h"
 #include "Components/CapsuleComponent.h"
+#include "Kismet/GameplayStatics.h"
 #include "GameInstance/GameInstanceFlightSimulator.h"
 
 
@@ -156,6 +158,7 @@ float AFlyer_Base::GetActorRotationPitch()
 	return GetActorRotation().Pitch;
 }
 
+
 // BeginPlay
 void AFlyer_Base::BeginPlay()
 {
@@ -167,10 +170,20 @@ void AFlyer_Base::BeginPlay()
         {
             if (UEnhancedInputLocalPlayerSubsystem* Subsystem = ULocalPlayer::GetSubsystem<UEnhancedInputLocalPlayerSubsystem>(PlayerController->GetLocalPlayer()))
             {
-                Subsystem->AddMappingContext(FlyerInputMappingContext, 0);
+                Subsystem->AddMappingContext(FlyerInputMappingContext, 1);
             }
         }
     }
+
+
+	//UI PAUSE MENU
+	// Obtener el Gameplay_PlayerController
+	GameplayController = Cast<AGameplay_PlayerController>(UGameplayStatics::GetPlayerController(this, 0));
+	if (!GameplayController)
+	{
+		UE_LOG(LogTemp, Warning, TEXT("Gameplay_PlayerController not found!"));
+	}
+	
 }
 
 // Tick
@@ -222,5 +235,12 @@ void AFlyer_Base::SetupPlayerInputComponent(UInputComponent* PlayerInputComponen
         EnhancedInputComponent->BindAction(IA_Turn, ETriggerEvent::Triggered, this, &AFlyer_Base::HandleRollAxis_HorizontalInclination);
         // Bind Pitch (Vertical Rotation)
         EnhancedInputComponent->BindAction(IA_LookUp, ETriggerEvent::Triggered, this, &AFlyer_Base::HandlePitchAxis_VerticalInclination);
-	}
+    	// Bind Pause Widget P
+    	EnhancedInputComponent->BindAction(IA_PauseMenu, ETriggerEvent::Triggered, this, &AFlyer_Base::TogglePauseMenu);
+    }
+}
+
+void AFlyer_Base::TogglePauseMenu()
+{
+	GameplayController->TogglePauseMenu();
 }

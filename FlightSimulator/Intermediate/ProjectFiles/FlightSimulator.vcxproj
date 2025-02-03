@@ -110,6 +110,7 @@
     <None Include="..\..\Source\FlightSimulator.Target.cs"/>
     <None Include="..\..\Source\FlightSimulatorEditor.Target.cs"/>
     <None Include="..\..\.vsconfig"/>
+    <None Include="..\..\FlightSimulator.sln.DotSettings.user"/>
     <None Include="..\..\Config\DefaultEditor.ini"/>
     <None Include="..\..\Config\DefaultEngine.ini"/>
     <None Include="..\..\Config\DefaultGame.ini"/>
@@ -127,6 +128,11 @@
       <AdditionalOptions>$(ClCompile_AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <ClInclude Include="..\..\Source\FlightSimulator\FlightSimulatorGameModeBase.h"/>
+    <ClCompile Include="..\..\Source\FlightSimulator\Private\Gameplay_PlayerController.cpp">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles)</ForcedIncludeFiles>
+      <AdditionalOptions>$(ClCompile_AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
     <ClCompile Include="..\..\Source\FlightSimulator\Private\PawnStaticCamera_PlaneSelector.cpp">
       <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles)</ForcedIncludeFiles>
@@ -152,16 +158,23 @@
       <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles)</ForcedIncludeFiles>
       <AdditionalOptions>$(ClCompile_AdditionalOptions)</AdditionalOptions>
     </ClCompile>
+    <ClCompile Include="..\..\Source\FlightSimulator\Private\UI\AirplanePauseMenuWidget.cpp">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles)</ForcedIncludeFiles>
+      <AdditionalOptions>$(ClCompile_AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
     <ClCompile Include="..\..\Source\FlightSimulator\Private\UI\AirplaneSelectorWidget.cpp">
       <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles)</ForcedIncludeFiles>
       <AdditionalOptions>$(ClCompile_AdditionalOptions)</AdditionalOptions>
     </ClCompile>
+    <ClInclude Include="..\..\Source\FlightSimulator\Public\Gameplay_PlayerController.h"/>
     <ClInclude Include="..\..\Source\FlightSimulator\Public\PawnStaticCamera_PlaneSelector.h"/>
     <ClInclude Include="..\..\Source\FlightSimulator\Public\PlaneSelector_PlayerController.h"/>
     <ClInclude Include="..\..\Source\FlightSimulator\Public\FlightSystem\Flyer_Base.h"/>
     <ClInclude Include="..\..\Source\FlightSimulator\Public\GameInstance\GameInstanceFlightSimulator.h"/>
     <ClInclude Include="..\..\Source\FlightSimulator\Public\GameMode\AirplaneSelector_GameMode.h"/>
+    <ClInclude Include="..\..\Source\FlightSimulator\Public\UI\AirplanePauseMenuWidget.h"/>
     <ClInclude Include="..\..\Source\FlightSimulator\Public\UI\AirplaneSelectorWidget.h"/>
   </ItemGroup>
   <PropertyGroup>

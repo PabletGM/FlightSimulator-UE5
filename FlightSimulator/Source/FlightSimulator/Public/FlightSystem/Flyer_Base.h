@@ -12,6 +12,8 @@
 #include "EnhancedInputSubsystems.h"
 #include "InputMappingContext.h"
 #include "InputAction.h"
+#include "Kismet/GameplayStatics.h"
+#include "Gameplay_PlayerController.h"
 #include "Flyer_Base.generated.h"
 
 class UInputMappingContext;
@@ -21,6 +23,8 @@ class UStaticMeshComponent;
 class USpringArmComponent;
 class UCameraComponent;
 class UCapsuleComponent;
+class AGameplay_PlayerController;
+class UAirplanePauseMenuWidget;
 class UGameInstanceFlightSimulator;
 
 UCLASS()
@@ -70,6 +74,10 @@ public:
 
 	UPROPERTY(VisibleAnywhere, Category = "Flight")
 	float CurrentSideSpeed{100.f};
+
+
+	//GameplayController
+	AGameplay_PlayerController* GameplayController;
 
 protected:
 	float CalculateHeightFromGround();
@@ -128,6 +136,7 @@ protected:
 		float GetActorRotationPitch();
 	
 
+
 	
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
@@ -145,6 +154,9 @@ protected:
 	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "Input")
 	UInputAction* IA_LookUp;
 
+	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "Input")
+	UInputAction* IA_PauseMenu;
+
 
 	
 public:	
@@ -154,5 +166,7 @@ public:
 	// Called to bind functionality to input
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
 
+	void TogglePauseMenu();
+	
 
 };

@@ -6653,3 +6653,1044 @@ LogConfig: Set CVar [[r.Shadow.DetectVertexShaderLayerAtRuntime:1]]
 [2025.02.05-02.31.03:072][794]LogUObjectHash: Compacting FUObjectHashTables data took  11.77ms
 [2025.02.05-02.31.03:541][795]LogPlayLevel: Display: Destroying online subsystem :Context_61
 [2025.02.05-02.31.03:688][796]LogUObjectHash: Compacting FUObjectHashTables data took  12.16ms
+[2025.02.05-02.32.57:809][430]LogSlate: External Image Picker: DecompressImage failed
+[2025.02.05-02.32.59:101][441]LogShaderCompilers: Display: ================================================
+[2025.02.05-02.32.59:101][441]LogShaderCompilers: Display: === FShaderJobCache stats ===
+[2025.02.05-02.32.59:102][441]LogShaderCompilers: Display: Total job queries 1245, among them cache hits 999 (80.24%)
+[2025.02.05-02.32.59:102][441]LogShaderCompilers: Display: Tracking 242 distinct input hashes that result in 107 distinct outputs (44.21%)
+[2025.02.05-02.32.59:103][441]LogShaderCompilers: Display: RAM used: 6,41 MiB of 1,60 GiB budget. Usage: 0.39%
+[2025.02.05-02.32.59:103][441]LogShaderCompilers: Display: === Shader Compilation stats ===
+[2025.02.05-02.32.59:103][441]LogShaderCompilers: Display: Shaders Compiled: 147
+[2025.02.05-02.32.59:104][441]LogShaderCompilers: Display: Jobs assigned 147, completed 147 (100%)
+[2025.02.05-02.32.59:104][441]LogShaderCompilers: Display: Average time worker was idle: 21.17 s
+[2025.02.05-02.32.59:104][441]LogShaderCompilers: Display: Time job spent in pending queue: average 0.24 s, longest 2.28 s
+[2025.02.05-02.32.59:106][441]LogShaderCompilers: Display: Job execution time: average 1.97 s, max 3.63 s
+[2025.02.05-02.32.59:106][441]LogShaderCompilers: Display: Job life time (pending + execution): average 2.22 s, max 4.44
+[2025.02.05-02.32.59:107][441]LogShaderCompilers: Display: Shader code size: average 51,907 KiB, min 4,453 KiB, max 73,371 KiB
+[2025.02.05-02.32.59:107][441]LogShaderCompilers: Display: Time at least one job was in flight (either pending or executed): 55.42 s
+[2025.02.05-02.32.59:107][441]LogShaderCompilers: Display: Jobs were issued in 147 batches (only local compilation was used), average 1.00 jobs/batch
+[2025.02.05-02.32.59:108][441]LogShaderCompilers: Display: Average processing rate: 2.65 jobs/sec
+[2025.02.05-02.32.59:108][441]LogShaderCompilers: Display: Total thread time: 205,598 s
+[2025.02.05-02.32.59:109][441]LogShaderCompilers: Display: Total thread preprocess time: 22,376 s
+[2025.02.05-02.32.59:109][441]LogShaderCompilers: Display: Percentage time preprocessing: 10.88%
+[2025.02.05-02.32.59:110][441]LogShaderCompilers: Display: Effective parallelization: 3.71 (times faster than compiling all shaders on one thread). Compare with number of workers: 16
+[2025.02.05-02.32.59:110][441]LogShaderCompilers: Display: Top 5 most expensive shader types by average time:
+[2025.02.05-02.32.59:110][441]LogShaderCompilers: Display:                   TBasePassVSFSelfShadowedTranslucencyPolicy (compiled    8 times, average 1.77 sec, max 2.33 sec, min 1.34 sec)
+[2025.02.05-02.32.59:111][441]LogShaderCompilers: Display:                   TBasePassPSFSelfShadowedTranslucencyPolicy (compiled    8 times, average 1.63 sec, max 2.05 sec, min 1.21 sec)
+[2025.02.05-02.32.59:111][441]LogShaderCompilers: Display:           TBasePassPSFSelfShadowedTranslucencyPolicySkylight (compiled    8 times, average 1.62 sec, max 1.95 sec, min 1.24 sec)
+[2025.02.05-02.32.59:112][441]LogShaderCompilers: Display:                                 TBasePassVSFNoLightMapPolicy (compiled   25 times, average 1.57 sec, max 2.27 sec, min 0.77 sec)
+[2025.02.05-02.32.59:112][441]LogShaderCompilers: Display:                                             FDebugViewModePS (compiled   20 times, average 1.45 sec, max 2.42 sec, min 1.06 sec)
+[2025.02.05-02.32.59:112][441]LogShaderCompilers: Display: Top 5 shader types by total compile time:
+[2025.02.05-02.32.59:113][441]LogShaderCompilers: Display:                                 TBasePassVSFNoLightMapPolicy - 19.15% of total time (compiled   25 times, average 1.57 sec, max 2.27 sec, min 0.77 sec)
+[2025.02.05-02.32.59:113][441]LogShaderCompilers: Display:                                 TBasePassPSFNoLightMapPolicy - 15.31% of total time (compiled   23 times, average 1.37 sec, max 1.82 sec, min 0.99 sec)
+[2025.02.05-02.32.59:114][441]LogShaderCompilers: Display:                                             FDebugViewModePS - 14.14% of total time (compiled   20 times, average 1.45 sec, max 2.42 sec, min 1.06 sec)
+[2025.02.05-02.32.59:114][441]LogShaderCompilers: Display:                         TBasePassPSFNoLightMapPolicySkylight - 13.19% of total time (compiled   19 times, average 1.43 sec, max 1.93 sec, min 1.09 sec)
+[2025.02.05-02.32.59:115][441]LogShaderCompilers: Display:                                             FDebugViewModeVS - 10.83% of total time (compiled   20 times, average 1.11 sec, max 1.65 sec, min 0.71 sec)
+[2025.02.05-02.32.59:115][441]LogShaderCompilers: Display: ================================================
+[2025.02.05-02.33.57:567][238]LogInterchangeEngine: [Pending] Importing
+[2025.02.05-02.33.57:570][238]LogInterchangeEngine: Display: Interchange start importing source [C:/Users/pgmla/OneDrive/Escritorio/Microsoft_Flight_Simulator_VR_2-1.jpg]
+[2025.02.05-02.33.57:784][239]LogInterchangeImport: JPEG file [C:/Users/pgmla/OneDrive/Escritorio/Microsoft_Flight_Simulator_VR_2-1.jpg]: Pipeline setting 'bPreferCompressedSourceData' has been overridden by Editor setting 'RetainJpegFormat'
+[2025.02.05-02.33.57:809][239]LogInterchangeEngine: [Pending] Importing
+[2025.02.05-02.33.57:941][239]LogTexture: Display: Building textures: /Game/Assets/Microsoft_Flight_Simulator_VR_2-1.Microsoft_Flight_Simulator_VR_2-1 (TFO_AutoDXT, 1200x720 x1x1x1) (Required Memory Estimate: 138.666016 MB), EncodeSpeed: Fast
+[2025.02.05-02.33.58:232][240]LogInterchangeEngine: [Success] Import Done
+[2025.02.05-02.33.58:472][241]LogInterchangeEngine: [Success] Import Done
+[2025.02.05-02.34.02:049][265]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2025.02.05-02.34.02:509][265]LogSavePackage: Moving output files for package: /Game/Assets/Microsoft_Flight_Simulator_VR_2-1
+[2025.02.05-02.34.02:510][265]LogSavePackage: Moving '../../../../../../FlightSimulator-UE5/FlightSimulator/Saved/Microsoft_Flight_Simulator_VR_2-8FF06E914C735BDC5177E8B4B94EDFEE.tmp' to '../../../../../../FlightSimulator-UE5/FlightSimulator/Content/Assets/Microsoft_Flight_Simulator_VR_2-1.uasset'
+[2025.02.05-02.34.02:574][265]LogFileHelpers: InternalPromptForCheckoutAndSave took 525 ms (total: 1:02 min)
+[2025.02.05-02.34.02:586][265]AssetCheck: New page: Asset Save: Microsoft_Flight_Simulator_VR_2-1
+[2025.02.05-02.34.02:587][265]LogContentValidation: Display: Validating /Script/Engine.Texture2D /Game/Assets/Microsoft_Flight_Simulator_VR_2-1.Microsoft_Flight_Simulator_VR_2-1
+[2025.02.05-02.34.31:273][387]LogSlate: Vector cache flush requested. Reason: Large atlases out of space; 2/1 Textures; frames since last flush: 1095216782121
+[2025.02.05-02.34.31:273][387]LogSlate: Warning: Setting the threshold to trigger a flush to 2 non-atlased textures as there is a lot of font data being cached.
+[2025.02.05-02.35.20:788][625]LogInterchangeEngine: [Pending] Importing
+[2025.02.05-02.35.20:788][625]LogInterchangeEngine: Display: Interchange start importing source [C:/Users/pgmla/Downloads/Microsoft_Flight_Simulator_VR_2-1.png]
+[2025.02.05-02.35.20:904][625]LogTexture: Display: Building textures: /Game/Assets/Microsoft_Flight_Simulator_VR_2-1.Microsoft_Flight_Simulator_VR_2-1 (TFO_AutoDXT, 1200x720 x1x1x1) (Required Memory Estimate: 138.666016 MB), EncodeSpeed: Fast
+[2025.02.05-02.35.20:958][625]LogInterchangeEngine: [Success] Import Done
+[2025.02.05-02.35.21:198][626]LogInterchangeEngine: [Success] Import Done
+[2025.02.05-02.35.29:415][656]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2025.02.05-02.35.29:924][656]LogSavePackage: Moving output files for package: /Game/Assets/Microsoft_Flight_Simulator_VR_2-1
+[2025.02.05-02.35.29:926][656]LogSavePackage: Moving '../../../../../../FlightSimulator-UE5/FlightSimulator/Saved/Microsoft_Flight_Simulator_VR_2-28297F4D48F3F233236F3B87B51876B1.tmp' to '../../../../../../FlightSimulator-UE5/FlightSimulator/Content/Assets/Microsoft_Flight_Simulator_VR_2-1.uasset'
+[2025.02.05-02.35.29:960][656]LogFileHelpers: InternalPromptForCheckoutAndSave took 544 ms (total: 1:03 min)
+[2025.02.05-02.35.29:971][656]AssetCheck: New page: Asset Save: Microsoft_Flight_Simulator_VR_2-1
+[2025.02.05-02.35.29:972][656]LogContentValidation: Display: Validating /Script/Engine.Texture2D /Game/Assets/Microsoft_Flight_Simulator_VR_2-1.Microsoft_Flight_Simulator_VR_2-1
+[2025.02.05-02.35.58:302][ 55]LogEOSSDK: LogEOS: Updating Product SDK Config, Time: 6267.716797
+[2025.02.05-02.35.58:537][ 62]LogEOSSDK: LogEOS: SDK Config Product Update Request Completed - No Change
+[2025.02.05-02.35.58:537][ 62]LogEOSSDK: LogEOS: ScheduleNextSDKConfigDataUpdate - Time: 6267.933594, Update Interval: 311.742920
+[2025.02.05-02.37.32:520][ 77]LogUObjectHash: Compacting FUObjectHashTables data took  12.78ms
+[2025.02.05-02.37.41:293][ 77]LogTurnkeySupport: Selected target: FlightSimulator
+[2025.02.05-02.37.41:316][ 77]LogLauncherProfile: Unable to use promoted target - receipt ../../../../../../FlightSimulator-UE5/FlightSimulator/Binaries/Win64/FlightSimulator.target is not for a promoted target
+[2025.02.05-02.37.41:826][ 77]LogMonitoredProcess: Running Serialized UAT: [ cmd.exe /c ""C:/Program Files/Epic Games/UE_5.3/Engine/Build/BatchFiles/RunUAT.bat"  -ScriptsForProject="C:/FlightSimulator-UE5/FlightSimulator/FlightSimulator.uproject" Turnkey -command=VerifySdk -platform=Win64 -UpdateIfNeeded -EditorIO -EditorIOPort=60140  -project="C:/FlightSimulator-UE5/FlightSimulator/FlightSimulator.uproject" BuildCookRun -nop4 -utf8output -nocompileeditor -skipbuildeditor -cook  -project="C:/FlightSimulator-UE5/FlightSimulator/FlightSimulator.uproject" -target=FlightSimulator  -unrealexe="C:\Program Files\Epic Games\UE_5.3\Engine\Binaries\Win64\UnrealEditor-Cmd.exe" -platform=Win64 -installed -stage -archive -package -build -pak -iostore -compressed -prereqs -archivedirectory="C:/Users/pgmla/OneDrive/Escritorio/Flight-Simulator" -clientconfig=Development" -nocompile -nocompileuat ]
+[2025.02.05-02.37.42:090][ 77]UATHelper: Packaging (Windows): Running AutomationTool...
+[2025.02.05-02.37.42:871][105]UATHelper: Packaging (Windows): Using bundled DotNet SDK version: 6.0.302
+[2025.02.05-02.37.43:603][139]UATHelper: Packaging (Windows): Starting AutomationTool...
+[2025.02.05-02.37.43:713][144]UATHelper: Packaging (Windows): Parsing command line: -ScriptsForProject=C:/FlightSimulator-UE5/FlightSimulator/FlightSimulator.uproject Turnkey -command=VerifySdk -platform=Win64 -UpdateIfNeeded -EditorIO -EditorIOPort=60140 -project=C:/FlightSimulator-UE5/FlightSimulator/FlightSimulator.uproject BuildCookRun -nop4 -utf8output -nocompileeditor -skipbuildeditor -cook -project=C:/FlightSimulator-UE5/FlightSimulator/FlightSimulator.uproject -target=FlightSimulator -unrealexe="C:\Program Files\Epic Games\UE_5.3\Engine\Binaries\Win64\UnrealEditor-Cmd.exe" -platform=Win64 -installed -stage -archive -package -build -pak -iostore -compressed -prereqs -archivedirectory=C:/Users/pgmla/OneDrive/Escritorio/Flight-Simulator -clientconfig=Development -nocompile -nocompileuat
+[2025.02.05-02.37.44:242][169]UATHelper: Packaging (Windows): Initializing script modules...
+[2025.02.05-02.37.45:129][206]UATHelper: Packaging (Windows): Total script module initialization time: 0.88 s.
+[2025.02.05-02.37.47:091][296]UATHelper: Packaging (Windows): Executing commands...
+[2025.02.05-02.37.47:425][312]UATHelper: Packaging (Windows): Installed Sdk validity:
+[2025.02.05-02.37.47:437][312]UATHelper: Packaging (Windows): Win64: (Status=Valid, MinAllowed_Sdk=10.0.00000.0, MaxAllowed_Sdk=10.9.99999.0, Current_Sdk=10.0.18362.0, Allowed_AutoSdk=10.0.18362.0, Current_AutoSdk=, Flags="InstalledSdk_ValidVersionExists, Sdk_HasBestVersion")
+[2025.02.05-02.37.47:449][313]UATHelper: Packaging (Windows): Scanning for envvar changes...
+[2025.02.05-02.37.47:449][313]UATHelper: Packaging (Windows): ... done! 
+[2025.02.05-02.37.47:450][313]UATHelper: Packaging (Windows): Cleaning Temp Paths...
+[2025.02.05-02.37.47:451][313]UATHelper: Packaging (Windows): BUILD SUCCESSFUL
+[2025.02.05-02.37.47:483][315]UATHelper: Packaging (Windows): Setting up ProjectParams for C:\FlightSimulator-UE5\FlightSimulator\FlightSimulator.uproject
+[2025.02.05-02.37.56:736][739]UATHelper: Packaging (Windows): ********** BUILD COMMAND STARTED **********
+[2025.02.05-02.37.56:924][747]UATHelper: Packaging (Windows): Running: C:\Program Files\Epic Games\UE_5.3\Engine\Binaries\ThirdParty\DotNet\6.0.302\windows\dotnet.exe "C:\Program Files\Epic Games\UE_5.3\Engine\Binaries\DotNET\UnrealBuildTool\UnrealBuildTool.dll" FlightSimulator Win64 Development -Project=C:\FlightSimulator-UE5\FlightSimulator\FlightSimulator.uproject -Manifest=C:\FlightSimulator-UE5\FlightSimulator\Intermediate\Build\Manifest.xml  -remoteini="C:\FlightSimulator-UE5\FlightSimulator"  -skipdeploy  -log="C:\Users\pgmla\AppData\Roaming\Unreal Engine\AutomationTool\Logs\C+Program+Files+Epic+Games+UE_5.3\UBT-FlightSimulator-Win64-Development.txt"
+[2025.02.05-02.37.58:466][806]UATHelper: Packaging (Windows): Log file: C:\Users\pgmla\AppData\Roaming\Unreal Engine\AutomationTool\Logs\C+Program+Files+Epic+Games+UE_5.3\UBT-FlightSimulator-Win64-Development.txt
+[2025.02.05-02.37.59:310][837]UATHelper: Packaging (Windows): Using 'git status' to determine working set for adaptive non-unity build (C:\FlightSimulator-UE5).
+[2025.02.05-02.37.59:735][854]UATHelper: Packaging (Windows): Creating makefile for FlightSimulator (manifest 'C:\FlightSimulator-UE5\FlightSimulator\Intermediate\Build\Manifest.xml' not found)
+[2025.02.05-02.38.03:103][  3]UATHelper: Packaging (Windows): Parsing headers for FlightSimulator
+[2025.02.05-02.38.03:126][  4]UATHelper: Packaging (Windows):   Running Internal UnrealHeaderTool C:\FlightSimulator-UE5\FlightSimulator\FlightSimulator.uproject C:\FlightSimulator-UE5\FlightSimulator\Intermediate\Build\Win64\FlightSimulator\Development\FlightSimulator.uhtmanifest -WarningsAsErrors -installed
+[2025.02.05-02.38.08:914][226]UATHelper: Packaging (Windows): Total of 7 written
+[2025.02.05-02.38.08:926][226]UATHelper: Packaging (Windows): Reflection code generated for FlightSimulator in 5.8170475 seconds
+[2025.02.05-02.38.24:163][917]UATHelper: Packaging (Windows): Writing manifest to C:\FlightSimulator-UE5\FlightSimulator\Intermediate\Build\Manifest.xml
+[2025.02.05-02.38.24:880][947]UATHelper: Packaging (Windows): Building FlightSimulator...
+[2025.02.05-02.38.24:881][947]UATHelper: Packaging (Windows): Using Visual Studio 2022 14.36.32545 toolchain (C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.36.32532) and Windows 10.0.18362.0 SDK (C:\Program Files (x86)\Windows Kits\10).
+[2025.02.05-02.38.24:934][949]UATHelper: Packaging (Windows): Determining max actions to execute in parallel (16 physical cores, 32 logical cores)
+[2025.02.05-02.38.24:945][949]UATHelper: Packaging (Windows):   Executing up to 16 processes, one per physical core
+[2025.02.05-02.38.24:947][949]UATHelper: Packaging (Windows):   Requested 1.5 GB memory per action, 4.05 GB available: limiting max parallel actions to 2
+[2025.02.05-02.38.24:980][951]UATHelper: Packaging (Windows): ------ Building 20 action(s) started ------
+[2025.02.05-02.38.57:125][376]UATHelper: Packaging (Windows): [1/20] Compile [x64] GameInstanceFlightSimulator.cpp
+[2025.02.05-02.38.59:069][460]UATHelper: Packaging (Windows): [2/20] Compile [x64] AudioManager.gen.cpp
+[2025.02.05-02.39.01:019][540]UATHelper: Packaging (Windows): [3/20] Compile [x64] Gameplay_PlayerController.gen.cpp
+[2025.02.05-02.39.06:862][799]UATHelper: Packaging (Windows): [4/20] Compile [x64] FlightSimulator.init.gen.cpp
+[2025.02.05-02.39.11:952][ 20]UATHelper: Packaging (Windows): [5/20] Compile [x64] Flyer_Base.gen.cpp
+[2025.02.05-02.39.15:227][162]UATHelper: Packaging (Windows): [6/20] Compile [x64] AirplanePauseMenuWidget.gen.cpp
+[2025.02.05-02.39.19:714][352]UATHelper: Packaging (Windows): [7/20] Compile [x64] FlightSimulatorGameModeBase.cpp
+[2025.02.05-02.39.23:428][507]UATHelper: Packaging (Windows): [8/20] Compile [x64] PawnStaticCamera_PlaneSelector.cpp
+[2025.02.05-02.39.26:200][627]UATHelper: Packaging (Windows): [9/20] Compile [x64] Flyer_Base.cpp
+[2025.02.05-02.39.29:157][757]UATHelper: Packaging (Windows): [10/20] Compile [x64] Gameplay_PlayerController.cpp
+[2025.02.05-02.39.35:101][ 16]UATHelper: Packaging (Windows): [11/20] Compile [x64] AudioManager.cpp
+[2025.02.05-02.39.42:709][342]UATHelper: Packaging (Windows): [12/20] Compile [x64] GameInstanceFlightSimulator.gen.cpp
+[2025.02.05-02.39.51:538][726]UATHelper: Packaging (Windows): [13/20] Compile [x64] FlightSimulatorGameModeBase.gen.cpp
+[2025.02.05-02.39.55:005][867]UATHelper: Packaging (Windows): [14/20] Compile [x64] AirplaneSelectorWidget.cpp
+[2025.02.05-02.39.55:027][868]UATHelper: Packaging (Windows): C:\FlightSimulator-UE5\FlightSimulator\Source\FlightSimulator\Private\UI\AirplaneSelectorWidget.cpp(23): warning C4996: 'UTextBlock::Font': Direct access to Font is deprecated. Please use the getter or setter. Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile.
+[2025.02.05-02.39.55:028][868]UATHelper: Packaging (Windows): [15/20] Compile [x64] PlaneSelector_PlayerController.gen.cpp
+[2025.02.05-02.40.00:471][111]UATHelper: Packaging (Windows): [16/20] Compile [x64] AirplaneSelectorWidget.gen.cpp
+[2025.02.05-02.41.21:721][643]UATHelper: Packaging (Windows): [17/20] Compile [x64] PlaneSelector_PlayerController.cpp
+[2025.02.05-02.41.21:721][643]UATHelper: Packaging (Windows): [18/20] Compile [x64] AirplanePauseMenuWidget.cpp
+[2025.02.05-02.41.21:721][643]UATHelper: Packaging (Windows): C:\FlightSimulator-UE5\FlightSimulator\Source\FlightSimulator\Private\UI\AirplanePauseMenuWidget.cpp(19): warning C4996: 'UTextBlock::Font': Direct access to Font is deprecated. Please use the getter or setter. Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile.
+[2025.02.05-02.41.21:722][643]UATHelper: Packaging (Windows): [19/20] Link [x64] FlightSimulator.exe
+[2025.02.05-02.41.21:733][643]UATHelper: Packaging (Windows):    Creando biblioteca C:\FlightSimulator-UE5\FlightSimulator\Binaries\Win64\FlightSimulator.lib y objeto C:\FlightSimulator-UE5\FlightSimulator\Binaries\Win64\FlightSimulator.exp
+[2025.02.05-02.41.23:048][700]UATHelper: Packaging (Windows): [20/20] WriteMetadata FlightSimulator.target
+[2025.02.05-02.41.23:060][700]UATHelper: Packaging (Windows): Total time in Parallel executor: 178.10 seconds
+[2025.02.05-02.41.23:113][703]UATHelper: Packaging (Windows): Total execution time: 205.78 seconds
+[2025.02.05-02.41.23:188][705]UATHelper: Packaging (Windows): Took 206,38s to run dotnet.exe, ExitCode=0
+[2025.02.05-02.41.23:221][707]UATHelper: Packaging (Windows): Build command time: 206.49 s
+[2025.02.05-02.41.23:222][707]UATHelper: Packaging (Windows): ********** BUILD COMMAND COMPLETED **********
+[2025.02.05-02.41.23:232][707]UATHelper: Packaging (Windows): ********** COOK COMMAND STARTED **********
+[2025.02.05-02.41.23:266][709]UATHelper: Packaging (Windows): Running UnrealEditor Cook for project C:\FlightSimulator-UE5\FlightSimulator\FlightSimulator.uproject
+[2025.02.05-02.41.23:278][709]UATHelper: Packaging (Windows): Commandlet log file is C:\Program Files\Epic Games\UE_5.3\Engine\Programs\AutomationTool\Saved\Cook-2025.02.05-03.41.23.txt
+[2025.02.05-02.41.23:279][709]UATHelper: Packaging (Windows): Running: C:\Program Files\Epic Games\UE_5.3\Engine\Binaries\Win64\UnrealEditor-Cmd.exe "C:\FlightSimulator-UE5\FlightSimulator\FlightSimulator.uproject" -run=Cook  -TargetPlatform=Windows  -unversioned -fileopenlog -abslog="C:\Program Files\Epic Games\UE_5.3\Engine\Programs\AutomationTool\Saved\Cook-2025.02.05-03.41.23.txt" -stdout -CrashForUAT -unattended -NoLogTimes  -UTF8Output
+[2025.02.05-02.41.26:965][864]UATHelper: Packaging (Windows): LogInit: Display: Running engine for game: FlightSimulator
+[2025.02.05-02.41.26:965][864]UATHelper: Packaging (Windows): LogCore: Display: Requested channels: 'cpu,gpu,frame,log,bookmark,screenshot,region'
+[2025.02.05-02.41.26:966][864]UATHelper: Packaging (Windows): LogCsvProfiler: Display: Metadata set : platform="Windows"
+[2025.02.05-02.41.26:967][864]UATHelper: Packaging (Windows): LogCsvProfiler: Display: Metadata set : config="Development"
+[2025.02.05-02.41.26:967][864]UATHelper: Packaging (Windows): LogCsvProfiler: Display: Metadata set : buildversion="++UE5+Release-5.3-CL-29314046"
+[2025.02.05-02.41.26:968][864]UATHelper: Packaging (Windows): LogCsvProfiler: Display: Metadata set : engineversion="5.3.2-29314046+++UE5+Release-5.3"
+[2025.02.05-02.41.26:968][864]UATHelper: Packaging (Windows): LogCsvProfiler: Display: Metadata set : os="Windows 11 (24H2) [10.0.26100.3037] "
+[2025.02.05-02.41.26:968][864]UATHelper: Packaging (Windows): LogCsvProfiler: Display: Metadata set : cpu="AuthenticAMD|AMD Ryzen 9 7945HX with Radeon Graphics"
+[2025.02.05-02.41.26:969][864]UATHelper: Packaging (Windows): LogCsvProfiler: Display: Metadata set : pgoenabled="0"
+[2025.02.05-02.41.26:969][864]UATHelper: Packaging (Windows): LogCsvProfiler: Display: Metadata set : pgoprofilingenabled="0"
+[2025.02.05-02.41.26:970][864]UATHelper: Packaging (Windows): LogCsvProfiler: Display: Metadata set : ltoenabled="0"
+[2025.02.05-02.41.26:970][864]UATHelper: Packaging (Windows): LogCsvProfiler: Display: Metadata set : asan="0"
+[2025.02.05-02.41.26:971][864]UATHelper: Packaging (Windows): LogCsvProfiler: Display: Metadata set : commandline="" C:\FlightSimulator-UE5\FlightSimulator\FlightSimulator.uproject -run=Cook -TargetPlatform=Windows -unversioned -fileopenlog -abslog="C:\Program Files\Epic Games\UE_5.3\Engine\Programs\AutomationTool\Saved\Cook-2025.02.05-03.41.23.txt" -stdout -CrashForUAT -unattended -NoLogTimes -UTF8Output""
+[2025.02.05-02.41.26:982][865]UATHelper: Packaging (Windows): LogCsvProfiler: Display: Metadata set : loginid="9c3deb8b44cf2dbd385898898f5b5e75"
+[2025.02.05-02.41.28:671][933]UATHelper: Packaging (Windows): LogCsvProfiler: Display: Metadata set : llm="0"
+[2025.02.05-02.41.28:672][933]UATHelper: Packaging (Windows): LogConfig: Display: Loading VulkanPC ini files took 0.19 seconds
+[2025.02.05-02.41.28:683][934]UATHelper: Packaging (Windows): LogConfig: Display: Loading Mac ini files took 0.19 seconds
+[2025.02.05-02.41.28:684][934]UATHelper: Packaging (Windows): LogConfig: Display: Loading Unix ini files took 0.22 seconds
+[2025.02.05-02.41.28:684][934]UATHelper: Packaging (Windows): LogConfig: Display: Loading IOS ini files took 0.24 seconds
+[2025.02.05-02.41.28:685][934]UATHelper: Packaging (Windows): LogConfig: Display: Loading TVOS ini files took 0.25 seconds
+[2025.02.05-02.41.28:685][934]UATHelper: Packaging (Windows): LogConfig: Display: Loading Windows ini files took 0.26 seconds
+[2025.02.05-02.41.28:686][934]UATHelper: Packaging (Windows): LogConfig: Display: Loading Android ini files took 0.27 seconds
+[2025.02.05-02.41.28:686][934]UATHelper: Packaging (Windows): LogConfig: Display: Loading Linux ini files took 0.28 seconds
+[2025.02.05-02.41.28:686][934]UATHelper: Packaging (Windows): LogConfig: Display: Loading LinuxArm64 ini files took 0.30 seconds
+[2025.02.05-02.41.30:602][ 16]UATHelper: Packaging (Windows): LogAssetRegistry: Display: Asset registry cache read as 25.2 MiB from ../../../../../../FlightSimulator-UE5/FlightSimulator/Intermediate/CachedAssetRegistry_0.bin
+[2025.02.05-02.41.30:603][ 16]UATHelper: Packaging (Windows): LogPackageName: Display: FPackageName: Mount point added: '../../Plugins/Fab/Content/' mounted to '/Fab/'
+[2025.02.05-02.41.30:603][ 16]UATHelper: Packaging (Windows): LogPackageName: Display: FPackageName: Mount point added: '../../Plugins/TraceUtilities/Content/' mounted to '/TraceUtilities/'
+[2025.02.05-02.41.30:604][ 16]UATHelper: Packaging (Windows): LogPackageName: Display: FPackageName: Mount point added: '../../Plugins/Bridge/Content/' mounted to '/Bridge/'
+[2025.02.05-02.41.30:604][ 16]UATHelper: Packaging (Windows): LogPackageName: Display: FPackageName: Mount point added: '../../Plugins/2D/Paper2D/Content/' mounted to '/Paper2D/'
+[2025.02.05-02.41.30:605][ 16]UATHelper: Packaging (Windows): LogPackageName: Display: FPackageName: Mount point added: '../../Plugins/Editor/BlueprintHeaderView/Content/' mounted to '/BlueprintHeaderView/'
+[2025.02.05-02.41.30:605][ 16]UATHelper: Packaging (Windows): LogPackageName: Display: FPackageName: Mount point added: '../../Plugins/Editor/SpeedTreeImporter/Content/' mounted to '/SpeedTreeImporter/'
+[2025.02.05-02.41.30:606][ 16]UATHelper: Packaging (Windows): LogPackageName: Display: FPackageName: Mount point added: '../../Plugins/Editor/UVEditor/Content/' mounted to '/UVEditor/'
+[2025.02.05-02.41.30:616][ 16]UATHelper: Packaging (Windows): LogPackageName: Display: FPackageName: Mount point added: '../../Plugins/Developer/AnimationSharing/Content/' mounted to '/AnimationSharing/'
+[2025.02.05-02.41.30:616][ 16]UATHelper: Packaging (Windows): LogPackageName: Display: FPackageName: Mount point added: '../../Plugins/Editor/GeometryMode/Content/' mounted to '/GeometryMode/'
+[2025.02.05-02.41.30:618][ 16]UATHelper: Packaging (Windows): LogPackageName: Display: FPackageName: Mount point added: '../../Plugins/Editor/ModelingToolsEditorMode/Content/' mounted to '/ModelingToolsEditorMode/'
+[2025.02.05-02.41.30:619][ 16]UATHelper: Packaging (Windows): LogPackageName: Display: FPackageName: Mount point added: '../../Plugins/Animation/ControlRigSpline/Content/' mounted to '/ControlRigSpline/'
+[2025.02.05-02.41.30:619][ 16]UATHelper: Packaging (Windows): LogPackageName: Display: FPackageName: Mount point added: '../../Plugins/Animation/IKRig/Content/' mounted to '/IKRig/'
+[2025.02.05-02.41.30:620][ 16]UATHelper: Packaging (Windows): LogPackageName: Display: FPackageName: Mount point added: '../../Plugins/Animation/ACLPlugin/Content/' mounted to '/ACLPlugin/'
+[2025.02.05-02.41.30:620][ 16]UATHelper: Packaging (Windows): LogPackageName: Display: FPackageName: Mount point added: '../../Plugins/Animation/ControlRig/Content/' mounted to '/ControlRig/'
+[2025.02.05-02.41.30:621][ 16]UATHelper: Packaging (Windows): LogPackageName: Display: FPackageName: Mount point added: '../../Plugins/FX/Niagara/Content/' mounted to '/Niagara/'
+[2025.02.05-02.41.30:621][ 16]UATHelper: Packaging (Windows): LogPackageName: Display: FPackageName: Mount point added: '../../Plugins/Enterprise/DatasmithContent/Content/' mounted to '/DatasmithContent/'
+[2025.02.05-02.41.30:622][ 16]UATHelper: Packaging (Windows): LogPackageName: Display: FPackageName: Mount point added: '../../Plugins/Enterprise/GLTFExporter/Content/' mounted to '/GLTFExporter/'
+[2025.02.05-02.41.30:622][ 16]UATHelper: Packaging (Windows): LogPackageName: Display: FPackageName: Mount point added: '../../Plugins/VirtualProduction/Takes/Content/' mounted to '/Takes/'
+[2025.02.05-02.41.30:623][ 16]UATHelper: Packaging (Windows): LogPackageName: Display: FPackageName: Mount point added: '../../Plugins/Experimental/ChaosCaching/Content/' mounted to '/ChaosCaching/'
+[2025.02.05-02.41.30:623][ 16]UATHelper: Packaging (Windows): LogPackageName: Display: FPackageName: Mount point added: '../../Plugins/Experimental/ChaosClothEditor/Content/' mounted to '/ChaosClothEditor/'
+[2025.02.05-02.41.30:624][ 16]UATHelper: Packaging (Windows): LogPackageName: Display: FPackageName: Mount point added: '../../Plugins/Experimental/ChaosSolverPlugin/Content/' mounted to '/ChaosSolverPlugin/'
+[2025.02.05-02.41.30:624][ 16]UATHelper: Packaging (Windows): LogPackageName: Display: FPackageName: Mount point added: '../../Plugins/Experimental/ChaosNiagara/Content/' mounted to '/ChaosNiagara/'
+[2025.02.05-02.41.30:625][ 16]UATHelper: Packaging (Windows): LogPackageName: Display: FPackageName: Mount point added: '../../Plugins/Experimental/Dataflow/Content/' mounted to '/Dataflow/'
+[2025.02.05-02.41.30:625][ 16]UATHelper: Packaging (Windows): LogPackageName: Display: FPackageName: Mount point added: '../../Plugins/Experimental/FullBodyIK/Content/' mounted to '/FullBodyIK/'
+[2025.02.05-02.41.30:626][ 16]UATHelper: Packaging (Windows): LogPackageName: Display: FPackageName: Mount point added: '../../Plugins/Experimental/GeometryCollectionPlugin/Content/' mounted to '/GeometryCollectionPlugin/'
+[2025.02.05-02.41.30:626][ 16]UATHelper: Packaging (Windows): LogPackageName: Display: FPackageName: Mount point added: '../../Plugins/Experimental/Landmass/Content/' mounted to '/Landmass/'
+[2025.02.05-02.41.30:627][ 16]UATHelper: Packaging (Windows): LogPackageName: Display: FPackageName: Mount point added: '../../Plugins/Experimental/GeometryFlow/Content/' mounted to '/GeometryFlow/'
+[2025.02.05-02.41.30:638][ 17]UATHelper: Packaging (Windows): LogPackageName: Display: FPackageName: Mount point added: '../../Plugins/Experimental/MeshLODToolset/Content/' mounted to '/MeshLODToolset/'
+[2025.02.05-02.41.30:639][ 17]UATHelper: Packaging (Windows): LogPackageName: Display: FPackageName: Mount point added: '../../Plugins/Experimental/MeshModelingToolsetExp/Content/' mounted to '/MeshModelingToolsetExp/'
+[2025.02.05-02.41.30:639][ 17]UATHelper: Packaging (Windows): LogPackageName: Display: FPackageName: Mount point added: '../../Plugins/Experimental/PythonScriptPlugin/Content/' mounted to '/PythonScriptPlugin/'
+[2025.02.05-02.41.30:640][ 17]UATHelper: Packaging (Windows): LogPackageName: Display: FPackageName: Mount point added: '../../Plugins/Experimental/ToolPresets/Content/' mounted to '/ToolPresets/'
+[2025.02.05-02.41.30:640][ 17]UATHelper: Packaging (Windows): LogPackageName: Display: FPackageName: Mount point added: '../../Plugins/Experimental/Water/Content/' mounted to '/Water/'
+[2025.02.05-02.41.30:641][ 17]UATHelper: Packaging (Windows): LogPackageName: Display: FPackageName: Mount point added: '../../Plugins/Interchange/Runtime/Content/' mounted to '/Interchange/'
+[2025.02.05-02.41.30:641][ 17]UATHelper: Packaging (Windows): LogPackageName: Display: FPackageName: Mount point added: '../../Plugins/MovieScene/SequencerScripting/Content/' mounted to '/SequencerScripting/'
+[2025.02.05-02.41.30:642][ 17]UATHelper: Packaging (Windows): LogPackageName: Display: FPackageName: Mount point added: '../../Plugins/Runtime/AudioWidgets/Content/' mounted to '/AudioWidgets/'
+[2025.02.05-02.41.30:642][ 17]UATHelper: Packaging (Windows): LogPackageName: Display: FPackageName: Mount point added: '../../Plugins/Runtime/AudioSynesthesia/Content/' mounted to '/AudioSynesthesia/'
+[2025.02.05-02.41.30:643][ 17]UATHelper: Packaging (Windows): LogPackageName: Display: FPackageName: Mount point added: '../../Plugins/Runtime/GeometryProcessing/Content/' mounted to '/GeometryProcessing/'
+[2025.02.05-02.41.30:643][ 17]UATHelper: Packaging (Windows): LogPackageName: Display: FPackageName: Mount point added: '../../Plugins/Runtime/GeoReferencing/Content/' mounted to '/GeoReferencing/'
+[2025.02.05-02.41.30:643][ 17]UATHelper: Packaging (Windows): LogPackageName: Display: FPackageName: Mount point added: '../../Plugins/Runtime/MeshModelingToolset/Content/' mounted to '/MeshModelingToolset/'
+[2025.02.05-02.41.30:644][ 17]UATHelper: Packaging (Windows): LogPackageName: Display: FPackageName: Mount point added: '../../Plugins/Runtime/Metasound/Content/' mounted to '/Metasound/'
+[2025.02.05-02.41.30:644][ 17]UATHelper: Packaging (Windows): LogPackageName: Display: FPackageName: Mount point added: '../../Plugins/Runtime/ResonanceAudio/Content/' mounted to '/ResonanceAudio/'
+[2025.02.05-02.41.30:645][ 17]UATHelper: Packaging (Windows): LogPackageName: Display: FPackageName: Mount point added: '../../Plugins/Runtime/RigVM/Content/' mounted to '/RigVM/'
+[2025.02.05-02.41.30:645][ 17]UATHelper: Packaging (Windows): LogPackageName: Display: FPackageName: Mount point added: '../../Plugins/Runtime/SunPosition/Content/' mounted to '/SunPosition/'
+[2025.02.05-02.41.30:646][ 17]UATHelper: Packaging (Windows): LogPackageName: Display: FPackageName: Mount point added: '../../Plugins/Runtime/Synthesis/Content/' mounted to '/Synthesis/'
+[2025.02.05-02.41.30:656][ 17]UATHelper: Packaging (Windows): LogPackageName: Display: FPackageName: Mount point added: '../../Plugins/Runtime/WaveTable/Content/' mounted to '/WaveTable/'
+[2025.02.05-02.41.30:656][ 17]UATHelper: Packaging (Windows): LogPackageName: Display: FPackageName: Mount point added: '../../Plugins/Marketplace/CesiumForUnreal_5.3/Content/' mounted to '/CesiumForUnreal/'
+[2025.02.05-02.41.30:658][ 17]UATHelper: Packaging (Windows): LogPackageName: Display: FPackageName: Mount point added: '../../Plugins/Media/MediaCompositing/Content/' mounted to '/MediaCompositing/'
+[2025.02.05-02.41.30:658][ 17]UATHelper: Packaging (Windows): LogPackageName: Display: FPackageName: Mount point added: '../../Plugins/Media/MediaPlate/Content/' mounted to '/MediaPlate/'
+[2025.02.05-02.41.30:659][ 17]UATHelper: Packaging (Windows): LogPackageName: Display: FPackageName: Mount point added: '../../Plugins/Editor/ObjectMixer/LightMixer/Content/' mounted to '/LightMixer/'
+[2025.02.05-02.41.36:654][278]UATHelper: Packaging (Windows): LogPackageName: Display: FPackageName: Mount point added: '../../Plugins/Editor/ObjectMixer/ObjectMixer/Content/' mounted to '/ObjectMixer/'
+[2025.02.05-02.41.38:338][353]UATHelper: Packaging (Windows): RenderDocPlugin: Display: RenderDoc plugin will not be loaded. Use '-AttachRenderDoc' on the cmd line or enable 'renderdoc.AutoAttach' in the plugin settings.
+[2025.02.05-02.41.38:339][353]UATHelper: Packaging (Windows): LogHAL: Display: Platform has ~ 32 GB [33479311360 / 34359738368 / 32], which maps to Largest [LargestMinGB=32, LargerMinGB=12, DefaultMinGB=8, SmallerMinGB=6, SmallestMinGB=0)
+[2025.02.05-02.41.39:000][385]UATHelper: Packaging (Windows): LogCsvProfiler: Display: Metadata set : extradevelopmentmemorymb="0"
+[2025.02.05-02.41.39:001][385]UATHelper: Packaging (Windows): LogTextureFormatManager: Display: Loaded Base TextureFormat: TextureFormatASTC
+[2025.02.05-02.41.39:002][385]UATHelper: Packaging (Windows): LogTextureFormatManager: Display: Loaded Base TextureFormat: TextureFormatDXT
+[2025.02.05-02.41.39:012][385]UATHelper: Packaging (Windows): LogTextureFormatManager: Display: Loaded Base TextureFormat: TextureFormatETC2
+[2025.02.05-02.41.39:013][385]UATHelper: Packaging (Windows): LogTextureFormatManager: Display: Loaded Base TextureFormat: TextureFormatIntelISPCTexComp
+[2025.02.05-02.41.39:013][385]UATHelper: Packaging (Windows): LogTextureFormatManager: Display: Loaded Base TextureFormat: TextureFormatUncompressed
+[2025.02.05-02.41.39:014][385]UATHelper: Packaging (Windows): LogTextureFormatOodle: Display: Oodle Texture TFO init; latest sdk version = 2.9.10
+[2025.02.05-02.41.39:014][385]UATHelper: Packaging (Windows): LogTextureFormatOodle: Display: Oodle Texture loading DLL: oo2tex_win64_2.9.5.dll
+[2025.02.05-02.41.39:015][385]UATHelper: Packaging (Windows): LogTextureFormatOodle: Display: Oodle Texture loading DLL: oo2tex_win64_2.9.6.dll
+[2025.02.05-02.41.39:015][385]UATHelper: Packaging (Windows): LogTextureFormatOodle: Display: Oodle Texture loading DLL: oo2tex_win64_2.9.7.dll
+[2025.02.05-02.41.39:016][385]UATHelper: Packaging (Windows): LogTextureFormatOodle: Display: Oodle Texture loading DLL: oo2tex_win64_2.9.8.dll
+[2025.02.05-02.41.39:026][385]UATHelper: Packaging (Windows): LogTextureFormatOodle: Display: Oodle Texture loading DLL: oo2tex_win64_2.9.9.dll
+[2025.02.05-02.41.39:026][385]UATHelper: Packaging (Windows): LogTextureFormatOodle: Display: Oodle Texture loading DLL: oo2tex_win64_2.9.10.dll
+[2025.02.05-02.41.39:143][390]UATHelper: Packaging (Windows): LogTextureFormatManager: Display: Loaded Base TextureFormat: TextureFormatOodle
+[2025.02.05-02.41.39:144][390]UATHelper: Packaging (Windows): LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android'
+[2025.02.05-02.41.39:144][390]UATHelper: Packaging (Windows): LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ASTC'
+[2025.02.05-02.41.39:145][390]UATHelper: Packaging (Windows): LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_DXT'
+[2025.02.05-02.41.39:145][390]UATHelper: Packaging (Windows): LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ETC2'
+[2025.02.05-02.41.39:146][390]UATHelper: Packaging (Windows): LogTargetPlatformManager: Display: Loaded TargetPlatform 'AndroidClient'
+[2025.02.05-02.41.39:146][390]UATHelper: Packaging (Windows): LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ASTCClient'
+[2025.02.05-02.41.39:147][390]UATHelper: Packaging (Windows): LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_DXTClient'
+[2025.02.05-02.41.39:147][390]UATHelper: Packaging (Windows): LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ETC2Client'
+[2025.02.05-02.41.39:148][390]UATHelper: Packaging (Windows): LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_Multi'
+[2025.02.05-02.41.39:169][391]UATHelper: Packaging (Windows): LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_MultiClient'
+[2025.02.05-02.41.39:170][391]UATHelper: Packaging (Windows): LogTargetPlatformManager: Display: Loaded TargetPlatform 'IOS'
+[2025.02.05-02.41.39:192][392]UATHelper: Packaging (Windows): LogTargetPlatformManager: Display: Loaded TargetPlatform 'IOSClient'
+[2025.02.05-02.41.39:193][392]UATHelper: Packaging (Windows): LogTargetPlatformManager: Display: Loaded TargetPlatform 'Linux'
+[2025.02.05-02.41.39:193][392]UATHelper: Packaging (Windows): LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxEditor'
+[2025.02.05-02.41.39:194][392]UATHelper: Packaging (Windows): LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxServer'
+[2025.02.05-02.41.39:215][393]UATHelper: Packaging (Windows): LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxClient'
+[2025.02.05-02.41.39:216][393]UATHelper: Packaging (Windows): LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxArm64'
+[2025.02.05-02.41.39:216][393]UATHelper: Packaging (Windows): LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxArm64Server'
+[2025.02.05-02.41.39:228][394]UATHelper: Packaging (Windows): LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxArm64Client'
+[2025.02.05-02.41.39:240][394]UATHelper: Packaging (Windows): LogTargetPlatformManager: Display: Loaded TargetPlatform 'Mac'
+[2025.02.05-02.41.39:241][394]UATHelper: Packaging (Windows): LogTargetPlatformManager: Display: Loaded TargetPlatform 'MacEditor'
+[2025.02.05-02.41.39:241][394]UATHelper: Packaging (Windows): LogTargetPlatformManager: Display: Loaded TargetPlatform 'MacServer'
+[2025.02.05-02.41.39:253][395]UATHelper: Packaging (Windows): LogTargetPlatformManager: Display: Loaded TargetPlatform 'MacClient'
+[2025.02.05-02.41.39:253][395]UATHelper: Packaging (Windows): LogTargetPlatformManager: Display: Loaded TargetPlatform 'TVOS'
+[2025.02.05-02.41.39:308][397]UATHelper: Packaging (Windows): LogTargetPlatformManager: Display: Loaded TargetPlatform 'TVOSClient'
+[2025.02.05-02.41.39:308][397]UATHelper: Packaging (Windows): LogTargetPlatformManager: Display: Loaded TargetPlatform 'Windows'
+[2025.02.05-02.41.39:308][397]UATHelper: Packaging (Windows): LogTargetPlatformManager: Display: Loaded TargetPlatform 'WindowsEditor'
+[2025.02.05-02.41.39:309][397]UATHelper: Packaging (Windows): LogTargetPlatformManager: Display: Loaded TargetPlatform 'WindowsServer'
+[2025.02.05-02.41.39:309][397]UATHelper: Packaging (Windows): LogTargetPlatformManager: Display: Loaded TargetPlatform 'WindowsClient'
+[2025.02.05-02.41.39:353][399]UATHelper: Packaging (Windows): LogTargetPlatformManager: Display: Building Assets For Windows
+[2025.02.05-02.42.04:577][450]UATHelper: Packaging (Windows): LogAudioDebug: Display: Lib vorbis DLL was dynamically loaded.
+[2025.02.05-02.42.04:929][466]UATHelper: Packaging (Windows): LogDerivedDataCache: Display: Memory: Max Cache Size: -1 MB
+[2025.02.05-02.42.05:429][488]UATHelper: Packaging (Windows): LogDerivedDataCache: Display: ../../../Engine/DerivedDataCache/Compressed.ddp: Opened pak cache for reading. (2383 MiB)
+[2025.02.05-02.42.05:441][488]UATHelper: Packaging (Windows): LogDerivedDataCache: Display: C:/Users/pgmla/AppData/Local/UnrealEngine/Common/DerivedDataCache: Performance: Latency=0.48ms. RandomReadSpeed=2.01MBs, RandomWriteSpeed=30.10MBs. Assigned SpeedClass 'Local'
+[2025.02.05-02.42.07:554][579]LogEOSSDK: LogEOS: Updating Product SDK Config, Time: 6636.954102
+[2025.02.05-02.42.07:722][587]LogEOSSDK: LogEOS: SDK Config Product Update Request Completed - No Change
+[2025.02.05-02.42.07:723][587]LogEOSSDK: LogEOS: ScheduleNextSDKConfigDataUpdate - Time: 6637.099121, Update Interval: 351.492676
+[2025.02.05-02.42.47:552][312]UATHelper: Packaging (Windows): LogShaderCompilers: Display: Using Local Shader Compiler with 29 workers.
+[2025.02.05-02.42.47:552][312]UATHelper: Packaging (Windows): LogShaderCompilers: Display: Compiling shader autogen file: ../../../../../../FlightSimulator-UE5/FlightSimulator/Intermediate/ShaderAutogen/PCD3D_SM5/AutogenShaderHeaders.ush
+[2025.02.05-02.42.47:586][314]UATHelper: Packaging (Windows): LogShaderCompilers: Display: Autogen file is unchanged, skipping write.
+[2025.02.05-02.42.47:661][316]UATHelper: Packaging (Windows): LogAssetRegistry: Display: AssetDataGatherer spent 0.003s loading caches ../../../../../../FlightSimulator-UE5/FlightSimulator/Intermediate/CachedAssetRegistry_*.bin.
+[2025.02.05-02.42.49:010][374]UATHelper: Packaging (Windows): LogEditorDomain: Display: EditorDomain is Disabled
+[2025.02.05-02.42.49:011][374]UATHelper: Packaging (Windows): LogDeviceProfileManager: Display: Deviceprofile LinuxArm64Editor not found.
+[2025.02.05-02.42.50:839][454]UATHelper: Packaging (Windows): LogDeviceProfileManager: Display: Deviceprofile LinuxArm64 not found.
+[2025.02.05-02.42.50:840][454]UATHelper: Packaging (Windows): LogCsvProfiler: Display: Metadata set : deviceprofile="WindowsEditor"
+[2025.02.05-02.42.50:841][454]UATHelper: Packaging (Windows): LogShaderCompilers: Display: Compiling shader autogen file: ../../../../../../FlightSimulator-UE5/FlightSimulator/Intermediate/ShaderAutogen/PCD3D_SM6/AutogenShaderHeaders.ush
+[2025.02.05-02.42.51:002][461]UATHelper: Packaging (Windows): LogShaderCompilers: Display: Autogen file is unchanged, skipping write.
+[2025.02.05-02.42.51:012][462]UATHelper: Packaging (Windows): LogTextureEncodingSettings: Display: Texture Encode Speed: Final (cook).
+[2025.02.05-02.42.51:012][462]UATHelper: Packaging (Windows): LogTextureEncodingSettings: Display: Oodle Texture Encode Speed settings: Fast: RDO Off Lambda=0, Effort=Normal Final: RDO Off Lambda=0, Effort=Normal
+[2025.02.05-02.42.51:321][475]UATHelper: Packaging (Windows): LogTextureEncodingSettings: Display: Shared linear texture encoding: Disabled
+[2025.02.05-02.42.51:333][476]UATHelper: Packaging (Windows): LogMeshReduction: Display: Using QuadricMeshReduction for automatic static mesh reduction
+[2025.02.05-02.42.51:334][476]UATHelper: Packaging (Windows): LogMeshReduction: Display: Using SkeletalMeshReduction for automatic skeletal mesh reduction
+[2025.02.05-02.42.51:334][476]UATHelper: Packaging (Windows): LogMeshReduction: Display: Using ProxyLODMeshReduction for automatic mesh merging
+[2025.02.05-02.42.53:959][590]UATHelper: Packaging (Windows): LogMeshReduction: Display: No distributed automatic mesh merging module available
+[2025.02.05-02.42.53:960][590]UATHelper: Packaging (Windows): LogVirtualization: Display: VirtualizationSystem name found in ini file: None
+[2025.02.05-02.42.55:119][639]UATHelper: Packaging (Windows): LogVirtualization: Display: FNullVirtualizationSystem mounted, virtualization will be disabled
+[2025.02.05-02.42.55:131][640]UATHelper: Packaging (Windows): LogWorldPartition: Display: FWorldPartitionClassDescRegistry::Initialize started...
+[2025.02.05-02.43.06:655][140]UATHelper: Packaging (Windows): LogWorldPartition: Display: FWorldPartitionClassDescRegistry::Initialize took 14 ms
+[2025.02.05-02.43.12:978][412]UATHelper: Packaging (Windows): LogAudio: Display: Registering Engine Module Parameter Interfaces...
+[2025.02.05-02.43.12:978][412]UATHelper: Packaging (Windows): LogAudioCaptureCore: Display: No Audio Capture implementations found. Audio input will be silent.
+[2025.02.05-02.43.15:482][524]UATHelper: Packaging (Windows): LogAudioCaptureCore: Display: No Audio Capture implementations found. Audio input will be silent.
+[2025.02.05-02.43.17:131][595]UATHelper: Packaging (Windows): LogCsvProfiler: Display: Metadata set : largeworldcoordinates="1"
+[2025.02.05-02.43.17:132][595]UATHelper: Packaging (Windows): LogCook: Display: CookProcessCount=1. CookMultiprocess is disabled and the cooker is running as a single process.
+[2025.02.05-02.43.17:186][597]UATHelper: Packaging (Windows): LogCook: Display: CookSettings for Memory:
+[2025.02.05-02.43.17:188][597]UATHelper: Packaging (Windows): 	MemoryMaxUsedVirtual 0MiB
+[2025.02.05-02.43.17:188][597]UATHelper: Packaging (Windows): 	MemoryMaxUsedPhysical 0MiB
+[2025.02.05-02.43.17:189][597]UATHelper: Packaging (Windows): 	MemoryMinFreeVirtual 2048MiB
+[2025.02.05-02.43.17:189][597]UATHelper: Packaging (Windows): 	MemoryMinFreePhysical 2048MiB
+[2025.02.05-02.43.17:190][597]UATHelper: Packaging (Windows): 	MemoryTriggerGCAtPressureLevel None
+[2025.02.05-02.43.17:190][597]UATHelper: Packaging (Windows): 	UseSoftGC true (5/10)
+[2025.02.05-02.43.17:615][615]UATHelper: Packaging (Windows): LogAssetRegistry: Display: Triggering cache save on discovery complete
+[2025.02.05-02.43.17:701][618]UATHelper: Packaging (Windows): LogCook: Display: Waiting for Asset Registry
+[2025.02.05-02.43.17:831][624]UATHelper: Packaging (Windows): LogAssetRegistry: Display: Asset registry cache written as 0.0 MiB to ../../../../../../FlightSimulator-UE5/FlightSimulator/Intermediate/CachedAssetRegistry_*.bin
+[2025.02.05-02.43.18:629][658]UATHelper: Packaging (Windows): LogCook: Display: Clearing all cooked content for platform Windows
+[2025.02.05-02.43.18:629][658]UATHelper: Packaging (Windows): LogCook: Display: Sandbox cleanup took 0.471 seconds for platforms Windows
+[2025.02.05-02.43.56:573][231]UATHelper: Packaging (Windows): LogCook: Display: Compiling global changed shaders for platform 'Windows'
+[2025.02.05-02.43.56:574][231]UATHelper: Packaging (Windows): LogShaderLibrary: Display:
+[2025.02.05-02.43.56:574][231]UATHelper: Packaging (Windows): LogShaderLibrary: Display: Shader Library 'Global' (PCD3D_SM6-PCD3D_SM6) Stats:
+[2025.02.05-02.43.56:595][232]UATHelper: Packaging (Windows): LogShaderLibrary: Display: =================
+[2025.02.05-02.43.56:596][232]UATHelper: Packaging (Windows): LogShaderLibrary: Display: Assets: 1, Unique Shadermaps: 327 (32700.00%)
+[2025.02.05-02.43.56:597][232]UATHelper: Packaging (Windows): LogShaderLibrary: Display: Total Shaders: 4157, Unique Shaders: 4157 (100.00%)
+[2025.02.05-02.43.56:597][232]UATHelper: Packaging (Windows): LogShaderLibrary: Display: Total Shader Size: 73.50mb, Unique Shaders Size: 73.50mb (100.00%)
+[2025.02.05-02.43.56:597][232]UATHelper: Packaging (Windows): LogShaderLibrary: Display: === Extended info:
+[2025.02.05-02.43.56:599][232]UATHelper: Packaging (Windows): LogShaderLibrary: Display: Minimum number of shaders in shadermap: 1
+[2025.02.05-02.43.56:610][232]UATHelper: Packaging (Windows): LogShaderLibrary: Display: Median number of shaders in shadermap: 3
+[2025.02.05-02.43.56:611][232]UATHelper: Packaging (Windows): LogShaderLibrary: Display: Maximum number of shaders in shadermap: 264
+[2025.02.05-02.43.56:611][232]UATHelper: Packaging (Windows): LogShaderLibrary: Display: Number of shadermaps referencing top 10 most shared shaders:
+[2025.02.05-02.43.56:634][233]UATHelper: Packaging (Windows): LogShaderLibrary: Display:     1, 1, 1, 1, 1, 1, 1, 1, 1, 1
+[2025.02.05-02.43.56:634][233]UATHelper: Packaging (Windows): LogShaderLibrary: Display: Textual dump saved to '../../../../../../FlightSimulator-UE5/FlightSimulator/Saved/Shaders/PCD3D_SM6-PCD3D_SM6/ShaderDebug-Global-PCD3D_SM6-PCD3D_SM6/Dump.txt'
+[2025.02.05-02.43.56:915][245]UATHelper: Packaging (Windows): LogShaderLibrary: Display: =================
+[2025.02.05-02.43.56:916][245]UATHelper: Packaging (Windows): LogShaderLibrary: Display:
+[2025.02.05-02.43.56:917][245]UATHelper: Packaging (Windows): LogShaderLibrary: Display: Shader Library 'Global' (PCD3D_SM5-PCD3D_SM5) Stats:
+[2025.02.05-02.43.56:939][246]UATHelper: Packaging (Windows): LogShaderLibrary: Display: =================
+[2025.02.05-02.43.56:950][247]UATHelper: Packaging (Windows): LogShaderLibrary: Display: Assets: 1, Unique Shadermaps: 295 (29500.00%)
+[2025.02.05-02.43.56:950][247]UATHelper: Packaging (Windows): LogShaderLibrary: Display: Total Shaders: 3481, Unique Shaders: 3471 (99.71%)
+[2025.02.05-02.43.56:951][247]UATHelper: Packaging (Windows): LogShaderLibrary: Display: Total Shader Size: 11.01mb, Unique Shaders Size: 11.00mb (99.97%)
+[2025.02.05-02.43.56:951][247]UATHelper: Packaging (Windows): LogShaderLibrary: Display: === Extended info:
+[2025.02.05-02.43.56:952][247]UATHelper: Packaging (Windows): LogShaderLibrary: Display: Minimum number of shaders in shadermap: 1
+[2025.02.05-02.43.56:952][247]UATHelper: Packaging (Windows): LogShaderLibrary: Display: Median number of shaders in shadermap: 3
+[2025.02.05-02.43.56:953][247]UATHelper: Packaging (Windows): LogShaderLibrary: Display: Maximum number of shaders in shadermap: 264
+[2025.02.05-02.43.56:953][247]UATHelper: Packaging (Windows): LogShaderLibrary: Display: Number of shadermaps referencing top 10 most shared shaders:
+[2025.02.05-02.43.56:985][248]UATHelper: Packaging (Windows): LogShaderLibrary: Display:     4, 2, 2, 2, 2, 2, 2, 2, 1, 1
+[2025.02.05-02.43.56:986][248]UATHelper: Packaging (Windows): LogShaderLibrary: Display: Textual dump saved to '../../../../../../FlightSimulator-UE5/FlightSimulator/Saved/Shaders/PCD3D_SM5-PCD3D_SM5/ShaderDebug-Global-PCD3D_SM5-PCD3D_SM5/Dump.txt'
+[2025.02.05-02.44.00:647][407]UATHelper: Packaging (Windows): LogShaderLibrary: Display: =================
+[2025.02.05-02.44.00:669][408]UATHelper: Packaging (Windows): LogCook: Display: Discovering localized assets for cultures: en
+[2025.02.05-02.44.00:670][408]UATHelper: Packaging (Windows): LogCook: Display: Cooked packages 0 Packages Remain 595 Total 595
+[2025.02.05-02.44.00:927][418]UATHelper: Packaging (Windows): LogCook: Display: Cook Diagnostics: OpenFileHandles=290, VirtualMemory=1747MiB
+[2025.02.05-02.44.00:927][418]UATHelper: Packaging (Windows): LogCook: Display: Garbage collection triggered (Soft). Triggered by conditions:
+[2025.02.05-02.44.00:928][418]UATHelper: Packaging (Windows):   CookSettings.bUseSoftGC: Available physical memory 4826MiB is less than the current target for SoftGC 15964MiB.
+[2025.02.05-02.44.01:046][423]UATHelper: Packaging (Windows): LogCookCommandlet: Display: GarbageCollection... (Soft GC)
+[2025.02.05-02.44.02:412][473]UATHelper: Packaging (Windows): LogCook: Display: GarbageCollection Results:
+[2025.02.05-02.44.02:413][473]UATHelper: Packaging (Windows): 	Type: Soft
+[2025.02.05-02.44.02:414][473]UATHelper: Packaging (Windows): 	NumObjects:
+[2025.02.05-02.44.02:415][473]UATHelper: Packaging (Windows): 		Capacity:           25231360
+[2025.02.05-02.44.02:416][473]UATHelper: Packaging (Windows): 		Before GC:             41769
+[2025.02.05-02.44.02:417][473]UATHelper: Packaging (Windows): 		After GC:              41348
+[2025.02.05-02.44.02:418][473]UATHelper: Packaging (Windows): 		Freed by GC:             421
+[2025.02.05-02.44.02:419][473]UATHelper: Packaging (Windows): 	Virtual Memory:
+[2025.02.05-02.44.02:420][473]UATHelper: Packaging (Windows): 		Before GC:              1836 MB
+[2025.02.05-02.44.02:420][473]UATHelper: Packaging (Windows): 		After GC:               1841 MB
+[2025.02.05-02.44.02:421][473]UATHelper: Packaging (Windows): 		Freed by GC:              -4 MB
+[2025.02.05-02.44.02:422][473]UATHelper: Packaging (Windows): LogTexture: Display: /Engine/EngineMaterials/Black_1x1_EXR_Texture_VT.Black_1x1_EXR_Texture_VT is marked for virtual streaming but virtual texture streaming is not available.
+[2025.02.05-02.44.02:435][473]UATHelper: Packaging (Windows): LogTexture: Display: /Engine/EngineMaterials/Black_1x1_EXR_Texture_VT.Black_1x1_EXR_Texture_VT is marked for virtual streaming but virtual texture streaming is not available.
+[2025.02.05-02.44.02:436][473]UATHelper: Packaging (Windows): LogTexture: Display: /Engine/EngineMaterials/BaseFlattenNormalMap_VT.BaseFlattenNormalMap_VT is marked for virtual streaming but virtual texture streaming is not available.
+[2025.02.05-02.44.02:437][473]UATHelper: Packaging (Windows): LogTexture: Display: /Engine/EngineMaterials/BaseFlattenNormalMap_VT.BaseFlattenNormalMap_VT is marked for virtual streaming but virtual texture streaming is not available.
+[2025.02.05-02.44.02:438][473]UATHelper: Packaging (Windows): LogTexture: Display: /Engine/EngineMaterials/BaseFlattenLinearColor_VT.BaseFlattenLinearColor_VT is marked for virtual streaming but virtual texture streaming is not available.
+[2025.02.05-02.44.02:439][473]UATHelper: Packaging (Windows): LogTexture: Display: /Engine/EngineMaterials/BaseFlattenLinearColor_VT.BaseFlattenLinearColor_VT is marked for virtual streaming but virtual texture streaming is not available.
+[2025.02.05-02.44.02:440][473]UATHelper: Packaging (Windows): LogTexture: Display: /Engine/EngineMaterials/BaseFlattenGrayscaleMap_VT.BaseFlattenGrayscaleMap_VT is marked for virtual streaming but virtual texture streaming is not available.
+[2025.02.05-02.44.02:440][473]UATHelper: Packaging (Windows): LogTexture: Display: /Engine/EngineMaterials/BaseFlattenGrayscaleMap_VT.BaseFlattenGrayscaleMap_VT is marked for virtual streaming but virtual texture streaming is not available.
+[2025.02.05-02.44.02:452][474]UATHelper: Packaging (Windows): LogTexture: Display: /Engine/EngineMaterials/BaseFlattenEmissiveMap_VT.BaseFlattenEmissiveMap_VT is marked for virtual streaming but virtual texture streaming is not available.
+[2025.02.05-02.44.02:453][474]UATHelper: Packaging (Windows): LogTexture: Display: /Engine/EngineMaterials/BaseFlattenEmissiveMap_VT.BaseFlattenEmissiveMap_VT is marked for virtual streaming but virtual texture streaming is not available.
+[2025.02.05-02.44.02:454][474]UATHelper: Packaging (Windows): LogTexture: Display: /Engine/EngineMaterials/BaseFlattenDiffuseMap_VT.BaseFlattenDiffuseMap_VT is marked for virtual streaming but virtual texture streaming is not available.
+[2025.02.05-02.44.02:704][480]UATHelper: Packaging (Windows): LogTexture: Display: /Engine/EngineMaterials/BaseFlattenDiffuseMap_VT.BaseFlattenDiffuseMap_VT is marked for virtual streaming but virtual texture streaming is not available.
+[2025.02.05-02.44.04:289][522]UATHelper: Packaging (Windows): LogCook: Display: Cooked packages 87 Packages Remain 3623 Total 3710
+[2025.02.05-02.44.04:302][522]UATHelper: Packaging (Windows): LogUObjectGlobals: Warning: [AssetLog] C:\FlightSimulator-UE5\FlightSimulator\Content\level\Gameplay.umap: Failed to load '/Game/level/GameplayTest': Can't find file.
+[2025.02.05-02.44.04:308][523]PackagingResults: Warning: [AssetLog] C:\FlightSimulator-UE5\FlightSimulator\Content\level\Gameplay.umap: Failed to load '/Game/level/GameplayTest': Can't find file.
+[2025.02.05-02.44.04:974][543]UATHelper: Packaging (Windows): LogLinker: Warning: [AssetLog] C:\FlightSimulator-UE5\FlightSimulator\Content\level\Gameplay.umap: VerifyImport: Failed to load package for import object 'Package /Game/level/GameplayTest'
+[2025.02.05-02.44.04:983][544]PackagingResults: Warning: [AssetLog] C:\FlightSimulator-UE5\FlightSimulator\Content\level\Gameplay.umap: VerifyImport: Failed to load package for import object 'Package /Game/level/GameplayTest'
+[2025.02.05-02.44.06:992][594]UATHelper: Packaging (Windows): LogCook: Display: Cooked packages 200 Packages Remain 3510 Total 3710
+[2025.02.05-02.44.08:989][650]UATHelper: Packaging (Windows): LogCook: Display: Cooked packages 290 Packages Remain 3420 Total 3710
+[2025.02.05-02.44.12:930][752]UATHelper: Packaging (Windows): LogCook: Display: Cooked packages 333 Packages Remain 3377 Total 3710
+[2025.02.05-02.44.15:037][799]UATHelper: Packaging (Windows): LogCook: Display: Cooked packages 1049 Packages Remain 2661 Total 3710
+[2025.02.05-02.44.17:266][850]UATHelper: Packaging (Windows): LogCook: Display: Cooked packages 1057 Packages Remain 2653 Total 3710
+[2025.02.05-02.44.19:368][904]UATHelper: Packaging (Windows): LogCook: Display: Cooked packages 1134 Packages Remain 2576 Total 3710
+[2025.02.05-02.44.22:222][968]UATHelper: Packaging (Windows): LogCook: Display: Cooked packages 1490 Packages Remain 2220 Total 3710
+[2025.02.05-02.44.24:248][ 14]UATHelper: Packaging (Windows): LogCook: Display: Cooked packages 1517 Packages Remain 2193 Total 3710
+[2025.02.05-02.44.27:219][ 79]UATHelper: Packaging (Windows): LogCook: Display: Cooked packages 1990 Packages Remain 1720 Total 3710
+[2025.02.05-02.44.29:276][125]UATHelper: Packaging (Windows): LogCook: Display: Cooked packages 2008 Packages Remain 1702 Total 3710
+[2025.02.05-02.44.31:284][169]UATHelper: Packaging (Windows): LogCook: Display: Cooked packages 2522 Packages Remain 1188 Total 3710
+[2025.02.05-02.44.32:726][202]UATHelper: Packaging (Windows): LogCook: Display: Cook Diagnostics: OpenFileHandles=2874, VirtualMemory=1884MiB
+[2025.02.05-02.44.34:919][252]UATHelper: Packaging (Windows): LogCook: Display: Cooked packages 2534 Packages Remain 1176 Total 3710
+[2025.02.05-02.44.36:935][298]UATHelper: Packaging (Windows): LogCook: Display: Cooked packages 2916 Packages Remain 794 Total 3710
+[2025.02.05-02.44.37:369][308]UATHelper: Packaging (Windows): LogCook: Display: Cooked packages 2933 Packages Remain 777 Total 3710
+[2025.02.05-02.44.37:758][317]UATHelper: Packaging (Windows): LogMaterial: Display: Missing cached shadermap for Body in PCD3D_SM6, Default, SM6, Game (DDC key hash: 1b7dceec3b5c6a57b32b3e56377e0f737cf868af), compiling.
+[2025.02.05-02.44.38:376][332]UATHelper: Packaging (Windows): LogMaterial: Display: Missing cached shadermap for Wing in PCD3D_SM6, Default, SM6, Game (DDC key hash: 6c565a7ab529f232579d65c3a85192dad9048da2), compiling.
+[2025.02.05-02.44.40:791][388]UATHelper: Packaging (Windows): LogShaderCompilers: Display: FShaderCompileThreadRunnable::WriteNewTasks()() took too long (0.623 seconds, threshold is 0.300 s), will parallelize next time.
+[2025.02.05-02.44.43:232][442]UATHelper: Packaging (Windows): LogCook: Display: Cooked packages 3450 Packages Remain 260 Total 3710
+[2025.02.05-02.44.45:254][488]UATHelper: Packaging (Windows): LogCook: Display: Cooked packages 3482 Packages Remain 228 Total 3710
+[2025.02.05-02.44.47:607][542]UATHelper: Packaging (Windows): LogCook: Display: Cooked packages 3546 Packages Remain 164 Total 3710
+[2025.02.05-02.44.50:542][610]UATHelper: Packaging (Windows): LogCook: Display: Cooked packages 3610 Packages Remain 100 Total 3710
+[2025.02.05-02.44.50:629][613]UATHelper: Packaging (Windows): LogCook: Display: Cooked packages 3656 Packages Remain 54 Total 3710
+[2025.02.05-02.44.51:856][642]UATHelper: Packaging (Windows): LogGeoReferencing: Display: Setting search path in ../../../Engine/Plugins/Runtime/GeoReferencing/Resources/PROJ
+[2025.02.05-02.44.52:843][664]UATHelper: Packaging (Windows): LogGeoReferencing: Display: Setting search path in ../../../Engine/Plugins/Runtime/GeoReferencing/Resources/PROJ
+[2025.02.05-02.44.52:844][664]UATHelper: Packaging (Windows): LogCesium: Warning: "Enable World Bounds Checks" in the world settings is currently enabled. Please consider disabling it to avoid potential issues.
+[2025.02.05-02.44.52:858][665]PackagingResults: Warning: "Enable World Bounds Checks" in the world settings is currently enabled. Please consider disabling it to avoid potential issues.
+[2025.02.05-02.44.53:324][675]UATHelper: Packaging (Windows): LogCesium: Display: Caching Cesium requests in C:/Users/pgmla/AppData/Local/UnrealEngine/5.3/cesium-request-cache.sqlite
+[2025.02.05-02.44.55:331][723]UATHelper: Packaging (Windows): LogCook: Display: Cooked packages 3670 Packages Remain 40 Total 3710
+[2025.02.05-02.44.57:471][798]UATHelper: Packaging (Windows): LogCook: Display: Cooked packages 3711 Packages Remain 2 Total 3713
+[2025.02.05-02.44.57:708][805]UATHelper: Packaging (Windows): LogMaterial: Display: Missing cached shadermap for Wing in PCD3D_SM5, Default, SM5, Game (DDC key hash: ac40475f45a680a2feae8f0065614e2aadd9a3ed), compiling.
+[2025.02.05-02.45.00:335][869]UATHelper: Packaging (Windows): LogMaterial: Display: Missing cached shadermap for Body in PCD3D_SM5, Default, SM5, Game (DDC key hash: 35584b3cac967b6a6db594e8a4c7ce504ef6f772), compiling.
+[2025.02.05-02.45.02:343][915]UATHelper: Packaging (Windows): LogCook: Display: Cooked packages 3711 Packages Remain 2 Total 3713
+[2025.02.05-02.45.05:334][984]UATHelper: Packaging (Windows): LogCook: Display: Cook Diagnostics: OpenFileHandles=3706, VirtualMemory=2075MiB
+[2025.02.05-02.45.10:335][144]UATHelper: Packaging (Windows): LogCook: Display: Cooked packages 3711 Packages Remain 2 Total 3713
+[2025.02.05-02.45.10:816][165]UATHelper: Packaging (Windows): LogCook: Display: Cooked packages 3711 Packages Remain 2 Total 3713
+[2025.02.05-02.45.10:816][165]UATHelper: Packaging (Windows): LogCook: Display: Cooked packages 3713 Packages Remain 0 Total 3713
+[2025.02.05-02.45.10:817][165]UATHelper: Packaging (Windows): LogCook: Display: Cook Diagnostics: OpenFileHandles=3706, VirtualMemory=2065MiB
+[2025.02.05-02.45.11:414][190]UATHelper: Packaging (Windows): LogCook: Display: Finishing up...
+[2025.02.05-02.45.12:254][224]UATHelper: Packaging (Windows): LogAssetRegistryGenerator: Display: Saving asset registry v17.
+[2025.02.05-02.45.12:706][244]UATHelper: Packaging (Windows): LogAssetRegistryGenerator: Display: Generated development asset registry C:/FlightSimulator-UE5/FlightSimulator/Saved/Cooked/Windows/FlightSimulator/Metadata/DevelopmentAssetRegistry.bin num assets 3749, size is 3111.44kb, XxHash64 = llu, waited on hash -236498409371975583201924578651889434130539604899282883611875824395845941321531392.00 seconds
+[2025.02.05-02.45.12:717][244]UATHelper: Packaging (Windows): LogAssetRegistryGenerator: Display: Generated asset registry num assets 3740, size is 971.44kb
+[2025.02.05-02.45.13:851][293]UATHelper: Packaging (Windows): LogAssetRegistryGenerator: Display: Done saving asset registry. Took 1.3 seconds.
+[2025.02.05-02.45.13:852][293]UATHelper: Packaging (Windows): LogShaderLibrary: Display:
+[2025.02.05-02.45.13:852][293]UATHelper: Packaging (Windows): LogShaderLibrary: Display: Shader Library 'FlightSimulator' (PCD3D_SM6-PCD3D_SM6) Stats:
+[2025.02.05-02.45.13:863][293]UATHelper: Packaging (Windows): LogShaderLibrary: Display: =================
+[2025.02.05-02.45.13:874][294]UATHelper: Packaging (Windows): LogShaderLibrary: Display: Assets: 210, Unique Shadermaps: 92 (43.81%)
+[2025.02.05-02.45.13:875][294]UATHelper: Packaging (Windows): LogShaderLibrary: Display: Total Shaders: 2151, Unique Shaders: 1401 (65.13%)
+[2025.02.05-02.45.13:876][294]UATHelper: Packaging (Windows): LogShaderLibrary: Display: Total Shader Size: 46.28mb, Unique Shaders Size: 31.69mb (68.48%)
+[2025.02.05-02.45.13:876][294]UATHelper: Packaging (Windows): LogShaderLibrary: Display: === Extended info:
+[2025.02.05-02.45.13:877][294]UATHelper: Packaging (Windows): LogShaderLibrary: Display: Minimum number of shaders in shadermap: 4
+[2025.02.05-02.45.13:877][294]UATHelper: Packaging (Windows): LogShaderLibrary: Display: Median number of shaders in shadermap: 14
+[2025.02.05-02.45.13:878][294]UATHelper: Packaging (Windows): LogShaderLibrary: Display: Maximum number of shaders in shadermap: 362
+[2025.02.05-02.45.13:879][294]UATHelper: Packaging (Windows): LogShaderLibrary: Display: Number of shadermaps referencing top 10 most shared shaders:
+[2025.02.05-02.45.13:889][294]UATHelper: Packaging (Windows): LogShaderLibrary: Display:     21, 20, 19, 18, 17, 17, 16, 16, 15, 15
+[2025.02.05-02.45.13:889][294]UATHelper: Packaging (Windows): LogShaderLibrary: Display: Textual dump saved to '../../../../../../FlightSimulator-UE5/FlightSimulator/Saved/Shaders/PCD3D_SM6-PCD3D_SM6/ShaderDebug-FlightSimulator-PCD3D_SM6-PCD3D_SM6/Dump.txt'
+[2025.02.05-02.45.14:049][300]UATHelper: Packaging (Windows): LogShaderLibrary: Display: =================
+[2025.02.05-02.45.14:050][300]UATHelper: Packaging (Windows): LogShaderLibrary: Display:
+[2025.02.05-02.45.14:051][300]UATHelper: Packaging (Windows): LogShaderLibrary: Display: Shader Library 'FlightSimulator' (PCD3D_SM5-PCD3D_SM5) Stats:
+[2025.02.05-02.45.14:063][301]UATHelper: Packaging (Windows): LogShaderLibrary: Display: =================
+[2025.02.05-02.45.14:063][301]UATHelper: Packaging (Windows): LogShaderLibrary: Display: Assets: 210, Unique Shadermaps: 92 (43.81%)
+[2025.02.05-02.45.14:064][301]UATHelper: Packaging (Windows): LogShaderLibrary: Display: Total Shaders: 1868, Unique Shaders: 1156 (61.88%)
+[2025.02.05-02.45.14:065][301]UATHelper: Packaging (Windows): LogShaderLibrary: Display: Total Shader Size: 3.86mb, Unique Shaders Size: 2.77mb (71.88%)
+[2025.02.05-02.45.14:065][301]UATHelper: Packaging (Windows): LogShaderLibrary: Display: === Extended info:
+[2025.02.05-02.45.14:066][301]UATHelper: Packaging (Windows): LogShaderLibrary: Display: Minimum number of shaders in shadermap: 4
+[2025.02.05-02.45.14:067][301]UATHelper: Packaging (Windows): LogShaderLibrary: Display: Median number of shaders in shadermap: 13
+[2025.02.05-02.45.14:068][301]UATHelper: Packaging (Windows): LogShaderLibrary: Display: Maximum number of shaders in shadermap: 257
+[2025.02.05-02.45.14:068][301]UATHelper: Packaging (Windows): LogShaderLibrary: Display: Number of shadermaps referencing top 10 most shared shaders:
+[2025.02.05-02.45.14:079][301]UATHelper: Packaging (Windows): LogShaderLibrary: Display:     26, 21, 20, 20, 18, 17, 17, 16, 16, 15
+[2025.02.05-02.45.14:080][301]UATHelper: Packaging (Windows): LogShaderLibrary: Display: Textual dump saved to '../../../../../../FlightSimulator-UE5/FlightSimulator/Saved/Shaders/PCD3D_SM5-PCD3D_SM5/ShaderDebug-FlightSimulator-PCD3D_SM5-PCD3D_SM5/Dump.txt'
+[2025.02.05-02.45.14:081][301]UATHelper: Packaging (Windows): LogShaderLibrary: Display: =================
+[2025.02.05-02.45.14:156][305]UATHelper: Packaging (Windows): LogCook: Display: Finalize package store(s)...
+[2025.02.05-02.45.14:157][305]UATHelper: Packaging (Windows): LogCook: Display: Done finalizing package store(s)
+[2025.02.05-02.45.14:158][305]UATHelper: Packaging (Windows): LogCook: Display: Cook by the book total time in tick 70.032183s total time 116.543587
+[2025.02.05-02.45.14:158][305]UATHelper: Packaging (Windows): LogCook: Display: Peak Used virtual 2085 MiB Peak Used physical 2072 MiB
+[2025.02.05-02.45.14:159][305]UATHelper: Packaging (Windows): LogCook: Display: Packages Cooked: 3704, Packages Iteratively Skipped: 0, Packages Skipped by Platform: 9, Total Packages: 3713
+[2025.02.05-02.45.14:159][305]UATHelper: Packaging (Windows): LogCook: Display: Hierarchy Timer Information:
+[2025.02.05-02.45.14:160][305]UATHelper: Packaging (Windows): LogCook: Display:   Root: 0.000s (0)
+[2025.02.05-02.45.14:161][305]UATHelper: Packaging (Windows): LogCook: Display:     CleanSandbox: 0.471s (1)
+[2025.02.05-02.45.14:161][305]UATHelper: Packaging (Windows): LogCook: Display:     CollectFilesToCook: 3.563s (1)
+[2025.02.05-02.45.14:162][305]UATHelper: Packaging (Windows): LogCook: Display:       CookModificationDelegate: 0.001s (1)
+[2025.02.05-02.45.14:163][305]UATHelper: Packaging (Windows): LogCook: Display:     GenerateLongPackageName: 0.012s (1)
+[2025.02.05-02.45.14:164][305]UATHelper: Packaging (Windows): LogCook: Display:     TickMainCookLoop: 70.032s (2)
+[2025.02.05-02.45.14:164][305]UATHelper: Packaging (Windows): LogCook: Display:       PumpPollables: 0.101s (14)
+[2025.02.05-02.45.14:165][305]UATHelper: Packaging (Windows): LogCook: Display:       PumpRequests: 0.208s (117)
+[2025.02.05-02.45.14:166][305]UATHelper: Packaging (Windows): LogCook: Display:       WaitForAsync: 16.809s (34422)
+[2025.02.05-02.45.14:178][305]UATHelper: Packaging (Windows): LogCook: Display:       LoadPackageForCooking: 18.718s (3713)
+[2025.02.05-02.45.14:178][305]UATHelper: Packaging (Windows): LogCook: Display:       SavingPackages: 32.885s (2049)
+[2025.02.05-02.45.14:179][305]UATHelper: Packaging (Windows): LogCook: Display:         PollPendingCookedPlatformDatas: 5.394s (142244)
+[2025.02.05-02.45.14:179][305]UATHelper: Packaging (Windows): LogCook: Display:         PrepareSave: 3.388s (138728)
+[2025.02.05-02.45.14:180][305]UATHelper: Packaging (Windows): LogCook: Display:         PrecachePlatformDataForNextPackage: 2.637s (3712)
+[2025.02.05-02.45.14:180][305]UATHelper: Packaging (Windows): LogCook: Display:           PrepareSave: 2.629s (4137)
+[2025.02.05-02.45.14:180][305]UATHelper: Packaging (Windows): LogCook: Display:         SaveCookedPackage: 18.913s (3713)
+[2025.02.05-02.45.14:181][305]UATHelper: Packaging (Windows): LogCook: Display:           GEditorSavePackage: 16.655s (3713)
+[2025.02.05-02.45.14:181][305]UATHelper: Packaging (Windows): LogCook: Display:             VerifyCanCookPackage: 0.040s (3704)
+[2025.02.05-02.45.14:182][305]UATHelper: Packaging (Windows): LogCook: Display:           TargetDomainDependencies: 0.005s (3713)
+[2025.02.05-02.45.14:182][305]UATHelper: Packaging (Windows): LogCook: Display:         ClearAllCachedCookedPlatformData: 0.797s (3713)
+[2025.02.05-02.45.14:183][305]UATHelper: Packaging (Windows): LogCook: Display:       PostLoadPackageFixup: 0.000s (5)
+[2025.02.05-02.45.14:184][305]UATHelper: Packaging (Windows): LogCook: Display:     SavingCurrentIniSettings: 0.118s (1)
+[2025.02.05-02.45.14:184][305]UATHelper: Packaging (Windows): LogCook: Display:       ProcessingAccessedStrings: 0.015s (1)
+[2025.02.05-02.45.14:185][305]UATHelper: Packaging (Windows): LogCook: Display:     SavingAssetRegistry: 3.124s (1)
+[2025.02.05-02.45.14:185][305]UATHelper: Packaging (Windows): LogCook: Display:       BuildChunkManifest: 0.375s (1)
+[2025.02.05-02.45.14:186][305]UATHelper: Packaging (Windows): LogCook: Display:       SaveManifests: 0.000s (1)
+[2025.02.05-02.45.14:186][305]UATHelper: Packaging (Windows): LogCook: Display:       SaveRealAssetRegistry: 1.298s (1)
+[2025.02.05-02.45.14:187][305]UATHelper: Packaging (Windows): LogCook: Display:       WriteCookerOpenOrder: 0.711s (1)
+[2025.02.05-02.45.14:199][306]UATHelper: Packaging (Windows): LogCook: Display:     FinalizePackageStore: 0.074s (1)
+[2025.02.05-02.45.14:210][306]UATHelper: Packaging (Windows): LogCook: Display: Misc Cook Stats
+[2025.02.05-02.45.14:211][306]UATHelper: Packaging (Windows): LogCook: Display: ===============
+[2025.02.05-02.45.14:212][306]UATHelper: Packaging (Windows): LogCook: Display: NiagaraShader.Misc
+[2025.02.05-02.45.14:212][306]UATHelper: Packaging (Windows): LogCook: Display:     ShadersCompiled=0
+[2025.02.05-02.45.14:213][306]UATHelper: Packaging (Windows): LogCook: Display: ShaderCompiler
+[2025.02.05-02.45.14:213][306]UATHelper: Packaging (Windows): LogCook: Display:     BlockingTimeSec=0.000257
+[2025.02.05-02.45.14:214][306]UATHelper: Packaging (Windows): LogCook: Display:     AsyncCompileTimeSec=637.400696
+[2025.02.05-02.45.14:215][306]UATHelper: Packaging (Windows): LogCook: Display:     GlobalBeginCompileShaderTimeSec=0.129303
+[2025.02.05-02.45.14:215][306]UATHelper: Packaging (Windows): LogCook: Display:     GlobalBeginCompileShaderCalls=72
+[2025.02.05-02.45.14:216][306]UATHelper: Packaging (Windows): LogCook: Display:     ProcessAsyncResultsTimeSec=0.132521
+[2025.02.05-02.45.14:217][306]UATHelper: Packaging (Windows): LogCook: Display: GlobalShader.Misc
+[2025.02.05-02.45.14:217][306]UATHelper: Packaging (Windows): LogCook: Display:     ShadersCompiled=0
+[2025.02.05-02.45.14:218][306]UATHelper: Packaging (Windows): LogCook: Display: Material
+[2025.02.05-02.45.14:218][306]UATHelper: Packaging (Windows): LogCook: Display:     MeshMaterialShadersCompiled=72
+[2025.02.05-02.45.14:219][306]UATHelper: Packaging (Windows): LogCook: Display:     FinishCacheShadersSec=2.155043
+[2025.02.05-02.45.14:220][306]UATHelper: Packaging (Windows): LogCook: Display:     MaterialShadersCompiled=0
+[2025.02.05-02.45.14:220][306]UATHelper: Packaging (Windows): LogCook: Display:     MaterialShaderMapSubmitCompileJobsTime=0.721789
+[2025.02.05-02.45.14:221][306]UATHelper: Packaging (Windows): LogCook: Display:     MaterialShaderMapSubmitCompileCalls=4
+[2025.02.05-02.45.14:234][307]UATHelper: Packaging (Windows): LogCook: Display:     MaterialInstanceUpdateCachedExpressionDataSec=0.071965
+[2025.02.05-02.45.14:235][307]UATHelper: Packaging (Windows): LogCook: Display:     MaterialInstancePostLoadSec=0.026000
+[2025.02.05-02.45.14:235][307]UATHelper: Packaging (Windows): LogCook: Display:     MaterialUpdateCachedExpressionDataSec=0.073816
+[2025.02.05-02.45.14:237][307]UATHelper: Packaging (Windows): LogCook: Display:     MaterialTranslateCalls=4
+[2025.02.05-02.45.14:237][307]UATHelper: Packaging (Windows): LogCook: Display:     MaterialTranslateTimeSec=0.034846
+[2025.02.05-02.45.14:238][307]UATHelper: Packaging (Windows): LogCook: Display: Package.Load
+[2025.02.05-02.45.14:239][307]UATHelper: Packaging (Windows): LogCook: Display:     NumInlineLoads=5
+[2025.02.05-02.45.14:239][307]UATHelper: Packaging (Windows): LogCook: Display:     NumPackagesLoaded=3732
+[2025.02.05-02.45.14:240][307]UATHelper: Packaging (Windows): LogCook: Display:     LoadPackageTimeSec=25.963691
+[2025.02.05-02.45.14:240][307]UATHelper: Packaging (Windows): LogCook: Display: Package.Save
+[2025.02.05-02.45.14:241][307]UATHelper: Packaging (Windows): LogCook: Display:     NumPackagesIterativelySkipped=0
+[2025.02.05-02.45.14:242][307]UATHelper: Packaging (Windows): LogCook: Display:     NumPackagesSaved=3713
+[2025.02.05-02.45.14:242][307]UATHelper: Packaging (Windows): LogCook: Display:     SavePackageTimeSec=16.256431
+[2025.02.05-02.45.14:243][307]UATHelper: Packaging (Windows): LogCook: Display:     TagPackageExportsPresaveTimeSec=0.000000
+[2025.02.05-02.45.14:244][307]UATHelper: Packaging (Windows): LogCook: Display:     TagPackageExportsTimeSec=0.000000
+[2025.02.05-02.45.14:244][307]UATHelper: Packaging (Windows): LogCook: Display:     FullyLoadLoadersTimeSec=0.000000
+[2025.02.05-02.45.14:245][307]UATHelper: Packaging (Windows): LogCook: Display:     ResetLoadersTimeSec=0.000000
+[2025.02.05-02.45.14:245][307]UATHelper: Packaging (Windows): LogCook: Display:     TagPackageExportsGetObjectsWithOuter=0.000000
+[2025.02.05-02.45.14:246][307]UATHelper: Packaging (Windows): LogCook: Display:     TagPackageExportsGetObjectsWithMarks=0.000000
+[2025.02.05-02.45.14:246][307]UATHelper: Packaging (Windows): LogCook: Display:     SerializeImportsTimeSec=0.000000
+[2025.02.05-02.45.14:247][307]UATHelper: Packaging (Windows): LogCook: Display:     SortExportsSeekfreeInnerTimeSec=0.000000
+[2025.02.05-02.45.14:247][307]UATHelper: Packaging (Windows): LogCook: Display:     SerializeExportsTimeSec=0.000000
+[2025.02.05-02.45.14:248][307]UATHelper: Packaging (Windows): LogCook: Display:     SerializeBulkDataTimeSec=0.085980
+[2025.02.05-02.45.14:249][307]UATHelper: Packaging (Windows): LogCook: Display:     AsyncWriteTimeSec=0.000000
+[2025.02.05-02.45.14:249][307]UATHelper: Packaging (Windows): LogCook: Display:     MBWritten=0.000000
+[2025.02.05-02.45.14:250][307]UATHelper: Packaging (Windows): LogCook: Display: CookOnTheFlyServer
+[2025.02.05-02.45.14:250][307]UATHelper: Packaging (Windows): LogCook: Display:     PeakRequestQueueSize=3710
+[2025.02.05-02.45.14:251][307]UATHelper: Packaging (Windows): LogCook: Display:     PeakLoadQueueSize=3710
+[2025.02.05-02.45.14:252][307]UATHelper: Packaging (Windows): LogCook: Display:     PeakSaveQueueSize=724
+[2025.02.05-02.45.14:253][307]UATHelper: Packaging (Windows): LogCook: Display: Package.DifferentPackagesSizeMBPerAsset
+[2025.02.05-02.45.14:263][308]UATHelper: Packaging (Windows): LogCook: Display: Package.NumberOfDifferencesInPackagesPerAsset
+[2025.02.05-02.45.14:264][308]UATHelper: Packaging (Windows): LogCook: Display: Package.PackageDifferencesSizeMBPerAsset
+[2025.02.05-02.45.14:265][308]UATHelper: Packaging (Windows): LogCook: Display: Package.DiffTotal
+[2025.02.05-02.45.14:265][308]UATHelper: Packaging (Windows): LogCook: Display:     NumberOfDifferentPackages=0
+[2025.02.05-02.45.14:266][308]UATHelper: Packaging (Windows): LogCook: Display:     DifferentPackagesSizeMB=0.000000
+[2025.02.05-02.45.14:266][308]UATHelper: Packaging (Windows): LogCook: Display:     NumberOfDifferencesInPackages=0
+[2025.02.05-02.45.14:267][308]UATHelper: Packaging (Windows): LogCook: Display:     PackageDifferencesSizeMB=0.000000
+[2025.02.05-02.45.14:268][308]UATHelper: Packaging (Windows): LogCook: Display: UnversionedProperties
+[2025.02.05-02.45.14:268][308]UATHelper: Packaging (Windows): LogCook: Display:     SavedStructs=0
+[2025.02.05-02.45.14:269][308]UATHelper: Packaging (Windows): LogCook: Display:     SavedMB=0
+[2025.02.05-02.45.14:270][308]UATHelper: Packaging (Windows): LogCook: Display:     EquivalentTaggedMB=0
+[2025.02.05-02.45.14:270][308]UATHelper: Packaging (Windows): LogCook: Display:     CompressionRatio=-nan(ind)
+[2025.02.05-02.45.14:271][308]UATHelper: Packaging (Windows): LogCook: Display:     BitfieldWasteKB=0
+[2025.02.05-02.45.14:272][308]UATHelper: Packaging (Windows): LogCook: Display:
+[2025.02.05-02.45.14:273][308]UATHelper: Packaging (Windows): LogCook: Display: Cook Profile
+[2025.02.05-02.45.14:273][308]UATHelper: Packaging (Windows): LogCook: Display: ============
+[2025.02.05-02.45.14:274][308]UATHelper: Packaging (Windows): LogCook: Display:  0.CookWallTimeSec=229.426787
+[2025.02.05-02.45.14:275][308]UATHelper: Packaging (Windows): LogCook: Display:  0. 0.StartupWallTimeSec=112.364733
+[2025.02.05-02.45.14:275][308]UATHelper: Packaging (Windows): LogCook: Display:  0. 1.CookByTheBookTimeSec=0.000000
+[2025.02.05-02.45.14:275][308]UATHelper: Packaging (Windows): LogCook: Display:  0. 1. 0.StartCookByTheBookTimeSec=43.057347
+[2025.02.05-02.45.14:277][308]UATHelper: Packaging (Windows): LogCook: Display:  0. 1. 0. 0.BlockOnAssetRegistryTimeSec=0.082435
+[2025.02.05-02.45.14:277][308]UATHelper: Packaging (Windows): LogCook: Display:  0. 1. 0. 1.GameCookModificationDelegateTimeSec=0.000609
+[2025.02.05-02.45.14:278][308]UATHelper: Packaging (Windows): LogCook: Display:  0. 1. 1.TickCookOnTheSideTimeSec=0.261756
+[2025.02.05-02.45.14:279][308]UATHelper: Packaging (Windows): LogCook: Display:  0. 1. 1. 0.TickCookOnTheSideLoadPackagesTimeSec=18.721924
+[2025.02.05-02.45.14:279][308]UATHelper: Packaging (Windows): LogCook: Display:  0. 1. 1. 1.TickCookOnTheSideSaveCookedPackageTimeSec=18.915657
+[2025.02.05-02.45.14:280][308]UATHelper: Packaging (Windows): LogCook: Display:  0. 1. 1. 1. 0.TickCookOnTheSideResolveRedirectorsTimeSec=0.000000
+[2025.02.05-02.45.14:281][308]UATHelper: Packaging (Windows): LogCook: Display:  0. 1. 1. 2.TickCookOnTheSidePrepareSaveTimeSec=6.121350
+[2025.02.05-02.45.14:281][308]UATHelper: Packaging (Windows): LogCook: Display:  0. 1. 2.TickLoopGCTimeSec=0.120249
+[2025.02.05-02.45.14:283][308]UATHelper: Packaging (Windows): LogCook: Display:  0. 1. 3.TickLoopRecompileShaderRequestsTimeSec=0.000000
+[2025.02.05-02.45.14:283][308]UATHelper: Packaging (Windows): LogCook: Display:  0. 1. 4.TickLoopShaderProcessAsyncResultsTimeSec=0.014093
+[2025.02.05-02.45.14:284][308]UATHelper: Packaging (Windows): LogCook: Display:  0. 1. 5.TickLoopProcessDeferredCommandsTimeSec=0.000063
+[2025.02.05-02.45.14:285][308]UATHelper: Packaging (Windows): LogCook: Display:  0. 1. 6.TickLoopTickCommandletStatsTimeSec=0.000013
+[2025.02.05-02.45.14:285][308]UATHelper: Packaging (Windows): LogCook: Display:  0. 1. 7.TickLoopFlushRenderingCommandsTimeSec=0.023139
+[2025.02.05-02.45.14:286][308]UATHelper: Packaging (Windows): LogCook: Display:  0. 1. 8.TargetPlatforms=Windows
+[2025.02.05-02.45.14:286][308]UATHelper: Packaging (Windows): LogCook: Display:  0. 1. 9.CookProject=FlightSimulator
+[2025.02.05-02.45.14:287][308]UATHelper: Packaging (Windows): LogCook: Display:  0. 1. 10.CookCultures=
+[2025.02.05-02.45.14:288][308]UATHelper: Packaging (Windows): LogCook: Display:  0. 1. 11.IsCookAll=false
+[2025.02.05-02.45.14:288][308]UATHelper: Packaging (Windows): LogCook: Display:  0. 1. 12.IsCookOnTheFly=false
+[2025.02.05-02.45.14:289][308]UATHelper: Packaging (Windows): LogCook: Display:  0. 1. 13.IsIterativeCook=false
+[2025.02.05-02.45.14:289][308]UATHelper: Packaging (Windows): LogCook: Display:  0. 1. 14.IsUnversioned=true
+[2025.02.05-02.45.14:290][308]UATHelper: Packaging (Windows): LogCook: Display:  0. 1. 15.CookLabel=
+[2025.02.05-02.45.14:290][308]UATHelper: Packaging (Windows): LogCook: Display:  0. 1. 16.IsFastCook=false
+[2025.02.05-02.45.14:291][308]UATHelper: Packaging (Windows): LogCook: Display:
+[2025.02.05-02.45.14:291][308]UATHelper: Packaging (Windows): LogCook: Display: DDC Summary Stats
+[2025.02.05-02.45.14:292][308]UATHelper: Packaging (Windows): LogCook: Display: =================
+[2025.02.05-02.45.14:292][308]UATHelper: Packaging (Windows): LogCook: Display: BackEnd         =InstalledDerivedDataBackendGraph
+[2025.02.05-02.45.14:293][308]UATHelper: Packaging (Windows): LogCook: Display: HasLocalCache   =      true
+[2025.02.05-02.45.14:293][308]UATHelper: Packaging (Windows): LogCook: Display: HasSharedCache  =     false
+[2025.02.05-02.45.14:294][308]UATHelper: Packaging (Windows): LogCook: Display: HasCloudCache   =     false
+[2025.02.05-02.45.14:305][308]UATHelper: Packaging (Windows): LogCook: Display: HasZenCache     =     false
+[2025.02.05-02.45.14:306][308]UATHelper: Packaging (Windows): LogCook: Display: TotalGetHits    =     11236
+[2025.02.05-02.45.14:307][308]UATHelper: Packaging (Windows): LogCook: Display: TotalGetMisses  =         9
+[2025.02.05-02.45.14:307][308]UATHelper: Packaging (Windows): LogCook: Display: TotalGets       =     11245
+[2025.02.05-02.45.14:308][308]UATHelper: Packaging (Windows): LogCook: Display: TotalGetHitPct  =  0.999200
+[2025.02.05-02.45.14:309][308]UATHelper: Packaging (Windows): LogCook: Display: GetMissPct      =  0.000800
+[2025.02.05-02.45.14:309][308]UATHelper: Packaging (Windows): LogCook: Display: TotalPutHits    =         5
+[2025.02.05-02.45.14:310][308]UATHelper: Packaging (Windows): LogCook: Display: TotalPutMisses  =         0
+[2025.02.05-02.45.14:310][308]UATHelper: Packaging (Windows): LogCook: Display: TotalPuts       =         5
+[2025.02.05-02.45.14:311][308]UATHelper: Packaging (Windows): LogCook: Display: TotalPutHitPct  =  1.000000
+[2025.02.05-02.45.14:311][308]UATHelper: Packaging (Windows): LogCook: Display: PutMissPct      =  0.000000
+[2025.02.05-02.45.14:312][308]UATHelper: Packaging (Windows): LogCook: Display: LocalGetHits    =      4487
+[2025.02.05-02.45.14:312][308]UATHelper: Packaging (Windows): LogCook: Display: LocalGetTotal   =      4496
+[2025.02.05-02.45.14:313][308]UATHelper: Packaging (Windows): LogCook: Display: LocalGetHitPct  =  0.997998
+[2025.02.05-02.45.14:314][308]UATHelper: Packaging (Windows): LogCook: Display: SharedGetHits   =         0
+[2025.02.05-02.45.14:314][308]UATHelper: Packaging (Windows): LogCook: Display: SharedGetTotal  =         0
+[2025.02.05-02.45.14:315][308]UATHelper: Packaging (Windows): LogCook: Display: SharedGetHitPct =  0.000000
+[2025.02.05-02.45.14:315][308]UATHelper: Packaging (Windows): LogCook: Display: ZenLocalGetHits =         0
+[2025.02.05-02.45.14:316][308]UATHelper: Packaging (Windows): LogCook: Display: ZenLocalGetTotal=         0
+[2025.02.05-02.45.14:316][308]UATHelper: Packaging (Windows): LogCook: Display: ZenLocalGetHitPct=  0.000000
+[2025.02.05-02.45.14:317][308]UATHelper: Packaging (Windows): LogCook: Display: ZenRemoteGetHits=         0
+[2025.02.05-02.45.14:318][308]UATHelper: Packaging (Windows): LogCook: Display: ZenRemoteGetTotal=         0
+[2025.02.05-02.45.14:318][308]UATHelper: Packaging (Windows): LogCook: Display: ZenRemoteGetHitPct=  0.000000
+[2025.02.05-02.45.14:319][308]UATHelper: Packaging (Windows): LogCook: Display: CloudGetHits    =         0
+[2025.02.05-02.45.14:319][308]UATHelper: Packaging (Windows): LogCook: Display: CloudGetTotal   =         0
+[2025.02.05-02.45.14:320][308]UATHelper: Packaging (Windows): LogCook: Display: CloudGetHitPct  =  0.000000
+[2025.02.05-02.45.14:321][308]UATHelper: Packaging (Windows): LogCook: Display: LocalLatency    =  1.171916
+[2025.02.05-02.45.14:322][308]UATHelper: Packaging (Windows): LogCook: Display: LocalReadSpeed  =  0.750738
+[2025.02.05-02.45.14:322][308]UATHelper: Packaging (Windows): LogCook: Display: LocalWriteSpeed =  7.757135
+[2025.02.05-02.45.14:323][308]UATHelper: Packaging (Windows): LogCook: Display: SharedLatency   =  0.000000
+[2025.02.05-02.45.14:324][308]UATHelper: Packaging (Windows): LogCook: Display: SharedReadSpeed =  0.000000
+[2025.02.05-02.45.14:324][308]UATHelper: Packaging (Windows): LogCook: Display: SharedWriteSpeed=  0.000000
+[2025.02.05-02.45.14:325][308]UATHelper: Packaging (Windows): LogCook: Display: CloudLatency    =  0.000000
+[2025.02.05-02.45.14:325][308]UATHelper: Packaging (Windows): LogCook: Display: CloudReadSpeed  =  0.000000
+[2025.02.05-02.45.14:326][308]UATHelper: Packaging (Windows): LogCook: Display: CloudWriteSpeed =  0.000000
+[2025.02.05-02.45.14:326][308]UATHelper: Packaging (Windows): LogCook: Display:
+[2025.02.05-02.45.14:327][308]UATHelper: Packaging (Windows): LogCook: Display: DDC Resource Stats
+[2025.02.05-02.45.14:327][308]UATHelper: Packaging (Windows): LogCook: Display: =======================================================================================================
+[2025.02.05-02.45.14:328][308]UATHelper: Packaging (Windows): LogCook: Display: Asset Type                          Total Time (Sec)  GameThread Time (Sec)  Assets Built  MB Processed
+[2025.02.05-02.45.14:329][308]UATHelper: Packaging (Windows): LogCook: Display: ----------------------------------  ----------------  ---------------------  ------------  ------------
+[2025.02.05-02.45.14:329][308]UATHelper: Packaging (Windows): LogCook: Display: BulkDataList                                  230.66                   0.00             1          1.13
+[2025.02.05-02.45.14:330][308]UATHelper: Packaging (Windows): LogCook: Display: Texture                                        83.51                   0.04             0         74.72
+[2025.02.05-02.45.14:330][308]UATHelper: Packaging (Windows): LogCook: Display: MaterialShader                                 31.69                   2.22             4         59.69
+[2025.02.05-02.45.14:331][308]UATHelper: Packaging (Windows): LogCook: Display: GlobalShader                                   27.36                  27.36             0         67.06
+[2025.02.05-02.45.14:331][308]UATHelper: Packaging (Windows): LogCook: Display: Audio                                          11.26                   0.00             0         30.22
+[2025.02.05-02.45.14:332][308]UATHelper: Packaging (Windows): LogCook: Display: DistanceField                                   0.94                   0.69             0          1.13
+[2025.02.05-02.45.14:333][308]UATHelper: Packaging (Windows): LogCook: Display: StaticMesh                                      0.83                   0.12             0          3.63
+[2025.02.05-02.45.14:333][308]UATHelper: Packaging (Windows): LogCook: Display: CardRepresentation                              0.75                   0.09             0          0.02
+[2025.02.05-02.45.14:334][308]UATHelper: Packaging (Windows): LogCook: Display: NavCollision                                    0.50                   0.13             0          0.04
+[2025.02.05-02.45.14:335][308]UATHelper: Packaging (Windows): LogCook: Display: BulkDataPayloadId                               0.27                   0.00             0          0.00
+[2025.02.05-02.45.14:335][308]UATHelper: Packaging (Windows): LogCook: Display: BodySetup                                       0.14                   0.13             0          3.68
+[2025.02.05-02.45.14:336][308]UATHelper: Packaging (Windows): LogCook: Display: AnimationSequence                               0.13                   0.00             0          1.78
+[2025.02.05-02.45.14:336][308]UATHelper: Packaging (Windows): LogCook: Display: SkeletalMesh                                    0.09                   0.00             0          4.53
+[2025.02.05-02.45.14:337][308]UATHelper: Packaging (Windows): LogPackageBuildDependencyTracker: Display: Package Accesses (280 referencing packages with a total of 2543 unique accesses)
+[2025.02.05-02.45.14:338][308]UATHelper: Packaging (Windows): LogCook: Display: Done!
+[2025.02.05-02.45.14:338][308]UATHelper: Packaging (Windows): LogSavePackage: Display: Took 0.021908s to verify the EDL loading graph.
+[2025.02.05-02.45.14:339][308]UATHelper: Packaging (Windows): LogCook: Display: Misc Cook Stats
+[2025.02.05-02.45.14:339][308]UATHelper: Packaging (Windows): LogCook: Display: ===============
+[2025.02.05-02.45.14:340][308]UATHelper: Packaging (Windows): LogCook: Display: NiagaraShader.Misc
+[2025.02.05-02.45.14:340][308]UATHelper: Packaging (Windows): LogCook: Display:     ShadersCompiled=0
+[2025.02.05-02.45.14:341][308]UATHelper: Packaging (Windows): LogCook: Display: ShaderCompiler
+[2025.02.05-02.45.14:352][309]UATHelper: Packaging (Windows): LogCook: Display:     BlockingTimeSec=0.000257
+[2025.02.05-02.45.14:353][309]UATHelper: Packaging (Windows): LogCook: Display:     AsyncCompileTimeSec=637.400696
+[2025.02.05-02.45.14:354][309]UATHelper: Packaging (Windows): LogCook: Display:     GlobalBeginCompileShaderTimeSec=0.129303
+[2025.02.05-02.45.14:354][309]UATHelper: Packaging (Windows): LogCook: Display:     GlobalBeginCompileShaderCalls=72
+[2025.02.05-02.45.14:355][309]UATHelper: Packaging (Windows): LogCook: Display:     ProcessAsyncResultsTimeSec=0.132521
+[2025.02.05-02.45.14:355][309]UATHelper: Packaging (Windows): LogCook: Display: GlobalShader.Misc
+[2025.02.05-02.45.14:356][309]UATHelper: Packaging (Windows): LogCook: Display:     ShadersCompiled=0
+[2025.02.05-02.45.14:357][309]UATHelper: Packaging (Windows): LogCook: Display: Material
+[2025.02.05-02.45.14:358][309]UATHelper: Packaging (Windows): LogCook: Display:     MeshMaterialShadersCompiled=72
+[2025.02.05-02.45.14:359][309]UATHelper: Packaging (Windows): LogCook: Display:     FinishCacheShadersSec=2.155043
+[2025.02.05-02.45.14:359][309]UATHelper: Packaging (Windows): LogCook: Display:     MaterialShadersCompiled=0
+[2025.02.05-02.45.14:360][309]UATHelper: Packaging (Windows): LogCook: Display:     MaterialShaderMapSubmitCompileJobsTime=0.721789
+[2025.02.05-02.45.14:361][309]UATHelper: Packaging (Windows): LogCook: Display:     MaterialShaderMapSubmitCompileCalls=4
+[2025.02.05-02.45.14:361][309]UATHelper: Packaging (Windows): LogCook: Display:     MaterialInstanceUpdateCachedExpressionDataSec=0.071965
+[2025.02.05-02.45.14:362][309]UATHelper: Packaging (Windows): LogCook: Display:     MaterialInstancePostLoadSec=0.026000
+[2025.02.05-02.45.14:362][309]UATHelper: Packaging (Windows): LogCook: Display:     MaterialUpdateCachedExpressionDataSec=0.073816
+[2025.02.05-02.45.14:363][309]UATHelper: Packaging (Windows): LogCook: Display:     MaterialTranslateCalls=4
+[2025.02.05-02.45.14:364][309]UATHelper: Packaging (Windows): LogCook: Display:     MaterialTranslateTimeSec=0.034846
+[2025.02.05-02.45.14:364][309]UATHelper: Packaging (Windows): LogCook: Display: Package.Load
+[2025.02.05-02.45.14:365][309]UATHelper: Packaging (Windows): LogCook: Display:     NumInlineLoads=5
+[2025.02.05-02.45.14:365][309]UATHelper: Packaging (Windows): LogCook: Display:     NumPackagesLoaded=3732
+[2025.02.05-02.45.14:366][309]UATHelper: Packaging (Windows): LogCook: Display:     LoadPackageTimeSec=25.963691
+[2025.02.05-02.45.14:366][309]UATHelper: Packaging (Windows): LogCook: Display: Package.Save
+[2025.02.05-02.45.14:367][309]UATHelper: Packaging (Windows): LogCook: Display:     NumPackagesIterativelySkipped=0
+[2025.02.05-02.45.14:368][309]UATHelper: Packaging (Windows): LogCook: Display:     NumPackagesSaved=3713
+[2025.02.05-02.45.14:368][309]UATHelper: Packaging (Windows): LogCook: Display:     SavePackageTimeSec=16.256431
+[2025.02.05-02.45.14:369][309]UATHelper: Packaging (Windows): LogCook: Display:     TagPackageExportsPresaveTimeSec=0.000000
+[2025.02.05-02.45.14:369][309]UATHelper: Packaging (Windows): LogCook: Display:     TagPackageExportsTimeSec=0.000000
+[2025.02.05-02.45.14:370][309]UATHelper: Packaging (Windows): LogCook: Display:     FullyLoadLoadersTimeSec=0.000000
+[2025.02.05-02.45.14:370][309]UATHelper: Packaging (Windows): LogCook: Display:     ResetLoadersTimeSec=0.000000
+[2025.02.05-02.45.14:371][309]UATHelper: Packaging (Windows): LogCook: Display:     TagPackageExportsGetObjectsWithOuter=0.000000
+[2025.02.05-02.45.14:372][309]UATHelper: Packaging (Windows): LogCook: Display:     TagPackageExportsGetObjectsWithMarks=0.000000
+[2025.02.05-02.45.14:372][309]UATHelper: Packaging (Windows): LogCook: Display:     SerializeImportsTimeSec=0.000000
+[2025.02.05-02.45.14:373][309]UATHelper: Packaging (Windows): LogCook: Display:     SortExportsSeekfreeInnerTimeSec=0.000000
+[2025.02.05-02.45.14:373][309]UATHelper: Packaging (Windows): LogCook: Display:     SerializeExportsTimeSec=0.000000
+[2025.02.05-02.45.14:374][309]UATHelper: Packaging (Windows): LogCook: Display:     SerializeBulkDataTimeSec=0.085980
+[2025.02.05-02.45.14:374][309]UATHelper: Packaging (Windows): LogCook: Display:     AsyncWriteTimeSec=0.000000
+[2025.02.05-02.45.14:375][309]UATHelper: Packaging (Windows): LogCook: Display:     MBWritten=0.000000
+[2025.02.05-02.45.14:376][309]UATHelper: Packaging (Windows): LogCook: Display: CookOnTheFlyServer
+[2025.02.05-02.45.14:376][309]UATHelper: Packaging (Windows): LogCook: Display:     PeakRequestQueueSize=3710
+[2025.02.05-02.45.14:377][309]UATHelper: Packaging (Windows): LogCook: Display:     PeakLoadQueueSize=3710
+[2025.02.05-02.45.14:377][309]UATHelper: Packaging (Windows): LogCook: Display:     PeakSaveQueueSize=724
+[2025.02.05-02.45.14:378][309]UATHelper: Packaging (Windows): LogCook: Display: Package.DifferentPackagesSizeMBPerAsset
+[2025.02.05-02.45.14:379][309]UATHelper: Packaging (Windows): LogCook: Display: Package.NumberOfDifferencesInPackagesPerAsset
+[2025.02.05-02.45.14:379][309]UATHelper: Packaging (Windows): LogCook: Display: Package.PackageDifferencesSizeMBPerAsset
+[2025.02.05-02.45.14:380][309]UATHelper: Packaging (Windows): LogCook: Display: Package.DiffTotal
+[2025.02.05-02.45.14:380][309]UATHelper: Packaging (Windows): LogCook: Display:     NumberOfDifferentPackages=0
+[2025.02.05-02.45.14:380][309]UATHelper: Packaging (Windows): LogCook: Display:     DifferentPackagesSizeMB=0.000000
+[2025.02.05-02.45.14:381][309]UATHelper: Packaging (Windows): LogCook: Display:     NumberOfDifferencesInPackages=0
+[2025.02.05-02.45.14:382][309]UATHelper: Packaging (Windows): LogCook: Display:     PackageDifferencesSizeMB=0.000000
+[2025.02.05-02.45.14:382][309]UATHelper: Packaging (Windows): LogCook: Display: UnversionedProperties
+[2025.02.05-02.45.14:383][309]UATHelper: Packaging (Windows): LogCook: Display:     SavedStructs=0
+[2025.02.05-02.45.14:383][309]UATHelper: Packaging (Windows): LogCook: Display:     SavedMB=0
+[2025.02.05-02.45.14:384][309]UATHelper: Packaging (Windows): LogCook: Display:     EquivalentTaggedMB=0
+[2025.02.05-02.45.14:385][309]UATHelper: Packaging (Windows): LogCook: Display:     CompressionRatio=-nan(ind)
+[2025.02.05-02.45.14:385][309]UATHelper: Packaging (Windows): LogCook: Display:     BitfieldWasteKB=0
+[2025.02.05-02.45.14:386][309]UATHelper: Packaging (Windows): LogCook: Display:
+[2025.02.05-02.45.14:386][309]UATHelper: Packaging (Windows): LogCook: Display: Cook Profile
+[2025.02.05-02.45.14:387][309]UATHelper: Packaging (Windows): LogCook: Display: ============
+[2025.02.05-02.45.14:387][309]UATHelper: Packaging (Windows): LogCook: Display:  0.CookWallTimeSec=229.519215
+[2025.02.05-02.45.14:388][309]UATHelper: Packaging (Windows): LogCook: Display:  0. 0.StartupWallTimeSec=112.364733
+[2025.02.05-02.45.14:388][309]UATHelper: Packaging (Windows): LogCook: Display:  0. 1.CookByTheBookTimeSec=117.100608
+[2025.02.05-02.45.14:389][309]UATHelper: Packaging (Windows): LogCook: Display:  0. 1. 0.StartCookByTheBookTimeSec=43.057347
+[2025.02.05-02.45.14:389][309]UATHelper: Packaging (Windows): LogCook: Display:  0. 1. 0. 0.BlockOnAssetRegistryTimeSec=0.082435
+[2025.02.05-02.45.14:390][309]UATHelper: Packaging (Windows): LogCook: Display:  0. 1. 0. 1.GameCookModificationDelegateTimeSec=0.000609
+[2025.02.05-02.45.14:391][309]UATHelper: Packaging (Windows): LogCook: Display:  0. 1. 1.TickCookOnTheSideTimeSec=73.421579
+[2025.02.05-02.45.14:391][309]UATHelper: Packaging (Windows): LogCook: Display:  0. 1. 1. 0.TickCookOnTheSideLoadPackagesTimeSec=18.721924
+[2025.02.05-02.45.14:392][309]UATHelper: Packaging (Windows): LogCook: Display:  0. 1. 1. 1.TickCookOnTheSideSaveCookedPackageTimeSec=18.915657
+[2025.02.05-02.45.14:393][309]UATHelper: Packaging (Windows): LogCook: Display:  0. 1. 1. 1. 0.TickCookOnTheSideResolveRedirectorsTimeSec=0.000000
+[2025.02.05-02.45.14:393][309]UATHelper: Packaging (Windows): LogCook: Display:  0. 1. 1. 2.TickCookOnTheSidePrepareSaveTimeSec=6.121350
+[2025.02.05-02.45.14:405][310]UATHelper: Packaging (Windows): LogCook: Display:  0. 1. 2.TickLoopGCTimeSec=0.120249
+[2025.02.05-02.45.14:405][310]UATHelper: Packaging (Windows): LogCook: Display:  0. 1. 3.TickLoopRecompileShaderRequestsTimeSec=0.000000
+[2025.02.05-02.45.14:406][310]UATHelper: Packaging (Windows): LogCook: Display:  0. 1. 4.TickLoopShaderProcessAsyncResultsTimeSec=0.014093
+[2025.02.05-02.45.14:406][310]UATHelper: Packaging (Windows): LogCook: Display:  0. 1. 5.TickLoopProcessDeferredCommandsTimeSec=0.000063
+[2025.02.05-02.45.14:407][310]UATHelper: Packaging (Windows): LogCook: Display:  0. 1. 6.TickLoopTickCommandletStatsTimeSec=0.000013
+[2025.02.05-02.45.14:407][310]UATHelper: Packaging (Windows): LogCook: Display:  0. 1. 7.TickLoopFlushRenderingCommandsTimeSec=0.023139
+[2025.02.05-02.45.14:408][310]UATHelper: Packaging (Windows): LogCook: Display:  0. 1. 8.TargetPlatforms=Windows
+[2025.02.05-02.45.14:409][310]UATHelper: Packaging (Windows): LogCook: Display:  0. 1. 9.CookProject=FlightSimulator
+[2025.02.05-02.45.14:409][310]UATHelper: Packaging (Windows): LogCook: Display:  0. 1. 10.CookCultures=
+[2025.02.05-02.45.14:410][310]UATHelper: Packaging (Windows): LogCook: Display:  0. 1. 11.IsCookAll=false
+[2025.02.05-02.45.14:410][310]UATHelper: Packaging (Windows): LogCook: Display:  0. 1. 12.IsCookOnTheFly=false
+[2025.02.05-02.45.14:410][310]UATHelper: Packaging (Windows): LogCook: Display:  0. 1. 13.IsIterativeCook=false
+[2025.02.05-02.45.14:411][310]UATHelper: Packaging (Windows): LogCook: Display:  0. 1. 14.IsUnversioned=true
+[2025.02.05-02.45.14:411][310]UATHelper: Packaging (Windows): LogCook: Display:  0. 1. 15.CookLabel=
+[2025.02.05-02.45.14:412][310]UATHelper: Packaging (Windows): LogCook: Display:  0. 1. 16.IsFastCook=false
+[2025.02.05-02.45.14:412][310]UATHelper: Packaging (Windows): LogCook: Display:
+[2025.02.05-02.45.14:413][310]UATHelper: Packaging (Windows): LogCook: Display: DDC Summary Stats
+[2025.02.05-02.45.14:413][310]UATHelper: Packaging (Windows): LogCook: Display: =================
+[2025.02.05-02.45.14:414][310]UATHelper: Packaging (Windows): LogCook: Display: BackEnd         =InstalledDerivedDataBackendGraph
+[2025.02.05-02.45.14:414][310]UATHelper: Packaging (Windows): LogCook: Display: HasLocalCache   =      true
+[2025.02.05-02.45.14:415][310]UATHelper: Packaging (Windows): LogCook: Display: HasSharedCache  =     false
+[2025.02.05-02.45.14:415][310]UATHelper: Packaging (Windows): LogCook: Display: HasCloudCache   =     false
+[2025.02.05-02.45.14:416][310]UATHelper: Packaging (Windows): LogCook: Display: HasZenCache     =     false
+[2025.02.05-02.45.14:416][310]UATHelper: Packaging (Windows): LogCook: Display: TotalGetHits    =     11236
+[2025.02.05-02.45.14:417][310]UATHelper: Packaging (Windows): LogCook: Display: TotalGetMisses  =         9
+[2025.02.05-02.45.14:418][310]UATHelper: Packaging (Windows): LogCook: Display: TotalGets       =     11245
+[2025.02.05-02.45.14:418][310]UATHelper: Packaging (Windows): LogCook: Display: TotalGetHitPct  =  0.999200
+[2025.02.05-02.45.14:419][310]UATHelper: Packaging (Windows): LogCook: Display: GetMissPct      =  0.000800
+[2025.02.05-02.45.14:419][310]UATHelper: Packaging (Windows): LogCook: Display: TotalPutHits    =         5
+[2025.02.05-02.45.14:420][310]UATHelper: Packaging (Windows): LogCook: Display: TotalPutMisses  =         0
+[2025.02.05-02.45.14:420][310]UATHelper: Packaging (Windows): LogCook: Display: TotalPuts       =         5
+[2025.02.05-02.45.14:421][310]UATHelper: Packaging (Windows): LogCook: Display: TotalPutHitPct  =  1.000000
+[2025.02.05-02.45.14:423][310]UATHelper: Packaging (Windows): LogCook: Display: PutMissPct      =  0.000000
+[2025.02.05-02.45.14:423][310]UATHelper: Packaging (Windows): LogCook: Display: LocalGetHits    =      4487
+[2025.02.05-02.45.14:423][310]UATHelper: Packaging (Windows): LogCook: Display: LocalGetTotal   =      4496
+[2025.02.05-02.45.14:424][310]UATHelper: Packaging (Windows): LogCook: Display: LocalGetHitPct  =  0.997998
+[2025.02.05-02.45.14:425][310]UATHelper: Packaging (Windows): LogCook: Display: SharedGetHits   =         0
+[2025.02.05-02.45.14:425][310]UATHelper: Packaging (Windows): LogCook: Display: SharedGetTotal  =         0
+[2025.02.05-02.45.14:425][310]UATHelper: Packaging (Windows): LogCook: Display: SharedGetHitPct =  0.000000
+[2025.02.05-02.45.14:426][310]UATHelper: Packaging (Windows): LogCook: Display: ZenLocalGetHits =         0
+[2025.02.05-02.45.14:427][310]UATHelper: Packaging (Windows): LogCook: Display: ZenLocalGetTotal=         0
+[2025.02.05-02.45.14:427][310]UATHelper: Packaging (Windows): LogCook: Display: ZenLocalGetHitPct=  0.000000
+[2025.02.05-02.45.14:427][310]UATHelper: Packaging (Windows): LogCook: Display: ZenRemoteGetHits=         0
+[2025.02.05-02.45.14:428][310]UATHelper: Packaging (Windows): LogCook: Display: ZenRemoteGetTotal=         0
+[2025.02.05-02.45.14:428][310]UATHelper: Packaging (Windows): LogCook: Display: ZenRemoteGetHitPct=  0.000000
+[2025.02.05-02.45.14:429][310]UATHelper: Packaging (Windows): LogCook: Display: CloudGetHits    =         0
+[2025.02.05-02.45.14:429][310]UATHelper: Packaging (Windows): LogCook: Display: CloudGetTotal   =         0
+[2025.02.05-02.45.14:430][310]UATHelper: Packaging (Windows): LogCook: Display: CloudGetHitPct  =  0.000000
+[2025.02.05-02.45.14:430][310]UATHelper: Packaging (Windows): LogCook: Display: LocalLatency    =  1.171902
+[2025.02.05-02.45.14:431][310]UATHelper: Packaging (Windows): LogCook: Display: LocalReadSpeed  =  0.751837
+[2025.02.05-02.45.14:432][310]UATHelper: Packaging (Windows): LogCook: Display: LocalWriteSpeed =  7.757135
+[2025.02.05-02.45.14:432][310]UATHelper: Packaging (Windows): LogCook: Display: SharedLatency   =  0.000000
+[2025.02.05-02.45.14:433][310]UATHelper: Packaging (Windows): LogCook: Display: SharedReadSpeed =  0.000000
+[2025.02.05-02.45.14:433][310]UATHelper: Packaging (Windows): LogCook: Display: SharedWriteSpeed=  0.000000
+[2025.02.05-02.45.14:434][310]UATHelper: Packaging (Windows): LogCook: Display: CloudLatency    =  0.000000
+[2025.02.05-02.45.14:434][310]UATHelper: Packaging (Windows): LogCook: Display: CloudReadSpeed  =  0.000000
+[2025.02.05-02.45.14:435][310]UATHelper: Packaging (Windows): LogCook: Display: CloudWriteSpeed =  0.000000
+[2025.02.05-02.45.14:435][310]UATHelper: Packaging (Windows): LogCook: Display:
+[2025.02.05-02.45.14:436][310]UATHelper: Packaging (Windows): LogCook: Display: DDC Resource Stats
+[2025.02.05-02.45.14:436][310]UATHelper: Packaging (Windows): LogCook: Display: =======================================================================================================
+[2025.02.05-02.45.14:437][310]UATHelper: Packaging (Windows): LogCook: Display: Asset Type                          Total Time (Sec)  GameThread Time (Sec)  Assets Built  MB Processed
+[2025.02.05-02.45.14:444][310]UATHelper: Packaging (Windows): LogCook: Display: ----------------------------------  ----------------  ---------------------  ------------  ------------
+[2025.02.05-02.45.14:444][310]UATHelper: Packaging (Windows): LogCook: Display: BulkDataList                                  230.66                   0.00             1          1.13
+[2025.02.05-02.45.14:445][310]UATHelper: Packaging (Windows): LogCook: Display: Texture                                        83.51                   0.04             0         74.72
+[2025.02.05-02.45.14:445][310]UATHelper: Packaging (Windows): LogCook: Display: MaterialShader                                 31.69                   2.22             4         59.69
+[2025.02.05-02.45.14:446][310]UATHelper: Packaging (Windows): LogCook: Display: GlobalShader                                   27.36                  27.36             0         67.06
+[2025.02.05-02.45.14:457][310]UATHelper: Packaging (Windows): LogCook: Display: Audio                                          11.26                   0.00             0         30.22
+[2025.02.05-02.45.14:458][310]UATHelper: Packaging (Windows): LogCook: Display: DistanceField                                   0.94                   0.69             0          1.13
+[2025.02.05-02.45.14:458][310]UATHelper: Packaging (Windows): LogCook: Display: StaticMesh                                      0.83                   0.12             0          3.63
+[2025.02.05-02.45.14:459][310]UATHelper: Packaging (Windows): LogCook: Display: CardRepresentation                              0.75                   0.09             0          0.02
+[2025.02.05-02.45.14:459][310]UATHelper: Packaging (Windows): LogCook: Display: NavCollision                                    0.50                   0.13             0          0.04
+[2025.02.05-02.45.14:460][310]UATHelper: Packaging (Windows): LogCook: Display: BulkDataPayloadId                               0.27                   0.00             0          0.00
+[2025.02.05-02.45.14:460][310]UATHelper: Packaging (Windows): LogCook: Display: BodySetup                                       0.14                   0.13             0          3.68
+[2025.02.05-02.45.14:461][310]UATHelper: Packaging (Windows): LogCook: Display: AnimationSequence                               0.13                   0.00             0          1.78
+[2025.02.05-02.45.14:462][310]UATHelper: Packaging (Windows): LogCook: Display: SkeletalMesh                                    0.09                   0.00             0          4.53
+[2025.02.05-02.45.14:463][310]UATHelper: Packaging (Windows): LogPackageBuildDependencyTracker: Display: Package Accesses (280 referencing packages with a total of 2543 unique accesses)
+[2025.02.05-02.45.14:463][310]UATHelper: Packaging (Windows): LogInit: Display:
+[2025.02.05-02.45.14:463][310]UATHelper: Packaging (Windows): LogInit: Display: Warning/Error Summary (Unique only)
+[2025.02.05-02.45.14:464][310]UATHelper: Packaging (Windows): LogInit: Display: -----------------------------------
+[2025.02.05-02.45.14:464][310]UATHelper: Packaging (Windows): LogInit: Display: LogUObjectGlobals: Warning: [AssetLog] C:\FlightSimulator-UE5\FlightSimulator\Content\level\Gameplay.umap: Failed to load '/Game/level/GameplayTest': Can't find file.
+[2025.02.05-02.45.14:465][310]UATHelper: Packaging (Windows): LogInit: Display: LogLinker: Warning: [AssetLog] C:\FlightSimulator-UE5\FlightSimulator\Content\level\Gameplay.umap: VerifyImport: Failed to load package for import object 'Package /Game/level/GameplayTest'
+[2025.02.05-02.45.14:466][310]UATHelper: Packaging (Windows): LogInit: Display: LogCesium: Warning: "Enable World Bounds Checks" in the world settings is currently enabled. Please consider disabling it to avoid potential issues.
+[2025.02.05-02.45.14:466][310]UATHelper: Packaging (Windows): LogInit: Display:
+[2025.02.05-02.45.14:467][310]UATHelper: Packaging (Windows): LogInit: Display: Success - 0 error(s), 3 warning(s)
+[2025.02.05-02.45.14:467][310]UATHelper: Packaging (Windows): LogInit: Display:
+[2025.02.05-02.45.14:468][310]UATHelper: Packaging (Windows): Execution of commandlet took:  1m 57s (117.16 seconds)
+[2025.02.05-02.45.16:385][392]UATHelper: Packaging (Windows): LogShaderCompilers: Display: ================================================
+[2025.02.05-02.45.16:386][392]UATHelper: Packaging (Windows): LogShaderCompilers: Display: === FShaderJobCache stats ===
+[2025.02.05-02.45.16:387][392]UATHelper: Packaging (Windows): LogShaderCompilers: Display: Total job queries 72, among them cache hits 0 (0.00%)
+[2025.02.05-02.45.16:398][392]UATHelper: Packaging (Windows): LogShaderCompilers: Display: Tracking 72 distinct input hashes that result in 38 distinct outputs (52.78%)
+[2025.02.05-02.45.16:399][392]UATHelper: Packaging (Windows): LogShaderCompilers: Display: RAM used: 765,45 KiB of 1,60 GiB budget. Usage: 0.05%
+[2025.02.05-02.45.16:399][392]UATHelper: Packaging (Windows): LogShaderCompilers: Display: === Shader Compilation stats ===
+[2025.02.05-02.45.16:400][392]UATHelper: Packaging (Windows): LogShaderCompilers: Display: Shaders Compiled: 72
+[2025.02.05-02.45.16:401][392]UATHelper: Packaging (Windows): LogShaderCompilers: Display: Jobs assigned 72, completed 72 (100%)
+[2025.02.05-02.45.16:402][392]UATHelper: Packaging (Windows): LogShaderCompilers: Display: Average time worker was idle: 1.88 s
+[2025.02.05-02.45.16:403][392]UATHelper: Packaging (Windows): LogShaderCompilers: Display: Time job spent in pending queue: average 1.86 s, longest 15.13 s
+[2025.02.05-02.45.16:403][392]UATHelper: Packaging (Windows): LogShaderCompilers: Display: Job execution time: average 11.32 s, max 18.28 s
+[2025.02.05-02.45.16:404][392]UATHelper: Packaging (Windows): LogShaderCompilers: Display: Job life time (pending + execution): average 13.18 s, max 19.13
+[2025.02.05-02.45.16:404][392]UATHelper: Packaging (Windows): LogShaderCompilers: Display: Shader code size: average 39,283 KiB, min 5,469 KiB, max 73,371 KiB
+[2025.02.05-02.45.16:405][392]UATHelper: Packaging (Windows): LogShaderCompilers: Display: Time at least one job was in flight (either pending or executed): 30.84 s
+[2025.02.05-02.45.16:405][392]UATHelper: Packaging (Windows): LogShaderCompilers: Display: Jobs were issued in 54 batches (only local compilation was used), average 1.33 jobs/batch
+[2025.02.05-02.45.16:406][392]UATHelper: Packaging (Windows): LogShaderCompilers: Display: Average processing rate: 2.33 jobs/sec
+[2025.02.05-02.45.16:407][392]UATHelper: Packaging (Windows): LogShaderCompilers: Display: Total thread time: 340,023 s
+[2025.02.05-02.45.16:408][392]UATHelper: Packaging (Windows): LogShaderCompilers: Display: Total thread preprocess time: 47,352 s
+[2025.02.05-02.45.16:418][393]UATHelper: Packaging (Windows): LogShaderCompilers: Display: Percentage time preprocessing: 13.93%
+[2025.02.05-02.45.16:419][393]UATHelper: Packaging (Windows): LogShaderCompilers: Display: Effective parallelization: 11.03 (times faster than compiling all shaders on one thread). Compare with number of workers: 28
+[2025.02.05-02.45.16:419][393]UATHelper: Packaging (Windows): LogShaderCompilers: Display: Top 5 most expensive shader types by average time:
+[2025.02.05-02.45.16:421][393]UATHelper: Packaging (Windows): LogShaderCompilers: Display:                                 TBasePassVSFNoLightMapPolicy (compiled   12 times, average 5.39 sec, max 6.55 sec, min 3.75 sec)
+[2025.02.05-02.45.16:421][393]UATHelper: Packaging (Windows): LogShaderCompilers: Display:                   TBasePassVSFSelfShadowedTranslucencyPolicy (compiled   12 times, average 4.97 sec, max 6.67 sec, min 3.77 sec)
+[2025.02.05-02.45.16:422][393]UATHelper: Packaging (Windows): LogShaderCompilers: Display:                   TBasePassPSFSelfShadowedTranslucencyPolicy (compiled   12 times, average 4.69 sec, max 5.61 sec, min 4.11 sec)
+[2025.02.05-02.45.16:422][393]UATHelper: Packaging (Windows): LogShaderCompilers: Display:           TBasePassPSFSelfShadowedTranslucencyPolicySkylight (compiled   12 times, average 4.69 sec, max 5.44 sec, min 3.79 sec)
+[2025.02.05-02.45.16:423][393]UATHelper: Packaging (Windows): LogShaderCompilers: Display:                                 TBasePassPSFNoLightMapPolicy (compiled   12 times, average 4.31 sec, max 5.24 sec, min 3.50 sec)
+[2025.02.05-02.45.16:423][393]UATHelper: Packaging (Windows): LogShaderCompilers: Display: Top 5 shader types by total compile time:
+[2025.02.05-02.45.16:424][393]UATHelper: Packaging (Windows): LogShaderCompilers: Display:                                 TBasePassVSFNoLightMapPolicy - 19.01% of total time (compiled   12 times, average 5.39 sec, max 6.55 sec, min 3.75 sec)
+[2025.02.05-02.45.16:425][393]UATHelper: Packaging (Windows): LogShaderCompilers: Display:                   TBasePassVSFSelfShadowedTranslucencyPolicy - 17.54% of total time (compiled   12 times, average 4.97 sec, max 6.67 sec, min 3.77 sec)
+[2025.02.05-02.45.16:425][393]UATHelper: Packaging (Windows): LogShaderCompilers: Display:                   TBasePassPSFSelfShadowedTranslucencyPolicy - 16.56% of total time (compiled   12 times, average 4.69 sec, max 5.61 sec, min 4.11 sec)
+[2025.02.05-02.45.16:426][393]UATHelper: Packaging (Windows): LogShaderCompilers: Display:           TBasePassPSFSelfShadowedTranslucencyPolicySkylight - 16.56% of total time (compiled   12 times, average 4.69 sec, max 5.44 sec, min 3.79 sec)
+[2025.02.05-02.45.16:437][393]UATHelper: Packaging (Windows): LogShaderCompilers: Display:                                 TBasePassPSFNoLightMapPolicy - 15.22% of total time (compiled   12 times, average 4.31 sec, max 5.24 sec, min 3.50 sec)
+[2025.02.05-02.45.16:469][395]UATHelper: Packaging (Windows): LogShaderCompilers: Display: ================================================
+[2025.02.05-02.45.21:942][632]UATHelper: Packaging (Windows): Took 238,66s to run UnrealEditor-Cmd.exe, ExitCode=0
+[2025.02.05-02.45.21:995][634]UATHelper: Packaging (Windows): Cook command time: 238.76 s
+[2025.02.05-02.45.21:996][634]UATHelper: Packaging (Windows): ********** COOK COMMAND COMPLETED **********
+[2025.02.05-02.45.22:007][635]UATHelper: Packaging (Windows): ********** STAGE COMMAND STARTED **********
+[2025.02.05-02.45.22:372][651]UATHelper: Packaging (Windows): Creating Staging Manifest...
+[2025.02.05-02.45.22:414][653]UATHelper: Packaging (Windows): Patching bootstrap executable; C:\FlightSimulator-UE5\FlightSimulator\Intermediate\Staging\FlightSimulator.exe
+[2025.02.05-02.46.32:052][792]UATHelper: Packaging (Windows): Begin update resource 'C:\FlightSimulator-UE5\FlightSimulator\Intermediate\Staging\FlightSimulator.exe' (0)
+[2025.02.05-02.46.32:063][793]UATHelper: Packaging (Windows): Add resource 101, length 104 (True)
+[2025.02.05-02.46.32:064][793]UATHelper: Packaging (Windows): Add resource 1, length 1996 (True)
+[2025.02.05-02.46.32:064][793]UATHelper: Packaging (Windows): Add resource 2, length 2447 (True)
+[2025.02.05-02.46.32:065][793]UATHelper: Packaging (Windows): Add resource 3, length 2535 (True)
+[2025.02.05-02.46.32:065][793]UATHelper: Packaging (Windows): Add resource 4, length 3037 (True)
+[2025.02.05-02.46.32:066][793]UATHelper: Packaging (Windows): Add resource 5, length 3244 (True)
+[2025.02.05-02.46.32:067][793]UATHelper: Packaging (Windows): Add resource 6, length 3531 (True)
+[2025.02.05-02.46.32:067][793]UATHelper: Packaging (Windows): Add resource 7, length 6931 (True)
+[2025.02.05-02.46.32:068][793]UATHelper: Packaging (Windows): Add resource 201, length 102 (True)
+[2025.02.05-02.46.32:068][793]UATHelper: Packaging (Windows): Add resource 202, length 32 (True)
+[2025.02.05-02.46.32:078][793]UATHelper: Packaging (Windows): End update resource (True/0)
+[2025.02.05-02.46.32:123][795]UATHelper: Packaging (Windows): Including config file C:\Program Files\Epic Games\UE_5.3\Engine\Config\Base.ini
+[2025.02.05-02.46.32:123][795]UATHelper: Packaging (Windows): Including config file C:\Program Files\Epic Games\UE_5.3\Engine\Config\BaseCompat.ini
+[2025.02.05-02.46.32:124][795]UATHelper: Packaging (Windows): Including config file C:\Program Files\Epic Games\UE_5.3\Engine\Config\BaseDeviceProfiles.ini
+[2025.02.05-02.46.32:124][795]UATHelper: Packaging (Windows): Excluding config file C:\Program Files\Epic Games\UE_5.3\Engine\Config\BaseEditor.ini
+[2025.02.05-02.46.32:125][795]UATHelper: Packaging (Windows): Excluding config file C:\Program Files\Epic Games\UE_5.3\Engine\Config\BaseEditorKeyBindings.ini
+[2025.02.05-02.46.32:126][795]UATHelper: Packaging (Windows): Excluding config file C:\Program Files\Epic Games\UE_5.3\Engine\Config\BaseEditorPerProjectUserSettings.ini
+[2025.02.05-02.46.32:126][795]UATHelper: Packaging (Windows): Excluding config file C:\Program Files\Epic Games\UE_5.3\Engine\Config\BaseEditorSettings.ini
+[2025.02.05-02.46.32:127][795]UATHelper: Packaging (Windows): Including config file C:\Program Files\Epic Games\UE_5.3\Engine\Config\BaseEngine.ini
+[2025.02.05-02.46.32:128][795]UATHelper: Packaging (Windows): Including config file C:\Program Files\Epic Games\UE_5.3\Engine\Config\BaseGame.ini
+[2025.02.05-02.46.32:128][795]UATHelper: Packaging (Windows): Including config file C:\Program Files\Epic Games\UE_5.3\Engine\Config\BaseGameUserSettings.ini
+[2025.02.05-02.46.32:129][795]UATHelper: Packaging (Windows): Including config file C:\Program Files\Epic Games\UE_5.3\Engine\Config\BaseHardware.ini
+[2025.02.05-02.46.32:129][795]UATHelper: Packaging (Windows): Including config file C:\Program Files\Epic Games\UE_5.3\Engine\Config\BaseInput.ini
+[2025.02.05-02.46.32:130][795]UATHelper: Packaging (Windows): Including config file C:\Program Files\Epic Games\UE_5.3\Engine\Config\BaseInstallBundle.ini
+[2025.02.05-02.46.32:140][796]UATHelper: Packaging (Windows): Excluding config file C:\Program Files\Epic Games\UE_5.3\Engine\Config\BaseLightmass.ini
+[2025.02.05-02.46.32:141][796]UATHelper: Packaging (Windows): Excluding config file C:\Program Files\Epic Games\UE_5.3\Engine\Config\BasePakFileRules.ini
+[2025.02.05-02.46.32:141][796]UATHelper: Packaging (Windows): Including config file C:\Program Files\Epic Games\UE_5.3\Engine\Config\BaseRuntimeOptions.ini
+[2025.02.05-02.46.32:142][796]UATHelper: Packaging (Windows): Including config file C:\Program Files\Epic Games\UE_5.3\Engine\Config\BaseScalability.ini
+[2025.02.05-02.46.32:142][796]UATHelper: Packaging (Windows): Including config file C:\Program Files\Epic Games\UE_5.3\Engine\Config\ConfigRedirects.ini
+[2025.02.05-02.46.32:144][796]UATHelper: Packaging (Windows): Including config file C:\Program Files\Epic Games\UE_5.3\Engine\Config\ConsoleVariables.ini
+[2025.02.05-02.46.32:144][796]UATHelper: Packaging (Windows): Including config file C:\Program Files\Epic Games\UE_5.3\Engine\Config\Layouts\DefaultLayout.ini
+[2025.02.05-02.46.32:145][796]UATHelper: Packaging (Windows): Including config file C:\Program Files\Epic Games\UE_5.3\Engine\Config\Layouts\UE4ClassicLayout.ini
+[2025.02.05-02.46.32:146][796]UATHelper: Packaging (Windows): Excluding config file C:\Program Files\Epic Games\UE_5.3\Engine\Config\Localization\Category.ini
+[2025.02.05-02.46.32:146][796]UATHelper: Packaging (Windows): Excluding config file C:\Program Files\Epic Games\UE_5.3\Engine\Config\Localization\Editor.ini
+[2025.02.05-02.46.32:147][796]UATHelper: Packaging (Windows): Excluding config file C:\Program Files\Epic Games\UE_5.3\Engine\Config\Localization\EditorTutorials.ini
+[2025.02.05-02.46.32:147][796]UATHelper: Packaging (Windows): Excluding config file C:\Program Files\Epic Games\UE_5.3\Engine\Config\Localization\Engine.ini
+[2025.02.05-02.46.32:148][796]UATHelper: Packaging (Windows): Excluding config file C:\Program Files\Epic Games\UE_5.3\Engine\Config\Localization\Keywords.ini
+[2025.02.05-02.46.32:148][796]UATHelper: Packaging (Windows): Excluding config file C:\Program Files\Epic Games\UE_5.3\Engine\Config\Localization\PortableObjectExport.ini
+[2025.02.05-02.46.32:149][796]UATHelper: Packaging (Windows): Excluding config file C:\Program Files\Epic Games\UE_5.3\Engine\Config\Localization\PortableObjectImport.ini
+[2025.02.05-02.46.32:150][796]UATHelper: Packaging (Windows): Excluding config file C:\Program Files\Epic Games\UE_5.3\Engine\Config\Localization\PropertyNames.ini
+[2025.02.05-02.46.32:150][796]UATHelper: Packaging (Windows): Excluding config file C:\Program Files\Epic Games\UE_5.3\Engine\Config\Localization\RepairData.ini
+[2025.02.05-02.46.32:151][796]UATHelper: Packaging (Windows): Excluding config file C:\Program Files\Epic Games\UE_5.3\Engine\Config\Localization\ToolTips.ini
+[2025.02.05-02.46.32:151][796]UATHelper: Packaging (Windows): Excluding config file C:\Program Files\Epic Games\UE_5.3\Engine\Config\Localization\WordCount.ini
+[2025.02.05-02.46.32:151][796]UATHelper: Packaging (Windows): Including config file C:\Program Files\Epic Games\UE_5.3\Engine\Config\VulkanPC\DataDrivenPlatformInfo.ini
+[2025.02.05-02.46.32:152][796]UATHelper: Packaging (Windows): Including config file C:\Program Files\Epic Games\UE_5.3\Engine\Config\Windows\BaseWindowsEngine.ini
+[2025.02.05-02.46.32:152][796]UATHelper: Packaging (Windows): Including config file C:\Program Files\Epic Games\UE_5.3\Engine\Config\Windows\DataDrivenPlatformInfo.ini
+[2025.02.05-02.46.32:153][796]UATHelper: Packaging (Windows): Excluding config file C:\Program Files\Epic Games\UE_5.3\Engine\Config\Windows\WindowsEditorPerProjectUserSettings.ini
+[2025.02.05-02.46.32:153][796]UATHelper: Packaging (Windows): Including config file C:\Program Files\Epic Games\UE_5.3\Engine\Config\Windows\WindowsEngine.ini
+[2025.02.05-02.46.32:153][796]UATHelper: Packaging (Windows): Including config file C:\Program Files\Epic Games\UE_5.3\Engine\Config\Windows\WindowsGame.ini
+[2025.02.05-02.46.32:154][796]UATHelper: Packaging (Windows): Including config file C:\Program Files\Epic Games\UE_5.3\Engine\Config\Windows\WindowsInput.ini
+[2025.02.05-02.46.32:165][796]UATHelper: Packaging (Windows): Excluding config file C:\FlightSimulator-UE5\FlightSimulator\Config\DefaultEditor.ini
+[2025.02.05-02.46.32:166][796]UATHelper: Packaging (Windows): Including config file C:\FlightSimulator-UE5\FlightSimulator\Config\DefaultEngine.ini
+[2025.02.05-02.46.32:166][796]UATHelper: Packaging (Windows): Including config file C:\FlightSimulator-UE5\FlightSimulator\Config\DefaultGame.ini
+[2025.02.05-02.46.32:167][796]UATHelper: Packaging (Windows): Including config file C:\FlightSimulator-UE5\FlightSimulator\Config\DefaultInput.ini
+[2025.02.05-02.46.34:609][905]UATHelper: Packaging (Windows): Cleaning Stage Directory: C:\FlightSimulator-UE5\FlightSimulator\Saved\StagedBuilds\Windows
+[2025.02.05-02.46.34:769][912]UATHelper: Packaging (Windows): Creating pak using staging manifest.
+[2025.02.05-02.46.34:770][912]UATHelper: Packaging (Windows): DumpManifest: C:\Users\pgmla\AppData\Roaming\Unreal Engine\AutomationTool\Logs\C+Program+Files+Epic+Games+UE_5.3\PrePak_Windows_NonUFSFiles.txt, NumItems: 19
+[2025.02.05-02.46.34:771][912]UATHelper: Packaging (Windows): DumpManifest: C:\Users\pgmla\AppData\Roaming\Unreal Engine\AutomationTool\Logs\C+Program+Files+Epic+Games+UE_5.3\PrePak_Windows_NonUFSFilesDebug.txt, NumItems: 8
+[2025.02.05-02.46.34:771][912]UATHelper: Packaging (Windows): DumpManifest: C:\Users\pgmla\AppData\Roaming\Unreal Engine\AutomationTool\Logs\C+Program+Files+Epic+Games+UE_5.3\PrePak_Windows_UFSFiles.txt, NumItems: 9108
+[2025.02.05-02.46.36:706][993]UATHelper: Packaging (Windows): No matching platform for PakFileRules for Section ExcludeContentForMobile : Windows
+[2025.02.05-02.46.36:919][  2]UATHelper: Packaging (Windows): Using 0 pak order files:
+[2025.02.05-02.46.37:103][ 10]UATHelper: Packaging (Windows): Running: C:\Program Files\Epic Games\UE_5.3\Engine\Binaries\Win64\UnrealPak.exe "C:\FlightSimulator-UE5\FlightSimulator\FlightSimulator.uproject"  -cryptokeys="C:\FlightSimulator-UE5\FlightSimulator\Saved\Cooked\Windows\FlightSimulator\Metadata\Crypto.json" -patchpaddingalign=2048 -compressionformats=Oodle -compresslevel=4 -compressmethod=Kraken  -platform=Windows  -CreateMultiple="C:\Users\pgmla\AppData\Roaming\Unreal Engine\AutomationTool\Logs\C+Program+Files+Epic+Games+UE_5.3\PakCommands.txt"
+[2025.02.05-02.46.38:917][ 89]UATHelper: Packaging (Windows): LogPakFile: Display: Parsing crypto keys from a crypto key cache file
+[2025.02.05-02.46.38:917][ 89]UATHelper: Packaging (Windows): LogPakFile: Display: CompressionFormats in priority order: Oodle, Zlib
+[2025.02.05-02.46.38:917][ 89]UATHelper: Packaging (Windows): LogPakFile: Display: Oodle enabled on 'NoPluginCompression' files
+[2025.02.05-02.46.39:047][ 95]UATHelper: Packaging (Windows): LogPakFile: Display: Loading response file C:\Program Files\Epic Games\UE_5.3\Engine\Programs\AutomationTool\Saved\ResponseFiles\PakList_FlightSimulator-Windows.txt
+[2025.02.05-02.46.39:047][ 95]UATHelper: Packaging (Windows): LogPakFile: Display: Added 1552 entries to add to pak file.
+[2025.02.05-02.46.39:102][ 97]UATHelper: Packaging (Windows): LogPakFile: Display: Collecting files to add to pak file...
+[2025.02.05-02.46.39:103][ 97]UATHelper: Packaging (Windows): LogPakFile: Display: Collected 1552 files in 0.05s.
+[2025.02.05-02.46.39:135][ 98]UATHelper: Packaging (Windows): LogPakFile: Display: Creating pak C:\FlightSimulator-UE5\FlightSimulator\Saved\StagedBuilds\Windows\FlightSimulator\Content\Paks\FlightSimulator-Windows.pak.
+[2025.02.05-02.46.41:181][145]UATHelper: Packaging (Windows): OodleDataCompression: Display: Oodle v2.9.10 format for pak/iostore with method=Kraken, level=4=Normal
+[2025.02.05-02.46.41:226][147]UATHelper: Packaging (Windows): LogPakFile: Display: Writing entries (1187/1552)...
+[2025.02.05-02.46.41:312][150]UATHelper: Packaging (Windows): LogPakFile: Display: Created pak file: C:\FlightSimulator-UE5\FlightSimulator\Saved\StagedBuilds\Windows\FlightSimulator\Content\Paks\FlightSimulator-Windows.pak
+[2025.02.05-02.46.41:323][151]UATHelper: Packaging (Windows): LogPakFile: Display: CompressionFormat 0 [Oodle] : 344 files, 32002972 -> 9856279 bytes
+[2025.02.05-02.46.41:324][151]UATHelper: Packaging (Windows): LogPakFile: Display: CompressionFormat 2 [None] : 1208 files, 713231 -> 713231 bytes
+[2025.02.05-02.46.41:325][151]UATHelper: Packaging (Windows): LogPakFile: Display: Added 1552 files, 11174315 bytes total
+[2025.02.05-02.46.41:326][151]UATHelper: Packaging (Windows): LogPakFile: Display: PrimaryIndex size: 21982 bytes
+[2025.02.05-02.46.41:326][151]UATHelper: Packaging (Windows): LogPakFile: Display: PathHashIndex size: 45757 bytes
+[2025.02.05-02.46.41:327][151]UATHelper: Packaging (Windows): LogPakFile: Display: FullDirectoryIndex size: 48781 bytes
+[2025.02.05-02.46.41:327][151]UATHelper: Packaging (Windows): LogPakFile: Display: Compression summary: 30.80% of original size. Compressed Size 9856279 bytes, Original Size 32002972 bytes.
+[2025.02.05-02.46.41:328][151]UATHelper: Packaging (Windows): LogPakFile: Display: Encryption - DISABLED
+[2025.02.05-02.46.41:328][151]UATHelper: Packaging (Windows): LogPakFile: Display:
+[2025.02.05-02.46.41:329][151]UATHelper: Packaging (Windows): LogPakFile: Display: Writer and Compression Threads exited.
+[2025.02.05-02.46.41:446][155]UATHelper: Packaging (Windows): LogPakFile: Display: UnrealPak executed in 2.428352 seconds
+[2025.02.05-02.46.41:447][155]UATHelper: Packaging (Windows): Took 4,35s to run UnrealPak.exe, ExitCode=0
+[2025.02.05-02.46.41:471][156]UATHelper: Packaging (Windows): Running UnrealPak with arguments: -CreateGlobalContainer="C:\FlightSimulator-UE5\FlightSimulator\Saved\StagedBuilds\Windows\FlightSimulator\Content\Paks\global.utoc" -CookedDirectory="C:\FlightSimulator-UE5\FlightSimulator\Saved\Cooked\Windows" -PackageStoreManifest="C:\FlightSimulator-UE5\FlightSimulator\Saved\Cooked\Windows\FlightSimulator\Metadata\packagestore.manifest" -Commands="C:\Users\pgmla\AppData\Roaming\Unreal Engine\AutomationTool\Logs\C+Program+Files+Epic+Games+UE_5.3\IoStoreCommands.txt" -ScriptObjects="C:\FlightSimulator-UE5\FlightSimulator\Saved\Cooked\Windows\FlightSimulator\Metadata\scriptobjects.bin" -patchpaddingalign=2048 -compressionformats=Oodle -compresslevel=4 -compressmethod=Kraken   -cryptokeys="C:\FlightSimulator-UE5\FlightSimulator\Saved\Cooked\Windows\FlightSimulator\Metadata\Crypto.json" -compressionMinBytesSaved=1024 -compressionMinPercentSaved=5 -WriteBackMetadataToAssetRegistry=Disabled 
+[2025.02.05-02.46.41:481][156]UATHelper: Packaging (Windows): Running: C:\Program Files\Epic Games\UE_5.3\Engine\Binaries\Win64\UnrealPak.exe -CreateGlobalContainer="C:\FlightSimulator-UE5\FlightSimulator\Saved\StagedBuilds\Windows\FlightSimulator\Content\Paks\global.utoc" -CookedDirectory="C:\FlightSimulator-UE5\FlightSimulator\Saved\Cooked\Windows" -PackageStoreManifest="C:\FlightSimulator-UE5\FlightSimulator\Saved\Cooked\Windows\FlightSimulator\Metadata\packagestore.manifest" -Commands="C:\Users\pgmla\AppData\Roaming\Unreal Engine\AutomationTool\Logs\C+Program+Files+Epic+Games+UE_5.3\IoStoreCommands.txt" -ScriptObjects="C:\FlightSimulator-UE5\FlightSimulator\Saved\Cooked\Windows\FlightSimulator\Metadata\scriptobjects.bin" -patchpaddingalign=2048 -compressionformats=Oodle -compresslevel=4 -compressmethod=Kraken   -cryptokeys="C:\FlightSimulator-UE5\FlightSimulator\Saved\Cooked\Windows\FlightSimulator\Metadata\Crypto.json" -compressionMinBytesSaved=1024 -compressionMinPercentSaved=5 -WriteBackMetadataToAssetRegistry=Disabled
+[2025.02.05-02.46.42:630][201]UATHelper: Packaging (Windows): LogIoStore: Display: ==================== IoStore Utils ====================
+[2025.02.05-02.46.42:631][201]UATHelper: Packaging (Windows): LogIoStore: Display: Parsing crypto keys from a crypto key cache file 'C:\FlightSimulator-UE5\FlightSimulator\Saved\Cooked\Windows\FlightSimulator\Metadata\Crypto.json'
+[2025.02.05-02.46.42:632][201]UATHelper: Packaging (Windows): LogIoStore: Display: Container signing - DISABLED
+[2025.02.05-02.46.42:643][202]UATHelper: Packaging (Windows): LogIoStore: Display: Directory index - ENABLED
+[2025.02.05-02.46.42:644][202]UATHelper: Packaging (Windows): LogIoStore: Display: Using compression format 'Oodle'
+[2025.02.05-02.46.42:645][202]UATHelper: Packaging (Windows): LogIoStore: Display: Using memory mapping alignment '16384'
+[2025.02.05-02.46.42:646][202]UATHelper: Packaging (Windows): LogIoStore: Display: Using compression block size '65536'
+[2025.02.05-02.46.42:646][202]UATHelper: Packaging (Windows): LogIoStore: Display: Using compression block alignment '2048'
+[2025.02.05-02.46.42:647][202]UATHelper: Packaging (Windows): LogIoStore: Display: Using compression min bytes saved '1024'
+[2025.02.05-02.46.42:647][202]UATHelper: Packaging (Windows): LogIoStore: Display: Using compression min percent saved '5'
+[2025.02.05-02.46.42:648][202]UATHelper: Packaging (Windows): LogIoStore: Display: Using max partition size '0'
+[2025.02.05-02.46.42:648][202]UATHelper: Packaging (Windows): LogIoStore: Display: Not using DDC for compression
+[2025.02.05-02.46.42:839][211]UATHelper: Packaging (Windows): LogIoStore: Display: Using command list file: 'C:\Users\pgmla\AppData\Roaming\Unreal Engine\AutomationTool\Logs\C+Program+Files+Epic+Games+UE_5.3\IoStoreCommands.txt'
+[2025.02.05-02.46.42:946][215]UATHelper: Packaging (Windows): LogIoStore: Display: Selected Oodle level 4 (Normal) from command line for shaders
+[2025.02.05-02.46.43:147][220]UATHelper: Packaging (Windows): LogIoStore: Display: Searching for cooked assets in folder 'C:\FlightSimulator-UE5\FlightSimulator\Saved\Cooked\Windows'
+[2025.02.05-02.46.43:211][220]UATHelper: Packaging (Windows): LogIoStore: Display: Found '7560' files
+[2025.02.05-02.46.43:327][220]UATHelper: Packaging (Windows): LogIoStore: Display: Using input asset registry: C:\FlightSimulator-UE5\FlightSimulator\Saved\Cooked\Windows/FlightSimulator/Metadata/DevelopmentAssetRegistry.bin
+[2025.02.05-02.46.43:370][220]UATHelper: Packaging (Windows): LogIoStore: Display: Added 144 hashes to the hash database, init took 0.000639 seconds
+[2025.02.05-02.46.43:434][221]UATHelper: Packaging (Windows): LogIoStore: Display: Creating container targets...
+[2025.02.05-02.46.43:681][221]UATHelper: Packaging (Windows): OodleDataCompression: Display: Oodle v2.9.10 format for pak/iostore with method=Kraken, level=4=Normal
+[2025.02.05-02.46.43:682][221]UATHelper: Packaging (Windows): LogIoStore: Display: Parsing packages...
+[2025.02.05-02.46.43:726][222]UATHelper: Packaging (Windows): LogIoStore: Display: Reading package assets...
+[2025.02.05-02.46.43:769][222]UATHelper: Packaging (Windows): LogIoStore: Display: Reading 1000/3704: 'C:/FlightSimulator-UE5/FlightSimulator/Saved/Cooked/Windows/Engine/Content/EngineMaterials/Substrate/Glints2/dict_0000_0232.uasset'
+[2025.02.05-02.46.43:812][222]UATHelper: Packaging (Windows): LogIoStore: Display: Reading 2000/3704: 'C:/FlightSimulator-UE5/FlightSimulator/Saved/Cooked/Windows/Engine/Content/EngineMaterials/Substrate/GLints/dict_16_192_64_0p5_0p02_0025_0014.uasset'
+[2025.02.05-02.46.43:846][222]UATHelper: Packaging (Windows): LogIoStore: Display: Reading 3000/3704: 'C:/FlightSimulator-UE5/FlightSimulator/Saved/Cooked/Windows/Engine/Content/EngineMaterials/Substrate/Glints2/dict_0000_0179.uasset'
+[2025.02.05-02.46.43:879][222]UATHelper: Packaging (Windows): LogIoStore: Display: Packages read 3,704 files in 0.16 seconds, 4,137,206 total bytes, 26,027,824 bytes per second
+[2025.02.05-02.46.43:891][222]UATHelper: Packaging (Windows): LogIoStore: Display: Processing shader libraries, compressing with Oodle Mermaid, level 4 (Normal)
+[2025.02.05-02.46.44:008][222]UATHelper: Packaging (Windows): LogShaderLibrary: Display: Created IoStoreShaderArchive header: shaders grouped in 163 groups (49 of them didn't need new indices), average uncompressed size 62261 bytes, min 469 bytes, max 794709 bytes (r.ShaderCodeLibrary.MaxShaderGroupSize=1048576)
+[2025.02.05-02.46.44:019][222]UATHelper: Packaging (Windows): LogIoStore: Display: FlightSimulator-PCD3D_SM5(PCD3D_SM5): Recompressed 1156 shaders as 163 groups. Library size changed from 2837 KB (3.49 : 1 ratio) to 1084 KB (9.14 : 1 ratio), 38.22% of previous.
+[2025.02.05-02.46.44:539][224]UATHelper: Packaging (Windows): LogShaderLibrary: Display: Created IoStoreShaderArchive header: shaders grouped in 194 groups (55 of them didn't need new indices), average uncompressed size 298381 bytes, min 4086 bytes, max 1021126 bytes (r.ShaderCodeLibrary.MaxShaderGroupSize=1048576)
+[2025.02.05-02.46.44:560][224]UATHelper: Packaging (Windows): LogIoStore: Display: FlightSimulator-PCD3D_SM6(PCD3D_SM6): Recompressed 1401 shaders as 194 groups. Library size changed from 32453 KB (1.74 : 1 ratio) to 21308 KB (2.65 : 1 ratio), 65.66% of previous.
+[2025.02.05-02.46.44:918][225]UATHelper: Packaging (Windows): LogShaderLibrary: Display: Created IoStoreShaderArchive header: shaders grouped in 325 groups (121 of them didn't need new indices), average uncompressed size 143216 bytes, min 172 bytes, max 1031930 bytes (r.ShaderCodeLibrary.MaxShaderGroupSize=1048576)
+[2025.02.05-02.46.44:951][225]UATHelper: Packaging (Windows): LogIoStore: Display: Global-PCD3D_SM5(PCD3D_SM5): Recompressed 3471 shaders as 325 groups. Library size changed from 11268 KB (4.03 : 1 ratio) to 5053 KB (8.99 : 1 ratio), 44.85% of previous.
+[2025.02.05-02.46.45:894][228]UATHelper: Packaging (Windows): LogShaderLibrary: Display: Created IoStoreShaderArchive header: shaders grouped in 405 groups (131 of them didn't need new indices), average uncompressed size 301365 bytes, min 2166 bytes, max 1035823 bytes (r.ShaderCodeLibrary.MaxShaderGroupSize=1048576)
+[2025.02.05-02.46.45:905][228]UATHelper: Packaging (Windows): LogIoStore: Display: Global-PCD3D_SM6(PCD3D_SM6): Recompressed 4157 shaders as 405 groups. Library size changed from 75267 KB (1.58 : 1 ratio) to 42002 KB (2.84 : 1 ratio), 55.80% of previous.
+[2025.02.05-02.46.45:939][228]UATHelper: Packaging (Windows): LogIoStore: Display: Shaders processed in 2.03 seconds
+[2025.02.05-02.46.45:950][228]UATHelper: Packaging (Windows): LogIoStore: Display: Processing redirects...
+[2025.02.05-02.46.45:974][228]UATHelper: Packaging (Windows): LogIoStore: Display: Creating disk layout...
+[2025.02.05-02.46.46:040][228]UATHelper: Packaging (Windows): LogIoStore: Display: Ordered 3704 packages using fallback bundle order
+[2025.02.05-02.46.48:066][234]UATHelper: Packaging (Windows): LogIoStore: Display: Serializing container(s)...
+[2025.02.05-02.46.49:257][238]UATHelper: Packaging (Windows): LogIoStore: Display: Writing chunks (4771/4939)... [3718 compressed] [1767 compression tasks scheduled]
+[2025.02.05-02.46.49:268][238]UATHelper: Packaging (Windows): LogIoStore: Display: Writing and compressing took 2.84 seconds, writes to disk took 0.94 seconds for 179,076,032 bytes @ 191,016,675 bytes per second.
+[2025.02.05-02.46.49:269][238]UATHelper: Packaging (Windows): LogIoStore: Display: global: Found perfect hashmap for 1 items.
+[2025.02.05-02.46.49:312][238]UATHelper: Packaging (Windows): LogIoStore: Display: FlightSimulator-Windows: Found perfect hashmap for 4938 items.
+[2025.02.05-02.46.49:312][238]UATHelper: Packaging (Windows): LogIoStore: Display: Finalize took 0.0 seconds for 2 writers to write 571,262 bytes, 11,770,298 bytes per second
+[2025.02.05-02.46.49:313][238]UATHelper: Packaging (Windows): LogIoStore: Display: 144 / 4,939 hashes were loaded from the hash database, by type:
+[2025.02.05-02.46.49:313][238]UATHelper: Packaging (Windows): LogIoStore: Display:     BulkData                   143
+[2025.02.05-02.46.49:314][238]UATHelper: Packaging (Windows): LogIoStore: Display:     OptionalBulkData           1
+[2025.02.05-02.46.49:314][238]UATHelper: Packaging (Windows): LogIoStore: Display: 3,848 / 4,939 chunks attempted to compress, by type:
+[2025.02.05-02.46.49:326][238]UATHelper: Packaging (Windows): LogIoStore: Display:     ExportBundleData           3,704 / 3,704
+[2025.02.05-02.46.49:327][238]UATHelper: Packaging (Windows): LogIoStore: Display:     BulkData                   143 / 143
+[2025.02.05-02.46.49:328][238]UATHelper: Packaging (Windows): LogIoStore: Display:     OptionalBulkData           1 / 1
+[2025.02.05-02.46.49:328][238]UATHelper: Packaging (Windows): LogIoStore: Display:     ScriptObjects              0 / 1
+[2025.02.05-02.46.49:329][238]UATHelper: Packaging (Windows): LogIoStore: Display:     ContainerHeader            0 / 1
+[2025.02.05-02.46.49:329][238]UATHelper: Packaging (Windows): LogIoStore: Display:     ShaderCodeLibrary          0 / 4
+[2025.02.05-02.46.49:330][238]UATHelper: Packaging (Windows): LogIoStore: Display:     ShaderCode                 0 / 1,085
+[2025.02.05-02.46.49:330][238]UATHelper: Packaging (Windows): LogIoStore: Display: Source bytes read:
+[2025.02.05-02.46.49:331][238]UATHelper: Packaging (Windows): LogIoStore: Display:     Zen:                                  0
+[2025.02.05-02.46.49:331][238]UATHelper: Packaging (Windows): LogIoStore: Display:     Loose File:                 381,539,508
+[2025.02.05-02.46.49:332][238]UATHelper: Packaging (Windows): LogIoStore: Display:         ExportBundleData        237,867,552 bytes over 7,408 reads
+[2025.02.05-02.46.49:332][238]UATHelper: Packaging (Windows): LogIoStore: Display:         BulkData                126,894,740 bytes over 143 reads
+[2025.02.05-02.46.49:332][238]UATHelper: Packaging (Windows): LogIoStore: Display:         OptionalBulkData         16,777,216 bytes over 1 reads
+[2025.02.05-02.46.49:333][238]UATHelper: Packaging (Windows): LogIoStore: Display:     Memory:                     143,046,258
+[2025.02.05-02.46.49:344][238]UATHelper: Packaging (Windows): LogIoStore: Display:         ShaderCodeLibrary           847,840 bytes over 8 reads
+[2025.02.05-02.46.49:345][238]UATHelper: Packaging (Windows): LogIoStore: Display:         ShaderCode              142,198,418 bytes over 2,170 reads
+[2025.02.05-02.46.49:345][238]UATHelper: Packaging (Windows): LogIoStore: Display: Calculating stats...
+[2025.02.05-02.46.49:346][238]UATHelper: Packaging (Windows): LogIoStore: Display: --------------------------------------------------- IoDispatcher --------------------------------------------------------
+[2025.02.05-02.46.49:346][238]UATHelper: Packaging (Windows): LogIoStore: Display:
+[2025.02.05-02.46.49:347][238]UATHelper: Packaging (Windows): LogIoStore: Display: Container                           Flags   TOC Size (KB)     TOC Entries       Size (MB)           Compressed (MB)
+[2025.02.05-02.46.49:347][238]UATHelper: Packaging (Windows): LogIoStore: Display: -------------------------------------------------------------------------------------------------------------------------
+[2025.02.05-02.46.49:348][238]UATHelper: Packaging (Windows): LogIoStore: Display: global                          -/-/-/-/-            0.57               1            1.99                         -
+[2025.02.05-02.46.49:348][238]UATHelper: Packaging (Windows): LogIoStore: Display: FlightSimulator-Windows         C/-/-/I/-          557.30            4938          323.50     168.79 (47.82% Oodle)
+[2025.02.05-02.46.49:349][238]UATHelper: Packaging (Windows): LogIoStore: Display: TOTAL                                              557.87            4939          325.49                         -
+[2025.02.05-02.46.49:349][238]UATHelper: Packaging (Windows): LogIoStore: Display:
+[2025.02.05-02.46.49:350][238]UATHelper: Packaging (Windows): LogIoStore: Display: ** Flags: (C)ompressed / (E)ncrypted / (S)igned) / (I)ndexed) / (O)nDemand **
+[2025.02.05-02.46.49:350][238]UATHelper: Packaging (Windows): LogIoStore: Display:
+[2025.02.05-02.46.49:350][238]UATHelper: Packaging (Windows): LogIoStore: Display: Compression block padding:     2.58 MB
+[2025.02.05-02.46.49:351][238]UATHelper: Packaging (Windows): LogIoStore: Display:
+[2025.02.05-02.46.49:351][238]UATHelper: Packaging (Windows): LogIoStore: Display: -------------------------------------------- Container Directory Index --------------------------------------------------
+[2025.02.05-02.46.49:352][238]UATHelper: Packaging (Windows): LogIoStore: Display: Container                            Size (KB)
+[2025.02.05-02.46.49:352][238]UATHelper: Packaging (Windows): LogIoStore: Display: global                                    0.00
+[2025.02.05-02.46.49:364][238]UATHelper: Packaging (Windows): LogIoStore: Display: FlightSimulator-Windows                 170.16
+[2025.02.05-02.46.49:365][238]UATHelper: Packaging (Windows): LogIoStore: Display:
+[2025.02.05-02.46.49:365][238]UATHelper: Packaging (Windows): LogIoStore: Display: ---------------------------------------------- Container Patch Report ---------------------------------------------------
+[2025.02.05-02.46.49:366][238]UATHelper: Packaging (Windows): LogIoStore: Display: Container                         Total (count) Modified (count)    Added (count)    Modified (MB)       Added (MB)
+[2025.02.05-02.46.49:366][238]UATHelper: Packaging (Windows): LogIoStore: Display: global                                        1                0                0             0.00             0.00
+[2025.02.05-02.46.49:367][238]UATHelper: Packaging (Windows): LogIoStore: Display: FlightSimulator-Windows                    4938                0             4938             0.00           166.20
+[2025.02.05-02.46.49:367][238]UATHelper: Packaging (Windows): LogIoStore: Display:
+[2025.02.05-02.46.49:368][238]UATHelper: Packaging (Windows): LogIoStore: Display:
+[2025.02.05-02.46.49:368][238]UATHelper: Packaging (Windows): LogIoStore: Display: --------------------------------------------------- PackageStore (KB) ---------------------------------------------------
+[2025.02.05-02.46.49:368][238]UATHelper: Packaging (Windows): LogIoStore: Display:
+[2025.02.05-02.46.49:369][238]UATHelper: Packaging (Windows): LogIoStore: Display: Container                                Store Size             Packages            Localized
+[2025.02.05-02.46.49:370][238]UATHelper: Packaging (Windows): LogIoStore: Display: -------------------------------------------------------------------------------------------------------------------------
+[2025.02.05-02.46.49:370][238]UATHelper: Packaging (Windows): LogIoStore: Display: FlightSimulator-Windows                          72                 3704                    0
+[2025.02.05-02.46.49:371][238]UATHelper: Packaging (Windows): LogIoStore: Display: TOTAL                                            72                 3704                    0
+[2025.02.05-02.46.49:371][238]UATHelper: Packaging (Windows): LogIoStore: Display:
+[2025.02.05-02.46.49:372][238]UATHelper: Packaging (Windows): LogIoStore: Display:
+[2025.02.05-02.46.49:372][238]UATHelper: Packaging (Windows): LogIoStore: Display: Input:      3704 Packages
+[2025.02.05-02.46.49:383][238]UATHelper: Packaging (Windows): LogIoStore: Display: Input:      0.11 GB UExp
+[2025.02.05-02.46.49:383][238]UATHelper: Packaging (Windows): LogIoStore: Display: Input:      0.00 GB UAsset
+[2025.02.05-02.46.49:384][238]UATHelper: Packaging (Windows): LogIoStore: Display: Input:      0.13 GB UBulk
+[2025.02.05-02.46.49:384][238]UATHelper: Packaging (Windows): LogIoStore: Display: Input:     45.95 MB for 730 Global shaders
+[2025.02.05-02.46.49:385][238]UATHelper: Packaging (Windows): LogIoStore: Display: Input:      3.22 MB for 155 Shared shaders
+[2025.02.05-02.46.49:385][238]UATHelper: Packaging (Windows): LogIoStore: Display: Input:      0.00 MB for 0 Unique shaders
+[2025.02.05-02.46.49:386][238]UATHelper: Packaging (Windows): LogIoStore: Display: Input:     18.64 MB for 200 Inline shaders
+[2025.02.05-02.46.49:386][238]UATHelper: Packaging (Windows): LogIoStore: Display:
+[2025.02.05-02.46.49:387][238]UATHelper: Packaging (Windows): LogIoStore: Display: Output:    17438 Name map entries
+[2025.02.05-02.46.49:387][238]UATHelper: Packaging (Windows): LogIoStore: Display: Output:      710 Imported package entries
+[2025.02.05-02.46.49:388][238]UATHelper: Packaging (Windows): LogIoStore: Display: Output:     3482 Packages without imports
+[2025.02.05-02.46.49:388][238]UATHelper: Packaging (Windows): LogIoStore: Display: Output:        0 Public runtime script objects
+[2025.02.05-02.46.49:388][238]UATHelper: Packaging (Windows): LogIoStore: Display: Output:     0.00 GB HeaderData
+[2025.02.05-02.46.49:389][238]UATHelper: Packaging (Windows): LogIoStore: Display: Output:     1.99 MB InitialLoadData
+[2025.02.05-02.46.49:389][238]UATHelper: Packaging (Windows): LogIoStore: Display:
+[2025.02.05-02.46.49:422][239]UATHelper: Packaging (Windows): LogPakFile: Display: UnrealPak executed in 6.711125 seconds
+[2025.02.05-02.46.49:422][239]UATHelper: Packaging (Windows): Took 7,95s to run UnrealPak.exe, ExitCode=0
+[2025.02.05-02.46.49:434][239]UATHelper: Packaging (Windows): DumpManifest: C:\Users\pgmla\AppData\Roaming\Unreal Engine\AutomationTool\Logs\C+Program+Files+Epic+Games+UE_5.3\FinalCopyWin64_UFSFiles.txt, NumItems: 9109
+[2025.02.05-02.46.49:477][239]UATHelper: Packaging (Windows): DumpManifest: C:\Users\pgmla\AppData\Roaming\Unreal Engine\AutomationTool\Logs\C+Program+Files+Epic+Games+UE_5.3\FinalCopyWin64_NonUFSFiles.txt, NumItems: 19
+[2025.02.05-02.46.49:488][239]UATHelper: Packaging (Windows): DumpManifest: C:\Users\pgmla\AppData\Roaming\Unreal Engine\AutomationTool\Logs\C+Program+Files+Epic+Games+UE_5.3\FinalCopyWin64_NonUFSFilesDebug.txt, NumItems: 8
+[2025.02.05-02.46.49:499][239]UATHelper: Packaging (Windows): Copying NonUFSFiles to staging directory: C:\FlightSimulator-UE5\FlightSimulator\Saved\StagedBuilds\Windows
+[2025.02.05-02.46.51:392][245]UATHelper: Packaging (Windows): Copying DebugFiles to staging directory: C:\FlightSimulator-UE5\FlightSimulator\Saved\StagedBuilds\Windows
+[2025.02.05-02.46.52:071][247]UATHelper: Packaging (Windows): Stage command time: 90.06 s
+[2025.02.05-02.46.52:071][247]UATHelper: Packaging (Windows): ********** STAGE COMMAND COMPLETED **********
+[2025.02.05-02.46.52:104][247]UATHelper: Packaging (Windows): ********** PACKAGE COMMAND STARTED **********
+[2025.02.05-02.46.52:115][247]UATHelper: Packaging (Windows): Package command time: 0.01 s
+[2025.02.05-02.46.52:116][247]UATHelper: Packaging (Windows): ********** PACKAGE COMMAND COMPLETED **********
+[2025.02.05-02.46.52:116][247]UATHelper: Packaging (Windows): ********** ARCHIVE COMMAND STARTED **********
+[2025.02.05-02.46.52:117][247]UATHelper: Packaging (Windows): Archiving to C:/Users/pgmla/OneDrive/Escritorio/Flight-Simulator
+[2025.02.05-02.46.53:947][252]UATHelper: Packaging (Windows): Archive command time: 1.83 s
+[2025.02.05-02.46.53:948][252]UATHelper: Packaging (Windows): ********** ARCHIVE COMMAND COMPLETED **********
+[2025.02.05-02.46.53:959][252]UATHelper: Packaging (Windows): BuildCookRun time: 546.51 s
+[2025.02.05-02.46.53:959][252]UATHelper: Packaging (Windows): BUILD SUCCESSFUL
+[2025.02.05-02.46.53:980][252]UATHelper: Packaging (Windows): AutomationTool executed for 0h 9m 10s
+[2025.02.05-02.46.53:981][252]UATHelper: Packaging (Windows): AutomationTool exiting with ExitCode=0 (Success)
+[2025.02.05-02.48.55:413][617]LogEOSSDK: LogEOS: Updating Product SDK Config, Time: 7044.808594
+[2025.02.05-02.48.56:421][620]LogEOSSDK: LogEOS: SDK Config Product Update Request Completed - No Change
+[2025.02.05-02.48.56:421][620]LogEOSSDK: LogEOS: ScheduleNextSDKConfigDataUpdate - Time: 7045.476562, Update Interval: 356.092407

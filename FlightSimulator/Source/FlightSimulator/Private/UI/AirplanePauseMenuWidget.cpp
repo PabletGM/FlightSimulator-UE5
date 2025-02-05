@@ -2,7 +2,7 @@
 
 
 #include "UI/AirplanePauseMenuWidget.h"
-
+#include "Music/AudioManager.h"
 #include "Gameplay_PlayerController.h"
 #include "Components/Button.h"
 #include "Components/TextBlock.h"
@@ -15,7 +15,7 @@ void UAirplanePauseMenuWidget::NativeConstruct()
 
 	if (PauseMenuText)
 	{
-		PauseMenuText->SetText(FText::FromString(TEXT("Airplane Selector")));
+		PauseMenuText->SetText(FText::FromString(TEXT("Pause Menu")));
 		FSlateFontInfo FontInfo = PauseMenuText->Font;
 		// FontInfo.Size = 120;
 		PauseMenuText->SetFont(FontInfo);
@@ -31,6 +31,8 @@ void UAirplanePauseMenuWidget::NativeConstruct()
 	{
 		UE_LOG(LogTemp, Warning, TEXT("Gameplay_PlayerController not found!"));
 	}
+
+	AudioManager = Cast<AAudioManager>(UGameplayStatics::GetActorOfClass(GetWorld(), AAudioManager::StaticClass()));
 }
 
 void UAirplanePauseMenuWidget::InitializeButton(UButton* Button, UTextBlock* ButtonText,
@@ -74,6 +76,28 @@ void UAirplanePauseMenuWidget::OnButtonUnhovered()
 
 void UAirplanePauseMenuWidget::BackToSelectorMethod()
 {
+	DelayMethod();
+}
+
+void UAirplanePauseMenuWidget::ResumeMethod()
+{
+	if (AudioManager)
+	{
+		AudioManager->PlaySFX2(FText::FromString("clickButton"));
+	}
+	// Ocultar el menú y reanudar el juego
+	SetVisibility(ESlateVisibility::Hidden);
+	UGameplayStatics::SetGamePaused(GetWorld(), false);
+
+	// Desactivar el cursor del ratón y restaurar el input de juego
+	GameplayController->bShowMouseCursor = false;
+	GameplayController->SetInputMode(FInputModeGameOnly());
+
+	UE_LOG(LogTemp, Log, TEXT("Game resumed"));
+}
+
+void UAirplanePauseMenuWidget::DelayMethod()
+{
 	const FName LevelName = TEXT("AirplaneSelector");
 
 	if (GetWorld())
@@ -85,17 +109,4 @@ void UAirplanePauseMenuWidget::BackToSelectorMethod()
 	{
 		UE_LOG(LogTemp, Error, TEXT("Failed to load level: %s. World is null!"), *LevelName.ToString());
 	}
-}
-
-void UAirplanePauseMenuWidget::ResumeMethod()
-{
-	// Ocultar el menú y reanudar el juego
-	SetVisibility(ESlateVisibility::Hidden);
-	UGameplayStatics::SetGamePaused(GetWorld(), false);
-
-	// Desactivar el cursor del ratón y restaurar el input de juego
-	GameplayController->bShowMouseCursor = false;
-	GameplayController->SetInputMode(FInputModeGameOnly());
-
-	UE_LOG(LogTemp, Log, TEXT("Game resumed"));
 }

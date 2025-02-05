@@ -76,6 +76,12 @@
     <ClCompile Include="..\..\Source\FlightSimulator\Private\GameMode\AirplaneSelector_GameMode.cpp">
       <Filter>Source\FlightSimulator\Private\GameMode</Filter>
     </ClCompile>
+    <Filter Include="Source\FlightSimulator\Private\Music">
+      <UniqueIdentifier>{9D488166-7658-3AEB-9A9F-09B19CB0C470}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\FlightSimulator\Private\Music\AudioManager.cpp">
+      <Filter>Source\FlightSimulator\Private\Music</Filter>
+    </ClCompile>
     <Filter Include="Source\FlightSimulator\Private\UI">
       <UniqueIdentifier>{D03EF0FE-D49D-384C-B759-ECF05D5F8757}</UniqueIdentifier>
     </Filter>
@@ -114,6 +120,12 @@
     </Filter>
     <ClInclude Include="..\..\Source\FlightSimulator\Public\GameMode\AirplaneSelector_GameMode.h">
       <Filter>Source\FlightSimulator\Public\GameMode</Filter>
+    </ClInclude>
+    <Filter Include="Source\FlightSimulator\Public\Music">
+      <UniqueIdentifier>{6A1F4ED3-00AD-3767-AFED-2FA90074E23D}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Source\FlightSimulator\Public\Music\AudioManager.h">
+      <Filter>Source\FlightSimulator\Public\Music</Filter>
     </ClInclude>
     <Filter Include="Source\FlightSimulator\Public\UI">
       <UniqueIdentifier>{262F0B9A-049E-3570-A0C3-B99AD64AB276}</UniqueIdentifier>

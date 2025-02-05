@@ -14,6 +14,7 @@ class AGameplay_PlayerController;
 class UButton;
 class UTextBlock;
 class UVerticalBoxSlot;
+class AAudioManager;
 UCLASS()
 class FLIGHTSIMULATOR_API UAirplanePauseMenuWidget : public UUserWidget
 {
@@ -36,7 +37,13 @@ public:
 	UFUNCTION()
 	void ResumeMethod();
 
+	UFUNCTION()
+	void DelayMethod();
+
 private:
+
+	AAudioManager* AudioManager = nullptr;
+	
 	UPROPERTY(meta = (BindWidget))
 	class UTextBlock* PauseMenuText = nullptr;
 

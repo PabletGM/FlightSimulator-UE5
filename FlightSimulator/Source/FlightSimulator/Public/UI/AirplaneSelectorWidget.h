@@ -14,6 +14,7 @@ class UButton;
 class UTextBlock;
 class UVerticalBoxSlot;
 class UHorizontalBoxSlot;
+class AAudioManager;
 
 UCLASS()
 class FLIGHTSIMULATOR_API UAirplaneSelectorWidget : public UUserWidget
@@ -39,9 +40,12 @@ class FLIGHTSIMULATOR_API UAirplaneSelectorWidget : public UUserWidget
 	void LeftOptionMethod();
 	UFUNCTION()
 	void PlayMethod();
+	UFUNCTION()
+	void Delay();
 
 private:
 
+	AAudioManager* AudioManager = nullptr;
 	UPROPERTY(meta = (BindWidget))
 	class UTextBlock* AirplaneTitleText = nullptr;
 

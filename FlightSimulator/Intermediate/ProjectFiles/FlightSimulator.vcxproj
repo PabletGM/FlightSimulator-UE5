@@ -158,6 +158,11 @@
       <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles)</ForcedIncludeFiles>
       <AdditionalOptions>$(ClCompile_AdditionalOptions)</AdditionalOptions>
     </ClCompile>
+    <ClCompile Include="..\..\Source\FlightSimulator\Private\Music\AudioManager.cpp">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles)</ForcedIncludeFiles>
+      <AdditionalOptions>$(ClCompile_AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
     <ClCompile Include="..\..\Source\FlightSimulator\Private\UI\AirplanePauseMenuWidget.cpp">
       <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles)</ForcedIncludeFiles>
@@ -174,6 +179,7 @@
     <ClInclude Include="..\..\Source\FlightSimulator\Public\FlightSystem\Flyer_Base.h"/>
     <ClInclude Include="..\..\Source\FlightSimulator\Public\GameInstance\GameInstanceFlightSimulator.h"/>
     <ClInclude Include="..\..\Source\FlightSimulator\Public\GameMode\AirplaneSelector_GameMode.h"/>
+    <ClInclude Include="..\..\Source\FlightSimulator\Public\Music\AudioManager.h"/>
     <ClInclude Include="..\..\Source\FlightSimulator\Public\UI\AirplanePauseMenuWidget.h"/>
     <ClInclude Include="..\..\Source\FlightSimulator\Public\UI\AirplaneSelectorWidget.h"/>
   </ItemGroup>

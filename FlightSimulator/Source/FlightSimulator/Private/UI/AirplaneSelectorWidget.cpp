@@ -10,8 +10,7 @@
 #include "Components/TextBlock.h"
 #include "Components/VerticalBoxSlot.h"
 #include "Kismet/GameplayStatics.h"
-
-
+#include "Music/AudioManager.h"
 
 
 void UAirplaneSelectorWidget::NativeConstruct()
@@ -29,6 +28,8 @@ void UAirplaneSelectorWidget::NativeConstruct()
     InitializeButton(LeftOptionButton, LeftOptionButtonText, TEXT("Prev"));
     InitializeButton(PlayButton, PlayButtonText, TEXT("Play"));
     // ConfigureMargins();
+    
+    AudioManager = Cast<AAudioManager>(UGameplayStatics::GetActorOfClass(GetWorld(), AAudioManager::StaticClass()));
 }
 
 void UAirplaneSelectorWidget::InitializeButton(UButton* Button, UTextBlock* ButtonText, const FString& ButtonTextString)
@@ -84,6 +85,10 @@ void UAirplaneSelectorWidget::ConfigureMargins()
 //TO DO
 void UAirplaneSelectorWidget::RightOptionMethod()
 {
+    if (AudioManager)
+    {
+        AudioManager->PlaySFX1(FText::FromString("changeAirplane"));
+    }
     if (APlaneSelector_PlayerController* PC = Cast<APlaneSelector_PlayerController>(UGameplayStatics::GetPlayerController(this, 0)))
     {
         PC->ChangeAirplaneRightChoice();
@@ -99,6 +104,10 @@ void UAirplaneSelectorWidget::RightOptionMethod()
 //TO DO
 void UAirplaneSelectorWidget::LeftOptionMethod()
 {
+    if (AudioManager)
+    {
+        AudioManager->PlaySFX1(FText::FromString("changeAirplane"));
+    }
     if (APlaneSelector_PlayerController* PC = Cast<APlaneSelector_PlayerController>(UGameplayStatics::GetPlayerController(this, 0)))
     {
         PC->ChangeAirplaneLeftChoice();
@@ -113,6 +122,16 @@ void UAirplaneSelectorWidget::LeftOptionMethod()
 
 //TO DO
 void UAirplaneSelectorWidget::PlayMethod()
+{
+    if (AudioManager)
+    {
+        AudioManager->PlaySFX1(FText::FromString("Play"));
+    }
+    FTimerHandle TimerHandle;
+    GetWorld()->GetTimerManager().SetTimer(TimerHandle, this, &UAirplaneSelectorWidget::Delay, 1.0f, false);
+}
+
+void UAirplaneSelectorWidget::Delay()
 {
     if (APlaneSelector_PlayerController* PC = Cast<APlaneSelector_PlayerController>(UGameplayStatics::GetPlayerController(this, 0)))
     {

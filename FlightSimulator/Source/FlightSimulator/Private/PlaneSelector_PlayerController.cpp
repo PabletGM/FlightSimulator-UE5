@@ -88,12 +88,11 @@ void APlaneSelector_PlayerController::ChangeAirplaneLeftChoice()
 	}
 }
 
-//TO-DO
 void APlaneSelector_PlayerController::EnterLevelGameplay()
 {
 	if (!CurrentAirplaneName.IsEmpty() && CurrentAirplaneClass)
 	{
-		GEngine->AddOnScreenDebugMessage(-1, 5.0f, FColor::Green, FString::Printf(TEXT("Selected Airplane: %s"), *CurrentAirplaneName));
+		// GEngine->AddOnScreenDebugMessage(-1, 5.0f, FColor::Green, FString::Printf(TEXT("Selected Airplane: %s"), *CurrentAirplaneName));
         
 		if (UGameInstance* GI = GetGameInstance())
 		{
@@ -111,7 +110,7 @@ void APlaneSelector_PlayerController::SpawnCurrentAirplane()
 {
 	if (CurrentSpawnedAirplane)
 	{
-		// Destruir el avión actual
+		//Destroy actual plane
 		CurrentSpawnedAirplane->Destroy();
 		CurrentSpawnedAirplane = nullptr;
 	}	

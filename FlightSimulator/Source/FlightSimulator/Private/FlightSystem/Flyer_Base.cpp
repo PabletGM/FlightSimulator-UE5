@@ -49,7 +49,6 @@ float AFlyer_Base::CalculateHeightFromGround()
 	FVector End = Start - FVector(0.0f, 0.0f, 100000.0f);
 
 	//create raycast
-	
 	FHitResult HitResult;
 	FCollisionQueryParams QueryParams;
 	//Ignore the actor
@@ -63,7 +62,7 @@ float AFlyer_Base::CalculateHeightFromGround()
 	}
 
 	//if it doesnt collide, it returns a big altitude
-	return 10000.0f; // Altura máxima si no detecta el suelo
+	return 10000.0f;
 }
 
 void AFlyer_Base::HandleRollAxis_HorizontalInclination(const FInputActionValue& Value)
@@ -72,13 +71,14 @@ void AFlyer_Base::HandleRollAxis_HorizontalInclination(const FInputActionValue& 
     AddControllerRollInput(InputValue * RollRateMultiplier * GetWorld()->GetDeltaSeconds());
 }
 
-//IT WORKS, the vertical inclination
+// vertical inclination
 void AFlyer_Base::HandlePitchAxis_VerticalInclination(const FInputActionValue& Value)
 {
     float InputValue = Value.Get<float>();
     AddControllerPitchInput(InputValue * PitchRateMultiplier * GetWorld()->GetDeltaSeconds()); 
 }
 
+// horizontal inclination
 float AFlyer_Base::CalculateYawEffect_HorizontalInclination(float RollInput, float deltaTime)
 {
 	float YawEffect = RollInput * YawScalingFactor;
@@ -99,7 +99,7 @@ float AFlyer_Base::CalculateAccelerationSide(float RollInput, float deltaTime, f
 
 void AFlyer_Base::CalculateFrontSpeed(float PitchInput, float CurrentAccForward)
 {
-	// Apply FRONT Speed if it does not surpass the maxTurnDegreeVertical
+		// Apply FRONT Speed if it does not surpass the maxTurnDegreeVertical
     	if (FMath::Abs(PitchInput) < maxTurnDegreeVertical) 
     	{
     		const float NewForwardSpeed = CurrentForwardSpeed + CurrentAccForward;
@@ -129,9 +129,9 @@ void AFlyer_Base::calculate_debugging_axis_degree_inclination_speeds(float RollI
 {
 	if (GEngine)
 	{
-		FString DebugMessage = FString::Printf(TEXT("Forward Speed: %.2f, Side Speed: %.2f, Roll: %.2f, Pitch: %.2f, Yaw: %.2f"),
-			CurrentForwardSpeed, CurrentSideSpeed, RollInput, PitchInput, YawEffect);
-		GEngine->AddOnScreenDebugMessage(-1, 0.1f, FColor::Green, DebugMessage);
+		// FString DebugMessage = FString::Printf(TEXT("Forward Speed: %.2f, Side Speed: %.2f, Roll: %.2f, Pitch: %.2f, Yaw: %.2f"),
+		// 	CurrentForwardSpeed, CurrentSideSpeed, RollInput, PitchInput, YawEffect);
+		// GEngine->AddOnScreenDebugMessage(-1, 0.1f, FColor::Green, DebugMessage);
 	}
 }
 
@@ -177,7 +177,7 @@ void AFlyer_Base::BeginPlay()
 
 
 	//UI PAUSE MENU
-	// Obtener el Gameplay_PlayerController
+	// Obtain the Gameplay_PlayerController
 	GameplayController = Cast<AGameplay_PlayerController>(UGameplayStatics::GetPlayerController(this, 0));
 	if (!GameplayController)
 	{
@@ -190,8 +190,7 @@ void AFlyer_Base::BeginPlay()
 void AFlyer_Base::Tick(float DeltaTime)
 {
     Super::Tick(DeltaTime);
-    
-    
+
 	// 🛠️ 1️⃣ OBTENER LOS VALORES ACTUALES DE LOS EJES
 	float RollInput = GetActorRotationRoll(); // Rotación actual en Roll
 	float PitchInput = GetActorRotationRoll(); // Rotación actual en Pitch

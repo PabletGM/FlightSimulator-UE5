@@ -24,8 +24,7 @@ void UAirplanePauseMenuWidget::NativeConstruct()
 	InitializeButton(BackToSelectorButton, BackToSelectorButtonText, TEXT("Back to Selector"));
 	InitializeButton(ResumeButton, ResumeButtonText, TEXT("Resume"));
 
-
-	// Obtener el Gameplay_PlayerController
+	
 	GameplayController = Cast<AGameplay_PlayerController>(UGameplayStatics::GetPlayerController(this, 0));
 	if (!GameplayController)
 	{
@@ -85,11 +84,11 @@ void UAirplanePauseMenuWidget::ResumeMethod()
 	{
 		AudioManager->PlaySFX2(FText::FromString("clickButton"));
 	}
-	// Ocultar el menú y reanudar el juego
+	//hide the widget and continue
 	SetVisibility(ESlateVisibility::Hidden);
 	UGameplayStatics::SetGamePaused(GetWorld(), false);
 
-	// Desactivar el cursor del ratón y restaurar el input de juego
+	//deactivate cursor
 	GameplayController->bShowMouseCursor = false;
 	GameplayController->SetInputMode(FInputModeGameOnly());
 

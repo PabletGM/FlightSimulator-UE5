@@ -32,14 +32,14 @@ APawnStaticCamera_PlaneSelector::APawnStaticCamera_PlaneSelector()
 
 }
 
-// Called when the game starts or when spawned
+
 void APawnStaticCamera_PlaneSelector::BeginPlay()
 {
 	Super::BeginPlay();
 	
 }
 
-// Called every frame
+
 void APawnStaticCamera_PlaneSelector::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);

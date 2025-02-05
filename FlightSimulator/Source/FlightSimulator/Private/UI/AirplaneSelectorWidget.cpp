@@ -82,7 +82,6 @@ void UAirplaneSelectorWidget::ConfigureMargins()
     }
 }
 
-//TO DO
 void UAirplaneSelectorWidget::RightOptionMethod()
 {
     if (AudioManager)
@@ -93,7 +92,7 @@ void UAirplaneSelectorWidget::RightOptionMethod()
     {
         PC->ChangeAirplaneRightChoice();
 
-        // Actualiza el texto del widget
+        //Update Text of widget
         if (AirplaneTitleText)
         {
             AirplaneTitleText->SetText(FText::FromString(PC->CurrentAirplaneName));
@@ -101,7 +100,6 @@ void UAirplaneSelectorWidget::RightOptionMethod()
     }
 }
 
-//TO DO
 void UAirplaneSelectorWidget::LeftOptionMethod()
 {
     if (AudioManager)
@@ -112,7 +110,7 @@ void UAirplaneSelectorWidget::LeftOptionMethod()
     {
         PC->ChangeAirplaneLeftChoice();
 
-        // Actualiza el texto del widget
+        // Update text of widget
         if (AirplaneTitleText)
         {
             AirplaneTitleText->SetText(FText::FromString(PC->CurrentAirplaneName));
@@ -120,7 +118,6 @@ void UAirplaneSelectorWidget::LeftOptionMethod()
     }
 }
 
-//TO DO
 void UAirplaneSelectorWidget::PlayMethod()
 {
     if (AudioManager)

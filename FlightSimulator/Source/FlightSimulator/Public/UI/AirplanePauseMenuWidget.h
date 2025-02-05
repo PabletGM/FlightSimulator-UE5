@@ -31,7 +31,7 @@ public:
 	UFUNCTION()
 	void OnButtonUnhovered();
 
-	//Fuctions click butto
+	//Fuctions click button
 	UFUNCTION()
 	void BackToSelectorMethod();
 	UFUNCTION()

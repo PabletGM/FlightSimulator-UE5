@@ -11,7 +11,7 @@ void AGameplay_PlayerController::BeginPlay()
 	
 	if (AirplanePauseMenuWidgetTemplate)
 	{
-		// Crear el widget usando el PlayerController como OwningObject
+		// Create widget
 		AirplanePauseMenuWidget = Cast<UAirplanePauseMenuWidget>(CreateWidget<UUserWidget>(this, AirplanePauseMenuWidgetTemplate));
 		if (AirplanePauseMenuWidget)
 		{
@@ -35,11 +35,11 @@ void AGameplay_PlayerController::TogglePauseMenu()
 	}
 
 	
-		// Mostrar el menú y pausar el juego
+		//show menu and pause game
 		AirplanePauseMenuWidget->SetVisibility(ESlateVisibility::Visible);
 		UGameplayStatics::SetGamePaused(GetWorld(), true);
 
-		// Permitir input para UI y juego
+		//Let Input for UI and Game
 		bShowMouseCursor = true;
 		FInputModeGameAndUI InputMode;
 		InputMode.SetWidgetToFocus(AirplanePauseMenuWidget->TakeWidget());
